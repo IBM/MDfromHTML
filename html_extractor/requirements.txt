@@ -1,0 +1,7 @@
+flask
+flask-restplus
+selenium
+beautifulsoup4
+lxml
+tldextract
+pymongo

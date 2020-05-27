@@ -1,0 +1,65 @@
+{
+  "request": {
+    "HTMLFilters": {
+      "*": {
+        ":all": {
+          "class": [
+            "header",
+            "footer"
+          ],
+          "aria-hidden": [
+            "true"
+          ],
+          "aria-label": [
+            "header",
+            "footer"
+          ],
+          "id": [
+            "header",
+            "footer"
+          ]
+        },
+        ":tagNames": [
+          "header",
+          "footer"
+        ]
+      },
+      "web.archive.org": {
+        ":all": {
+          "id": [
+            "wm-ipp"
+          ]
+        }
+      },
+      "cloud.ibm.com": {
+        "nav": {
+          "class": [
+            "left-nav"
+          ]
+        }
+      },
+      "w3.ibm.com": {
+        "div": {
+          "aria-labelledby": [
+            "footer",
+            "header",
+            "not-found-label"
+          ],
+          "class": [
+            "hidden"
+          ],
+          "id": [
+            "desktop-alerts",
+            "footer",
+            "header",
+            "hidden",
+            "support-options",
+            "support-overlay"
+          ]
+        }
+      }
+    },
+    "url":"the url for your webpage",
+    "html": "the html for your webpage"
+  }
+}
