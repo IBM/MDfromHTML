@@ -2,6 +2,7 @@
 Generate Markdown from HTML using filters to remove noise from web pages (e.g., headers, footers, advertisements, sidebars). Captures provenance of markdown generation back to original HTML content and explains filtering that occurred. Also includes tools to generate formatted text from the generated markdown. This repo includes multiple Eclipse Maven Java projects including REST web services to generate MD from HTML.
 
 ## Project Components
+  * html_extractor: HTML capture providing a web server for cURL requests or for interactive use to capture rendered web pages via Selenium and Chromium
   * MDfromHTMLBase: Common utility methods used by other projects
   * Remark: upgraded code from https://bitbucket.org/OverZealous/remark/src/default/ to provide HTML parsing and converstion to Markdown
   * MarkdownGenerator: Utilities and Services to perform Markdown generation from HTML
