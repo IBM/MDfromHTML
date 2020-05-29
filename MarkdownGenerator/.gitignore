@@ -1,0 +1,16 @@
+/target/
+/websiteWords.json
+/telstra_fixed_urls.json
+/telstra_urls.txt
+/ExtractHTMLJSON_Output.txt
+/getURLs.sh
+/getURLs_ibm.sh
+/KShitijData.zip
+/Test/
+/Twitter_file_domain_count.txt
+/Twitter_url_to_file_by_domain.txt
+/Twitter_file_domain_count.xlsx
+/HTMLInfo.json
+/MissingURLS.json
+/help-at-ibm-urls-cogir.txt
+/help-at-ibm-urls-esim.txt

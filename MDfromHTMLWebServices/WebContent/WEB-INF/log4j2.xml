@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE PROJECT> <!-- stops the "no grammar" validation error -->
+<Configuration status="INFO" monitorInterval="10">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{ABSOLUTE}(%C{1}) %-5p: %m     -- %M:%L:%t%n" />
+		</Console>
+		<RollingFile name="RollingFile"
+			fileName="${sys:MDfromHTML_HOME}/logs/mdfromhtmlwebservices.log"
+			filePattern="${sys:MDfromHTML_HOME}/logs/mdfromhtmlwebservices-log-%d{yyyy-MM-dd}-%i.gz">
+			<PatternLayout
+				pattern="%d{ISO8601}(%C{1}) %-5p: %m     -- %%M:%L:%n%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="10"
+				compressionLevel="9" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.mdfromhtml" additivity="false" level="info">
+			<Appender-Ref ref="Console" />
+			<Appender-Ref ref="RollingFile" />
+		</Logger>
+		<Logger name="org.apache.commons" additivity="false"
+			level="error">
+			<Appender-Ref ref="RollingFile" />
+		</Logger>
+		<Root level="warn">
+			<Appender-Ref ref="Console" />
+			<Appender-Ref ref="RollingFile" />
+		</Root>
+	</Loggers>
+</Configuration>
+

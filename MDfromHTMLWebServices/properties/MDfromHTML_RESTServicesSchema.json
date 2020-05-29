@@ -1,0 +1,55 @@
+{
+  "schema":{
+    "comment":"Below are the different services supported by MDfromHTMLWebServices",
+    "MDfromHTML":{
+      "name":"MDfromHTML REST Services",
+      "requests":{
+        "comment":"create sections for get, put, post, and delete, then create their services with actions and response",
+        "get":{
+          "HelloMDfromHTML":{
+            "actions":[{
+                "params":[],
+                "class":"com.mdfromhtml.services.MDfromHTMLHelloService",
+                "method":"doHello",
+                "return":"response",
+                "publish":[]
+              }
+            ],
+            "response":"response"
+          }
+        },
+        "patch":{
+        },
+        "put":{
+        },
+        "post":{
+         "mdfromhtml/HelloMDfromHTML":{
+            "actions":[{
+                "params":[],
+                "class":"com.mdfromhtml.services.MDfromHTMLHelloService",
+                "method":"doHello",
+                "return":"response",
+                "publish":[]
+              }
+            ],
+            "response":"response"
+          },
+          "mdfromhtml/getMarkdown":{
+            "actions":[{
+                "comment":"Submitted object containing html, url, and HTMLFilters, and will return generated markdown (or an errorMsg) in the response",
+                "params":["request:com.api.json.JSONObject"
+                ],
+                "class":"com.mdfromhtml.markdown.transform.GetMarkdownFromHTML",
+                "method":"getMarkdownFromHTML",
+                "return":"results",
+                "publish":[]
+              }
+            ],
+            "response":"results"
+          }        },
+        "delete":{
+        }
+      }
+    }
+  }
+}

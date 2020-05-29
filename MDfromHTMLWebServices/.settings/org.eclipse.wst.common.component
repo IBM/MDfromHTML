@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="MDfromHTMLWebServices-1.0.0">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/.apt_generated"/>
+        <dependent-module archiveName="MarkdownGenerator-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MarkdownGenerator/MarkdownGenerator">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="remark-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Remark/Remark">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="API4JSON-2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.api.json.api4json/com.api.json.api4json">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MDfromHTMLBase-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MDfromHTMLBase/MDfromHTMLBase">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/MDformHTMLWebServices/target/classes"/>
+        <property name="component.inclusion.patterns"/>
+        <property name="context-root" value="MDfromHTMLWebServices"/>
+    </wb-module>
+</project-modules>
