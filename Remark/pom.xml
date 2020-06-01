@@ -46,6 +46,12 @@
 			<organization>IBM Corporation</organization>
 			<organizationUrl>https://researcher.watson.ibm.com/researcher/view.php?person=us-wnm3</organizationUrl>
 		</developer>
+		<developer>
+			<name>Phil DeJarnett</name>
+			<email>phil@overzealous.com</email>
+			<organization>OverZealous Creations</organization>
+			<organizationUrl>https://www.overzealous.com/</organizationUrl>
+		</developer>
 	</developers>
 	<scm>
 		<connection>https://github.com/IBM/MDfromHTML.git</connection>
