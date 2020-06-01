@@ -33,15 +33,6 @@ CHROMEDRIVER_PATH = os.getenv("CHROMEDRIVER_PATH", "/usr/local/bin/chromedriver"
 content_extractor = ContentExtractor(chromedriver_path=CHROMEDRIVER_PATH)
 
 def warmup():
-    # call a few urls
-    # response = content_extractor.get_content(url = "https://web.archive.org/web/20190727181310/https://m.dm/ibm/4357622",
-    #                                          type = 'generic')
-    # print(response["url"])
-
-    # response = content_extractor.get_content(url="https://cloud.ibm.com/docs/containers?topic=containers-cs_cli_install",
-    #                                          type='generic', check_db=False)
-    # print(response["url"])
-
     response = content_extractor.get_content(url="http://www.google.com",
                                              type='generic')
 
