@@ -25,7 +25,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mdfromhtml.services</groupId>
+	<groupId>com.ibm.mdfromhtml.services</groupId>
 	<artifactId>MDfromHTMLWebServices</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
@@ -87,12 +87,12 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.mdfromhtml</groupId>
+			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>MarkdownGenerator</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mdfromhtml</groupId>
+			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>remark</artifactId>
 			<version>1.0.0</version>
 		</dependency>
@@ -102,7 +102,7 @@
 			<version>2.0</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mdfromhtml</groupId>
+			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>MDfromHTMLBase</artifactId>
 			<version>1.0.0</version>
 			<exclusions>

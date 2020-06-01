@@ -25,7 +25,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mdfromhtml</groupId>
+	<groupId>com.ibm.mdfromhtml</groupId>
 	<artifactId>MDfromHTMLBase</artifactId>
 	<version>1.0.0</version>
 	<name>MDfromHTMLBase</name>
@@ -155,7 +155,8 @@
 					<bnd>
 						<![CDATA[ 
                         Export-Package: \
-                        com.whitelistmasker.masker
+                        com.mdfromhtml.core, \
+                        com.mdfromhtml.utility
 					]]>
 					Bundle-Developers: wnm3; email=wnm3@us.ibm.com; name="Nathaniel Mills"; organization=IBM; organizationUrl=https://www.ibm.com
 					</bnd>

@@ -25,7 +25,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mdfromhtml</groupId>
+	<groupId>com.ibm.mdfromhtml</groupId>
 	<artifactId>remark</artifactId>
 	<version>1.0.0</version>
 	<name>remark</name>
@@ -92,7 +92,7 @@
 			<version>2.0</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mdfromhtml</groupId>
+			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>MDfromHTMLBase</artifactId>
 			<version>1.0.0</version>
 		</dependency>
@@ -103,10 +103,10 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/biz.aQute.bnd/bnd-maven-plugin -->
 		<dependency>
-		    <groupId>biz.aQute.bnd</groupId>
-		    <artifactId>bnd-maven-plugin</artifactId>
-		    <version>5.0.1</version>
-		</dependency>		
+			<groupId>biz.aQute.bnd</groupId>
+			<artifactId>bnd-maven-plugin</artifactId>
+			<version>5.0.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
@@ -133,7 +133,7 @@
 				</excludes>
 			</testResource>
 		</testResources>
-      <plugins>
+		<plugins>
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
@@ -180,9 +180,13 @@
 					<bnd>
 						<![CDATA[ 
                         Export-Package: \
-                        com.whitelistmasker.masker
+                        com.mdfromhtml.remark.test, \
+                        com.mdfromhtml.remark.utils, \
+                        com.overzealous.remark, \
+                        com.overzealous.remark.convert, \
+                        com.overzealous.remark.util
 					]]>
-					Bundle-Developers: wnm3; email=wnm3@us.ibm.com; name="Nathaniel Mills"; organization=IBM; organizationUrl=https://www.ibm.com
+						Bundle-Developers: wnm3; email=wnm3@us.ibm.com; name="Nathaniel Mills"; organization=IBM; organizationUrl=https://www.ibm.com
 					</bnd>
 				</configuration>
 				<executions>
@@ -213,16 +217,16 @@
 						<goals>
 							<goal>jar</goal>
 						</goals>
-			            <configuration>
-					          <tagletArtifacts>
-					            <tagletArtifact>
-					              <artifactId>formatter:off</artifactId>
-					            </tagletArtifact>
-					            <tagletArtifact>
-					              <artifactId>formatter:on</artifactId>
-					            </tagletArtifact>
-					         </tagletArtifacts>
-			            </configuration>
+						<configuration>
+							<tagletArtifacts>
+								<tagletArtifact>
+									<artifactId>formatter:off</artifactId>
+								</tagletArtifact>
+								<tagletArtifact>
+									<artifactId>formatter:on</artifactId>
+								</tagletArtifact>
+							</tagletArtifacts>
+						</configuration>
 					</execution>
 				</executions>
 				<configuration>

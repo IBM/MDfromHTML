@@ -26,7 +26,7 @@
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mdfromhtml</groupId>
+	<groupId>com.ibm.mdfromhtml</groupId>
 	<artifactId>MarkdownGenerator</artifactId>
 	<version>1.0.0</version>
 	<name>MarkdownGenerator</name>
@@ -66,12 +66,12 @@
 	</distributionManagement>
 	<dependencies>
 		<dependency>
-			<groupId>com.mdfromhtml</groupId>
+			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>remark</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mdfromhtml</groupId>
+			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>MDfromHTMLBase</artifactId>
 			<version>1.0.0</version>
 		</dependency>
@@ -87,12 +87,13 @@
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/biz.aQute.bnd/bnd-maven-plugin -->
+		<!-- https://mvnrepository.com/artifact/biz.aQute.bnd/bnd-maven-plugin
 		<dependency>
 		    <groupId>biz.aQute.bnd</groupId>
 		    <artifactId>bnd-maven-plugin</artifactId>
 		    <version>5.0.1</version>
-		</dependency>		
+		</dependency>
+		 -->		
 	</dependencies>
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
@@ -158,6 +159,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- 
 			<plugin>
 				<groupId>biz.aQute.bnd</groupId>
 				<artifactId>bnd-maven-plugin</artifactId>
@@ -166,7 +168,16 @@
 					<bnd>
 						<![CDATA[ 
                         Export-Package: \
-                        com.whitelistmasker.masker
+                        com.mdfromhtml.markdown.test, \
+                        com.mdfromhtml.markdown.transform, \
+                        com.mdfromhtml.markdown.provenance, \
+                        com.mdfromhtml.remark.test, \
+                        com.mdfromhtml.remark.utils, \
+                        com.overzealous.remark, \
+                        com.overzealous.remark.convert, \
+                        com.overzealous.remark.util, \
+                        com.mdfromhtml.core, \
+                        com.mdfromhtml.utility
 					]]>
 					Bundle-Developers: wnm3; email=wnm3@us.ibm.com; name="Nathaniel Mills"; organization=IBM; organizationUrl=https://www.ibm.com
 					</bnd>
@@ -179,6 +190,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
