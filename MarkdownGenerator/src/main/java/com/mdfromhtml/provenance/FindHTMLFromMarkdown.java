@@ -67,8 +67,10 @@ public class FindHTMLFromMarkdown extends DocumentConverter {
             "Warning: Using no HTML Filters -- can not find \"HTML_Filters.json\": "
                + e1.getLocalizedMessage());
       }
+      Options options = Options.multiMarkdown();
+      options.hardwraps = true;
       FindHTMLFromMarkdown pgm = new FindHTMLFromMarkdown(
-         Options.multiMarkdown());
+         options);
       if (pgm.getParams(args)) {
          if (pgm._thumbsucker) {
             System.out

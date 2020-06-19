@@ -66,8 +66,9 @@ public class CleanupMarkdown {
                continue;
             }
 
-            line = cleanURLReference(line, br);
-            line = cleanImageTags(line);
+            // Don't remove newlines in references -- address elsewhere
+            // line = cleanURLReference(line, br);
+            // line = cleanImageTags(line);
             sb.append(line);
             sb.append("\n");
          }

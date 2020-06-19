@@ -125,7 +125,9 @@ public class GetMarkdownFromHTML {
                + e.getLocalizedMessage());
          return result;
       }
-      GetMarkdownFromHTML pgm = new GetMarkdownFromHTML(Options.multiMarkdown(),
+      Options options = Options.multiMarkdown();
+      options.hardwraps = true;
+      GetMarkdownFromHTML pgm = new GetMarkdownFromHTML(options,
          HTMLFilters);
       JsonNode temp = htmlObject.get("html");
       if (temp == null) {
@@ -271,7 +273,9 @@ public class GetMarkdownFromHTML {
                + e1.getLocalizedMessage());
          return;
       }
-      GetMarkdownFromHTML pgm = new GetMarkdownFromHTML(Options.multiMarkdown(),
+      Options options = Options.multiMarkdown();
+      options.hardwraps = true;
+      GetMarkdownFromHTML pgm = new GetMarkdownFromHTML(options,
          HTMLFilters);
       if (pgm.getParams(args)) {
          if (pgm._thumbsucker) {
@@ -411,8 +415,8 @@ public class GetMarkdownFromHTML {
                      + MDfromHTMLUtils.padLeftZero(htmlCounter, 3) + ".html";
                   MDfromHTMLUtils.saveTextFile(htmlOutputFileName, html);
                   // testing for hidden tags
-                  html = html.replaceAll("&lt;", "<");
-                  html = html.replaceAll("&gt;", ">");
+                  // html = html.replaceAll("&lt;", "<");
+                  // html = html.replaceAll("&gt;", ">");
                   Document doc = Jsoup.parse(html, baseURI);
                   // TODO: process iframe elements in a loop making below a
                   // routine passing an Element
@@ -430,8 +434,8 @@ public class GetMarkdownFromHTML {
 
                   String formattedHTML = doc.toString();
                   formattedHTML = formattedHTML.replaceAll("&amp;", "&");
-                  formattedHTML = formattedHTML.replaceAll("&lt;", "<");
-                  formattedHTML = formattedHTML.replaceAll("&gt;", ">");
+                  // formattedHTML = formattedHTML.replaceAll("&lt;", "<");
+                  // formattedHTML = formattedHTML.replaceAll("&gt;", ">");
                   formattedHTML = formattedHTML.replaceAll("&quot;", "\"");
 
                   String formattedHTMLOutputFileName = _outputPath
@@ -489,8 +493,8 @@ public class GetMarkdownFromHTML {
                      markdown += "\n###### Doc2Dial Provenance ######\n\n"
                         + " * [Doc2Dial Original URL][]\n"
                         + " * [Doc2Dial File Processed][]\n\n[Doc2Dial Original URL]: "
-                        + baseURI.replaceAll(" ", "%20").replaceAll("#", "%23")
-                           .replaceAll("&", "%26")
+                        + baseURI.replaceAll(" ", "%20")
+                        // + .replaceAll("#", "%23").replaceAll("&", "%26")
                         + "\n[Doc2Dial File Processed]: file://"
                         + file.toAbsolutePath().toString();
                   }
