@@ -63,7 +63,9 @@ public class MultiMarkdownTest extends RemarkTester {
          HTMLFilters = new JSONObject();
          HTMLFilters.put("*", globalFilter);
       }
-      return new Remark(Options.multiMarkdown(), HTMLFilters);
+      Options options = Options.multiMarkdown();
+      // options.hardwraps = true;
+      return new Remark(options, HTMLFilters);
    }
 
    @Test
