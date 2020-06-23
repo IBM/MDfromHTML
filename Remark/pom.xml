@@ -27,7 +27,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ibm.mdfromhtml</groupId>
 	<artifactId>remark</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>remark</name>
 	<description>markdown generator from html updated but based on original 
 	Apache 2.0 licensed code from 
@@ -100,12 +100,12 @@
 		<dependency>
 			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>MDfromHTMLBase</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jsoup</groupId>
 			<artifactId>jsoup</artifactId>
-			<version>1.12.1</version>
+			<version>1.13.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/biz.aQute.bnd/bnd-maven-plugin -->
 		<dependency>
