@@ -27,7 +27,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ibm.mdfromhtml</groupId>
 	<artifactId>MDfromHTMLBase</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.4</version>
 	<name>MDfromHTMLBase</name>
 	<description>Common utilities and classes used throughout the MDfromHTML project</description>
 	<url>https://github.com/IBM/MDfromHTML</url>
@@ -79,12 +79,13 @@
           <artifactId>jackson-databind</artifactId>
           <version>2.10.0.pr1</version>
       </dependency>	
-		<!-- https://mvnrepository.com/artifact/biz.aQute.bnd/bnd-maven-plugin -->
+		<!-- https://mvnrepository.com/artifact/biz.aQute.bnd/bnd-maven-plugin
 		<dependency>
 		    <groupId>biz.aQute.bnd</groupId>
 		    <artifactId>bnd-maven-plugin</artifactId>
 		    <version>5.0.1</version>
 		</dependency>		
+		 -->
 	</dependencies>
    <build>
       <sourceDirectory>src/main/java</sourceDirectory>
@@ -147,6 +148,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- 
 			<plugin>
 				<groupId>biz.aQute.bnd</groupId>
 				<artifactId>bnd-maven-plugin</artifactId>
@@ -169,6 +171,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>

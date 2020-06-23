@@ -72,10 +72,10 @@ To configure Eclipse to use these settings
   5. Enter **clean install** as the Goals
   6. Click Launch. This will build two jar files in the target directory:
   
-    * MarkdownGenerator-1.0.1-jar-with-dependencies.jar
-    * MarkdownGenerator-1.0.1.jar
+    * MarkdownGenerator-1.0.4-jar-with-dependencies.jar
+    * MarkdownGenerator-1.0.4.jar
 
-The MarkdownGenerator-1.0.1-jar-with-dependencies.jar contains all the dependent classes so we use this when running from a command line. Open the processAll.sh script in a Text Editor to see how this is accomplished.
+The MarkdownGenerator-1.0.4-jar-with-dependencies.jar contains all the dependent classes so we use this when running from a command line. Open the processAll.sh script in a Text Editor to see how this is accomplished.
 
 ## Execution Pipeline ##
 
@@ -85,7 +85,7 @@ To generate markdown from html, you run the GetMarkdownFromHTML class. You can r
 
 If you'd prefer to run from the command line, go to the MarkdownGenerator project directory and issue a command like this:
 ```
-java -cp "./target/MarkdownGenerator-1.0.1-jar-with-dependencies.jar" com.mdfromhtml.markdown.transform.GetMarkdownFromHTML "./src/test/resources" "./src/test/resources" true
+java -cp "./target/MarkdownGenerator-1.0.4-jar-with-dependencies.jar" com.mdfromhtml.markdown.transform.GetMarkdownFromHTML "./src/test/resources" "./src/test/resources" true
 ```
 or see the runMDGen.sh shell script
 
@@ -114,7 +114,7 @@ To generate text from markdown, you run the GetTextFromMarkdown class. You can r
 
 If you'd prefer to run from the command line, go to the MarkdownGenerator project directory and issue a command like this:
 ```
-java -cp "./target/MarkdownGenerator-1.0.1-jar-with-dependencies.jar" com.mdfromhtml.markdown.transform.GetTextFromMarkdown "./src/test/resources" "./src/test/resources" true
+java -cp "./target/MarkdownGenerator-1.0.4-jar-with-dependencies.jar" com.mdfromhtml.markdown.transform.GetTextFromMarkdown "./src/test/resources" "./src/test/resources" true
 ```
 or see the runTXTGen.sh shell script
 
