@@ -360,6 +360,9 @@ public class GetTextFromMarkdown {
       int lineLen = line.length();
       int offset = 0;
       while (offset < lineLen) {
+         if (line == null) {
+            break;
+         }
          char startChar = line.charAt(offset); // substring(offset, offset + 1);
          switch (startChar) {
             // handle escaped characters first
@@ -386,6 +389,9 @@ public class GetTextFromMarkdown {
                      // image link
                      line = removeReferencesAndLinks(line.substring(offset),
                         refURLs);
+                     if (line == null) {
+                     	break;
+                     }
                      offset = 0;
                      lineLen = line.length();
                   } else { // just an exclamation point

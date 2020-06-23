@@ -37,8 +37,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.Stack;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Entities.EscapeMode;
+
 import com.api.json.JSON;
 import com.api.json.JSONArray;
 import com.api.json.JSONObject;
@@ -158,9 +161,10 @@ public class GetMarkdownFromHTML {
       String baseURI = temp.asText();
 
       // testing for hidden tags
-      html = html.replaceAll("&lt;", "<");
-      html = html.replaceAll("&gt;", ">");
+      // html = html.replaceAll("&lt;", "<");
+      // html = html.replaceAll("&gt;", ">");
       Document doc = Jsoup.parse(html, baseURI);
+      doc.outputSettings().escapeMode(EscapeMode.extended);
 
       // determine if we should skip markdown until first header is encountered
       boolean seekHeaders = true; // default is true so only special sites need
@@ -418,6 +422,8 @@ public class GetMarkdownFromHTML {
                   // html = html.replaceAll("&lt;", "<");
                   // html = html.replaceAll("&gt;", ">");
                   Document doc = Jsoup.parse(html, baseURI);
+                  doc.outputSettings().escapeMode(EscapeMode.extended);
+
                   // TODO: process iframe elements in a loop making below a
                   // routine passing an Element
                   // Elements elements = document.select("iframe");

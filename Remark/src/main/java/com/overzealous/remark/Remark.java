@@ -269,6 +269,9 @@ public class Remark {
             }
             JSONObject attributeObj = (JSONObject) domainFilters.get(tag);
             Set<String> attributes = attributeObj.keySet();
+            if (attributes.size() == 0) {
+            	continue;
+            }
             whitelist = whitelist.addAttributes(tag,
                attributes.toArray(new String[0]));
          }

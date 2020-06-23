@@ -1,0 +1,69 @@
+{
+   "*": {
+      ":all": {
+         "aria-hidden": [
+            "true"
+         ],
+         "class": [
+            "hidden",
+            "sidebar",
+            "footer",
+            "hide",
+            "comment",
+            "navigation",
+            "adlink",
+            "adsbygoogle",
+            "-ad",
+            "_ad",
+            "rating",
+            "modal",
+            "popover",
+            "history",
+            "top-nav",
+            "menu",
+            "infobox",
+            "slidein",
+            "poll",
+            "screen-reader-text"
+         ],
+         "id": [
+            "header",
+            "footer",
+            "sidebar",
+            "cookie",
+            "comment",
+            "tweets",
+            "floating",
+            "right_column",
+            "respond",
+            "breadcrumb",
+            "menu",
+            "clear",
+            "wm-ipp"
+         ],
+         "input": [
+            "hidden"
+         ],
+         "role": [
+            "navigation",
+            "region"
+         ],
+         "style": [
+            "display:none",
+            "display: none"
+         ],
+         "type": [
+            "hidden"
+         ],
+         "ul": [
+            "breadcrumb"
+         ]
+      },
+      ":tagnames": [
+         "header",
+         "footer",
+         "sidebar",
+         "noscript"
+      ]
+   }
+}
