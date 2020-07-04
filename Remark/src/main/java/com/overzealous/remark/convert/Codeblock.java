@@ -89,7 +89,7 @@ public class Codeblock extends AbstractNodeHandler {
          converter.output.startBlock();
          String md = fence + "\n" + converter.cleaner.cleanCode(node) + "\n"
             + fence;
-         out.print(md);
+         out.printAsIs(md);
          saveAnnotation(pw, level, node, md);
          converter.output.endBlock();
       } else {
@@ -97,7 +97,7 @@ public class Codeblock extends AbstractNodeHandler {
          out = new BlockWriter(converter.output)
             .setPrependNewlineString("    ");
          String md = converter.cleaner.cleanCode(node);
-         out.write(md);
+         out.writeAsIs(md);
          saveAnnotation(pw, level, node, md);
          converter.output.endBlock();
       }

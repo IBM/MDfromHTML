@@ -38,12 +38,11 @@
 
 package com.overzealous.remark.util;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.List;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * @author Phil DeJarnett
@@ -53,10 +52,10 @@ public class MarkdownTableTest {
 	@Test
 	public void testTable() throws Exception {
 		MarkdownTable mt = new MarkdownTable();
-		List<MarkdownTableCell> header = mt.addHeaderRow();
+		List<MarkdownTableHeaderCell> header = mt.addHeaderRow();
 		List<MarkdownTableCell> body = mt.addBodyRow();
 		for(int i=1; i<4; i++) {
-			header.add(new MarkdownTableCell("header"+i));
+			header.add(new MarkdownTableHeaderCell("header"+i));
 			body.add(new MarkdownTableCell("column "+i));
 		}
 
@@ -66,11 +65,11 @@ public class MarkdownTableTest {
 	@Test
 	public void testTableWithAlignment() throws Exception {
 		MarkdownTable mt = new MarkdownTable();
-		List<MarkdownTableCell> header = mt.addHeaderRow();
+		List<MarkdownTableHeaderCell> header = mt.addHeaderRow();
 		List<MarkdownTableCell> body1 = mt.addBodyRow();
 		List<MarkdownTableCell> body2 = mt.addBodyRow();
 		for(int i=1; i<4; i++) {
-			header.add(new MarkdownTableCell("h"+i, MarkdownTable.Alignment.find(i-2)));
+			header.add(new MarkdownTableHeaderCell("h"+i, MarkdownTable.Alignment.find(i-2)));
 			body1.add(new MarkdownTableCell("col"+i));
 			body2.add(new MarkdownTableCell("column "+i));
 		}
@@ -81,11 +80,11 @@ public class MarkdownTableTest {
 	@Test
 	public void testTableWithColspan() throws Exception {
 		MarkdownTable mt = new MarkdownTable();
-		List<MarkdownTableCell> header = mt.addHeaderRow();
+		List<MarkdownTableHeaderCell> header = mt.addHeaderRow();
 		List<MarkdownTableCell> body1 = mt.addBodyRow();
 		List<MarkdownTableCell> body2 = mt.addBodyRow();
 		for(int i=1; i<4; i++) {
-			header.add(new MarkdownTableCell("h"+i, MarkdownTable.Alignment.find(i-2)));
+			header.add(new MarkdownTableHeaderCell("h"+i, MarkdownTable.Alignment.find(i-2)));
 			body1.add(new MarkdownTableCell("col"+i));
 		}
 		body2.add(new MarkdownTableCell("column 1"));
@@ -97,11 +96,11 @@ public class MarkdownTableTest {
 	@Test
 	public void testTableWithWideColspan() throws Exception {
 		MarkdownTable mt = new MarkdownTable();
-		List<MarkdownTableCell> header = mt.addHeaderRow();
+		List<MarkdownTableHeaderCell> header = mt.addHeaderRow();
 		List<MarkdownTableCell> body1 = mt.addBodyRow();
 		List<MarkdownTableCell> body2 = mt.addBodyRow();
 		for(int i=1; i<5; i++) {
-			header.add(new MarkdownTableCell("h"+i, MarkdownTable.Alignment.find(i-2)));
+			header.add(new MarkdownTableHeaderCell("h"+i, MarkdownTable.Alignment.find(i-2)));
 			body1.add(new MarkdownTableCell("col"+i));
 		}
 		body2.add(new MarkdownTableCell("column 1"));
@@ -113,10 +112,10 @@ public class MarkdownTableTest {
 	@Test
 	public void testTableAsCode() throws Exception {
 		MarkdownTable mt = new MarkdownTable();
-		List<MarkdownTableCell> header = mt.addHeaderRow();
+		List<MarkdownTableHeaderCell> header = mt.addHeaderRow();
 		List<MarkdownTableCell> body = mt.addBodyRow();
 		for(int i=1; i<4; i++) {
-			header.add(new MarkdownTableCell("header"+i));
+			header.add(new MarkdownTableHeaderCell("header"+i));
 			body.add(new MarkdownTableCell("column "+i));
 		}
 
@@ -126,7 +125,7 @@ public class MarkdownTableTest {
 	private String getTableString(MarkdownTable mt, boolean allowColSpan, boolean renderAsCode) {
 		StringWriter sw = new StringWriter();
 		//noinspection IOResourceOpenedButNotSafelyClosed
-		mt.renderTable(new PrintWriter(sw), allowColSpan, renderAsCode);
+		mt.renderTable(new BlockWriter(sw), allowColSpan, renderAsCode);
 		return '\n' + sw.toString();
 	}
 
@@ -160,9 +159,9 @@ public class MarkdownTableTest {
 
 		Assert.assertEquals(5, mt.getNumberOfColumns());
 
-		List<MarkdownTableCell> row = mt.addHeaderRow();
+		List<MarkdownTableHeaderCell> row = mt.addHeaderRow();
 		for(int i=1; i<=7; i++) {
-			row.add(new MarkdownTableCell("head "+i));
+			row.add(new MarkdownTableHeaderCell("head "+i));
 		}
 
 		Assert.assertEquals(7, mt.getNumberOfColumns());

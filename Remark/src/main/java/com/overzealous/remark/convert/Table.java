@@ -43,11 +43,14 @@ import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
+
 import com.overzealous.remark.Options;
 import com.overzealous.remark.util.MarkdownTable;
 import com.overzealous.remark.util.MarkdownTableCell;
+import com.overzealous.remark.util.MarkdownTableHeaderCell;
 
 /**
  * @author Phil DeJarnett
@@ -80,7 +83,7 @@ public class Table extends AbstractNodeHandler {
                if (searchLevel != null && searchLevel.equals(nextNextLevel+nextDepthLevel)) {
                   return headerRow;
                }
-               result = processRow(table.addHeaderRow(), headerRow, converter, pw,
+               result = processHeaderRow(table.addHeaderRow(), headerRow, converter, pw,
                   baseUri, domain, nextNextLevel+nextDepthLevel, searchLevel);
                if (result != null) {
                   return result;
@@ -113,7 +116,7 @@ public class Table extends AbstractNodeHandler {
                   if (searchLevel != null && searchLevel.equals(nextLevel+depthLevel+"."+1)) {
                      return child;
                   }
-                  result = processRow(table.addHeaderRow(), child, converter, pw, baseUri, domain,
+                  result = processHeaderRow(table.addHeaderRow(), child, converter, pw, baseUri, domain,
                      nextLevel+depthLevel+"."+1, searchLevel);
                   if (result != null) {
                      return result;
@@ -139,6 +142,30 @@ public class Table extends AbstractNodeHandler {
       converter.output.endBlock();
       return result;
    }
+
+   private Node processHeaderRow(List<MarkdownTableHeaderCell> row, Element tableRow,
+         DocumentConverter converter, ProvenanceWriter pw, String baseUri, String domain,
+         String level, String searchLevel) {
+         Node result = null;
+         int depthLevel = 0;
+         String nextLevel = level+"~";
+         for (final Element cell : tableRow.children()) {
+            depthLevel++;
+            if (searchLevel != null && searchLevel.equals(nextLevel+depthLevel)) {
+               return cell;
+            }
+            Set<Node>nodeSet = new HashSet<Node>();
+            String contents = converter.getInlineContent(this, cell, true, pw,
+               baseUri, domain, level, searchLevel, nodeSet);
+            if (nodeSet.size() != 0) {
+               return nodeSet.iterator().next();
+            }
+            row.add(new MarkdownTableHeaderCell(contents, getAlignment(cell),
+               getColspan(cell)));
+            saveAnnotation(pw, nextLevel+depthLevel, cell, contents.replaceAll("\n"," "));
+         }
+         return result;
+      }
 
    private Node processRow(List<MarkdownTableCell> row, Element tableRow,
       DocumentConverter converter, ProvenanceWriter pw, String baseUri, String domain,

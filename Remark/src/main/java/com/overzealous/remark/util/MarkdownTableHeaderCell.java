@@ -46,7 +46,7 @@ package com.overzealous.remark.util;
  * @author Phil DeJarnett
  * @author Nathaniel Mills modifications for provenance and level tracking
  */
-public class MarkdownTableCell {
+public class MarkdownTableHeaderCell {
 
    private MarkdownTable.Alignment alignment = MarkdownTable.Alignment.LEFT;
 
@@ -57,7 +57,7 @@ public class MarkdownTableCell {
    /**
     * Creates a new, empty MarkdownTableCell
     */
-   public MarkdownTableCell() {
+   public MarkdownTableHeaderCell() {
       this("", MarkdownTable.Alignment.LEFT, 1);
    }
 
@@ -67,7 +67,7 @@ public class MarkdownTableCell {
     * @param contents
     *           The contents of this cell
     */
-   public MarkdownTableCell(String contents) {
+   public MarkdownTableHeaderCell(String contents) {
       this(contents, MarkdownTable.Alignment.LEFT, 1);
    }
 
@@ -79,7 +79,7 @@ public class MarkdownTableCell {
     * @param alignment
     *           The alignment of this cell (if specified)
     */
-   public MarkdownTableCell(String contents,
+   public MarkdownTableHeaderCell(String contents,
       MarkdownTable.Alignment alignment) {
       this(contents, alignment, 1);
    }
@@ -92,7 +92,7 @@ public class MarkdownTableCell {
     * @param colspan
     *           The number of columns this cell spans
     */
-   public MarkdownTableCell(String contents, int colspan) {
+   public MarkdownTableHeaderCell(String contents, int colspan) {
       this(contents, MarkdownTable.Alignment.LEFT, colspan);
    }
 
@@ -106,9 +106,9 @@ public class MarkdownTableCell {
     * @param colspan
     *           The number of columns this cell spans
     */
-   public MarkdownTableCell(String contents, MarkdownTable.Alignment alignment,
+   public MarkdownTableHeaderCell(String contents, MarkdownTable.Alignment alignment,
       int colspan) {
-      this.setContents(contents);
+      this.setHeaderContents(contents);
       this.setAlignment(alignment);
       this.setColspan(colspan);
    }
@@ -214,7 +214,7 @@ public class MarkdownTableCell {
          return false;
       }
 
-      MarkdownTableCell that = (MarkdownTableCell) o;
+      MarkdownTableHeaderCell that = (MarkdownTableHeaderCell) o;
 
       return !(colspan != that.colspan || alignment != that.alignment
          || !contents.equals(that.contents));

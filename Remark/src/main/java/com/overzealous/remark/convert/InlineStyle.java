@@ -118,7 +118,7 @@ public class InlineStyle extends AbstractNodeHandler {
             String nodeStr = node.toString().trim();
             int index = nodeStr.indexOf(">");
             nodeStr = nodeStr.substring(0,index).trim();
-            converter.output.write("<!-- "+nodeStr+"> -->"); // role=\""+node.attr("role").trim()+"\" -->");
+            converter.output.writeAsIs("<!-- "+nodeStr+"> -->"); // role=\""+node.attr("role").trim()+"\" -->");
          } else {
             converter.output.testNewBlock();
             if (converter.output.isAtLineStart() == false) {

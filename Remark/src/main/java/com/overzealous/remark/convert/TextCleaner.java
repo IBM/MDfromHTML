@@ -478,6 +478,9 @@ public class TextCleaner {
             }
          }
       }
+      input = input.replace("<", "&lt;");
+      input = input.replace(">", "&gt;");
+      
       return input;
    }
 

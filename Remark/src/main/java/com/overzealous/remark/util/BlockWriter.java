@@ -119,10 +119,32 @@ public final class BlockWriter extends PrintWriter {
 		super(out, autoFlush);
 	}
 
+	public void writeAsIs(int c) {
+		testNewBlock();
+		super.write(c);
+		atLineStart = false;
+		if (c == '\n') {
+			atLineStart = true;
+			prependAfterNewline();
+		}
+	}
+	
 	@Override
 	public void write(int c) {
 		testNewBlock();
-		super.write(c);
+		if (c == 60) {
+			super.write((int) '&');
+			super.write((int) 'l');
+			super.write((int) 't');
+			super.write((int) ';');
+		} else if (c == 62) {
+			super.write((int) '&');
+			super.write((int) 'g');
+			super.write((int) 't');
+			super.write((int) ';');
+		} else {
+			super.write(c);
+		}
 		atLineStart = false;
 		if (c == '\n') {
 			atLineStart = true;
@@ -175,6 +197,19 @@ public final class BlockWriter extends PrintWriter {
 		}
 	}
 
+	public void writeAsIs(String s) {
+		write(s, 0, s.length());
+	}
+
+	@Override
+	public void write(String s) {
+		if (s != null) {
+			s = s.replace("<", "&lt;");
+			s = s.replace(">", "&gt;");
+		}
+		write(s, 0, s.length());
+	}
+
 	@Override
 	public void write(String s, int off, int len) {
 		if (len == 0) {
@@ -218,6 +253,27 @@ public final class BlockWriter extends PrintWriter {
 		} finally {
 			prependingLock.unlock();
 		}
+	}
+	
+   public void printAsIs(Object obj) {
+      writeAsIs(String.valueOf(obj));
+  }
+
+
+	public void printAsIs(String s) {
+      if (s == null) {
+         s = "null";
+     }
+     writeAsIs(s);
+	}
+	
+	@Override
+	public void print(String s) {
+		if (s != null) {
+			s = s.replace("<", "&lt;");
+			s = s.replace(">", "&gt;");
+		}
+		super.print(s);
 	}
 
 	@Override
@@ -354,7 +410,7 @@ public final class BlockWriter extends PrintWriter {
 	 */
 	public void writeBlock(Object blockText) {
 		startBlock();
-		print(blockText);
+		printAsIs(blockText);
 		if (String.valueOf(blockText).endsWith("\n")) {
 			atLineStart = true;
 		} else if (String.valueOf(blockText).length() != 0) {

@@ -76,6 +76,9 @@ public abstract class AbstractNodeHandler implements NodeHandler {
    public void handleTextNode(TextNode node, DocumentConverter converter,
       ProvenanceWriter pw, String baseUri, String domain, String level) {
       String md = converter.cleaner.clean(node);
+      md = md.replace("<", "&lt;");
+      md = md.replace(">", "&gt;");
+      
       converter.output.write(md);
       saveAnnotation(pw, level, node, md);
    }
@@ -113,7 +116,7 @@ public abstract class AbstractNodeHandler implements NodeHandler {
          Document doc = node.ownerDocument();
          boolean oldPrettyPrint = doc.outputSettings().prettyPrint();
          doc.outputSettings().prettyPrint(false);
-         converter.output.write(node.toString());
+         converter.output.writeAsIs(node.toString());
          String md = node.toString();
          saveAnnotation(pw, level, node, md);
          doc.outputSettings().prettyPrint(oldPrettyPrint);

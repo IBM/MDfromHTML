@@ -211,7 +211,11 @@ public class ProvenanceWriter extends BufferedWriter {
        */
       String nodeHTML = "";
       if (node instanceof Element) {
-         nodeHTML = ((Element) node).shallowClone().toString();
+      	try {
+      		nodeHTML = ((Element) node).shallowClone().toString();
+      	} catch (NullPointerException npe) {
+      		nodeHTML = ((Element) node).toString();
+      	}
       } else if (node instanceof TextNode) {
          // saving the parent inclosing the text
          nodeHTML = ((TextNode) node).parentNode().toString();

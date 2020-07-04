@@ -84,8 +84,8 @@ public class Heading extends AbstractNodeHandler {
       Set<Node> nodeSet = new HashSet<Node>();
       // test to skip empty headers
       String inlineContent = converter
-         .getInlineContent(this, node, pw, baseUri, domain, level, searchLevel, nodeSet)
-         .replace("\n", " ");
+         .getInlineContent(this, node, pw, baseUri, domain, level, searchLevel, nodeSet);
+//         .replace("\n", " ");
       if (nodeSet.size() != 0) {
          result = nodeSet.iterator().next();
       }

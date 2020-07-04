@@ -152,6 +152,9 @@ public class DocumentConverter {
       addInlineNode(new Break(), "br");
       addInlineNode(new Button(), "button");
       addInlineNode(new Input(), "input");
+      addInlineNode(new Heading(), "h1,h2,h3,h4,h5,h6");
+      addInlineNode(new List(), "ol,ul");
+      
       /**
        * Had to add special span handling in InlineStyle to 
        * avoid additional inline code processing being called.
@@ -338,7 +341,8 @@ public class DocumentConverter {
          .create(DocumentConverter.calculateLength(doc, 0));
       this.output = bw;
       this.convertImpl(doc, pw, baseUri, domain);
-      return bw.toString();
+      String str = bw.toString();
+      return str.replace("&tl;!--", "<!--").replace("--&gt;","-->");
    }
 
    // Utility method to quickly walk the DOM tree and estimate the size of the
@@ -906,6 +910,9 @@ public class DocumentConverter {
       if (undoLeadingEscapes) {
          ret = cleaner.unescapeLeadingCharacters(ret);
       }
+      
+      ret = ret.replace("<", "&lt;");
+      ret = ret.replace(">", "&gt;");
       return ret;
    }
 

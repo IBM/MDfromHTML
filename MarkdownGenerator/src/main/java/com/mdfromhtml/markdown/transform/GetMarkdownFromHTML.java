@@ -395,6 +395,16 @@ public class GetMarkdownFromHTML {
             for (Object obj : htmlList) {
                boolean seekHeaders = true; // default is true so only special
                                            // sites need override this
+               JSONObject globalFilters = (JSONObject) HTMLFilters
+                     .get("*");
+               if (globalFilters != null) {
+                  Boolean test = (Boolean) globalFilters
+                     .get(DocumentConverter.SEEK_HEADERS);
+                  if (test != null) {
+                     seekHeaders = test;
+                  }
+               }
+
                try {
                   htmlCounter++;
                   ObjectNode htmlObj = (ObjectNode) obj;
@@ -495,6 +505,7 @@ public class GetMarkdownFromHTML {
                   String markdown = generateMarkdownFromHTML(doc,
                      provenanceWriter, baseURI, seekHeaders);
 
+                  
                   if (_keepProvenanceLinks) {
                      markdown += "\n###### Doc2Dial Provenance ######\n\n"
                         + " * [Doc2Dial Original URL][]\n"

@@ -76,7 +76,7 @@ public class InlineCode extends AbstractNodeHandler {
       String level, String searchLevel) {
       Node result = null;
       String markdown = converter.cleaner.cleanInlineCode(node);
-      converter.output.write(markdown);
+      converter.output.writeAsIs(markdown);
       saveAnnotation(aw, level, node, markdown);
       return result;
    }

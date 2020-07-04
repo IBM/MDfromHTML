@@ -167,6 +167,63 @@ public class StringUtils {
    }
 
    /**
+    * Pads out a left-, right-, or center-aligned string using spaces up to the
+    * specified width.
+    * 
+    * @param output
+    *           Writer to output the centered string to
+    * @param s
+    *           String to pad
+    * @param width
+    *           Minimum width of final string
+    * @param alignment
+    *           How to align the string < 0 means left, 0 means center, and > 0
+    *           means right
+    */
+   public static void alignAsIs(BlockWriter output, String s, int width,
+      int alignment) {
+      alignAsIs(output, s, width, ' ', alignment);
+   }
+
+   /**
+    * Pads out a left-, right-, or center-aligned string using the specified
+    * character up to the specified width.
+    * 
+    * @param output
+    *           Writer to output the centered string to
+    * @param s
+    *           String to pad
+    * @param width
+    *           Minimum width of final string
+    * @param paddingChar
+    *           Character to pad with
+    * @param alignment
+    *           How to align the string < 0 means left, 0 means center, and > 0
+    *           means right
+    */
+   public static void alignAsIs(BlockWriter output, String s, int width,
+      char paddingChar, int alignment) {
+      if (s.length() < width) {
+         int diff = width - s.length();
+         if (alignment == 0) {
+            int numLeftChars = diff / 2;
+            int numRightChars = numLeftChars + (diff % 2);
+            multiply(output, paddingChar, numLeftChars);
+            output.writeAsIs(s);
+            multiply(output, paddingChar, numRightChars);
+         } else if (alignment < 0) {
+            output.writeAsIs(s);
+            multiply(output, paddingChar, diff);
+         } else {
+            multiply(output, paddingChar, diff);
+            output.writeAsIs(s);
+         }
+      } else {
+         output.writeAsIs(s);
+      }
+   }
+
+   /**
     * Duplicates the given character {@code count} times. If {@code count} is
     * less than or equal to 0, the empty string is returned.
     * 
