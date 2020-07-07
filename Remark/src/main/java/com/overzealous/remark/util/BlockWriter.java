@@ -279,7 +279,8 @@ public final class BlockWriter extends PrintWriter {
 	@Override
 	public void println() {
 		testFirstPrepend();
-		super.println();
+		// super.println(); // in Windows \r is part of newline used in PrintWriter.println()
+		super.write('\n');
 		atLineStart = true;
 		prependAfterNewline();
 	}
