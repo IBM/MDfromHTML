@@ -46,7 +46,7 @@ public class TestWebServicesMD {
     * 
     */
    public TestWebServicesMD() {
-      String htmlFiltersFilename = "./HTML_Filters.json";
+      String htmlFiltersFilename = "."+File.separator+"properties"+File.separator+"HTML_Filters.json";
       while (true) {
          String test = MDfromHTMLUtils.prompt(
             "Enter the fully qualified path of the HTML filters file (\""

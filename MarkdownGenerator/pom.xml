@@ -28,7 +28,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ibm.mdfromhtml</groupId>
 	<artifactId>MarkdownGenerator</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.6</version>
 	<name>MarkdownGenerator</name>
 	<description>Generate markdown (.md) files from html and url provided in JSON files. The name of the generated files will use the name of the JSON file, and an incrementing number starting with 1 for each JSON file read, and for each html reference within the files.</description>
 	<url>https://github.com/IBM/MDfromHTML</url>

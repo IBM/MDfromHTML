@@ -1,6 +1,6 @@
 FROM openliberty/open-liberty:kernel-java8-openj9-ubi
 
-ARG VERSION=1.0.4
+ARG VERSION=1.0.6
 ARG REVISION=RELEASE
 
 LABEL \
@@ -19,6 +19,8 @@ LABEL \
 COPY --chown=1001:0 MDfromHTMLWebServices/server.xml /config/
 COPY --chown=1001:0 MDfromHTMLWebServices/target/*.war /config/dropins/
 COPY --chown=1001:0 MDfromHTMLWebServices/properties/  /opt/ol/wlp/output/defaultServer/properties/
+COPY --chown=1001:0 MarkdownGenerator/data/  /opt/ol/wlp/output/defaultServer/data/
+COPY --chown=1001:0 MarkdownGenerator/properties/  /opt/ol/wlp/output/defaultServer/properties/
 
 ENV AIDEN_HOME=/opt/ol/wlp/output/defaultServer
 

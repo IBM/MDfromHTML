@@ -72,10 +72,10 @@ To configure Eclipse to use these settings
   5. Enter **clean install** as the Goals
   6. Click Launch. This will build two jar files in the target directory:
   
-    * MarkdownGenerator-1.0.4-jar-with-dependencies.jar
-    * MarkdownGenerator-1.0.4.jar
+    * MarkdownGenerator-1.0.6-jar-with-dependencies.jar
+    * MarkdownGenerator-1.0.6.jar
 
-The MarkdownGenerator-1.0.4-jar-with-dependencies.jar contains all the dependent classes so we use this when running from a command line. Open the processAll.sh script in a Text Editor to see how this is accomplished.
+The MarkdownGenerator-1.0.6-jar-with-dependencies.jar contains all the dependent classes so we use this when running from a command line. Open the processAll.sh script in a Text Editor to see how this is accomplished.
 
 ## Execution Pipeline ##
 
@@ -85,17 +85,17 @@ To generate markdown from html, you run the GetMarkdownFromHTML class. You can r
 
 If you'd prefer to run from the command line, go to the MarkdownGenerator project directory and issue a command like this:
 ```
-java -cp "./target/MarkdownGenerator-1.0.4-jar-with-dependencies.jar" com.mdfromhtml.markdown.transform.GetMarkdownFromHTML "./src/test/resources" "./src/test/resources" true
+java -cp "./target/MarkdownGenerator-1.0.6-jar-with-dependencies.jar" com.mdfromhtml.markdown.transform.GetMarkdownFromHTML "./data/htmljson" "./data/md" true
 ```
 or see the runMDGen.sh shell script
 
 ```
-Enter the fully qualified path to directory containing json html capture files, or q to exit (./src/test/resources):
+Enter the fully qualified path to directory containing json html capture files, or q to exit (./data/htmljson):
 
-Enter the fully qualified path to the markdown output directory, or q to exit (./src/test/resources):
+Enter the fully qualified path to the markdown output directory, or q to exit (./data/md):
 
-Files ending with .json will be read from ./src/test/resources
-and the generated markdown (.md), and html (.html and _foramtted.html) saved in ./src/test/resources/
+Files ending with .json will be read from ./data/htmljson
+and the generated markdown (.md), and html (.html and _foramtted.html) saved in ./data/md/
 Press q to quit or press Enter to continue...
 ```
 
@@ -114,18 +114,18 @@ To generate text from markdown, you run the GetTextFromMarkdown class. You can r
 
 If you'd prefer to run from the command line, go to the MarkdownGenerator project directory and issue a command like this:
 ```
-java -cp "./target/MarkdownGenerator-1.0.4-jar-with-dependencies.jar" com.mdfromhtml.markdown.transform.GetTextFromMarkdown "./src/test/resources" "./src/test/resources" true
+java -cp "./target/MarkdownGenerator-1.0.6-jar-with-dependencies.jar" com.mdfromhtml.markdown.transform.GetTextFromMarkdown "./data/md" "./data/txt" true
 ```
 or see the runTXTGen.sh shell script
 
 ```
-Enter the fully qualified path to directory containing md multimarkdown files, or q to exit (./src/test/resources):
+Enter the fully qualified path to directory containing md multimarkdown files, or q to exit (./data/md):
 
-Enter the fully qualified path to the text file output directory, or q to exit (./src/test/resources):
+Enter the fully qualified path to the text file output directory, or q to exit (./data/txt):
 
 
-Files ending with .md will be read from ./src/test/resources
-and the generated text files (.txt) will be saved in ./src/test/resources
+Files ending with .md will be read from ./data/md
+and the generated text files (.txt) will be saved in ./data/txt
 Press q to quit or press Enter to continue...
 ```
 
@@ -139,24 +139,28 @@ This will generate the following set of files for each input md file in the spec
 You can run the FindHTMLFromMarkdown class to find the HTML node corresponding to the markdown generated in the .md file. Right click on the src/main/java/com.mdfromhtml.provenance.FindHTMLFromMarkdown.java and select Run as... / Java Application.
 
 ```
-Enter the fully qualified path to directory containing json html2md provenance files, or q to exit (./src/test/resources):
+Enter the fully qualified path to directory containing json html2md provenance files, or q to exit (./data/md):
 
-Enter the file name of the html2md provenance file, or q to exit (Archive0001_001_html2md.json):
+Enter the file name of the html2md provenance file, or q to exit (swg21122368_001_html2md.json):
 
-Loading the input file ./src/test/resources/markdown/Archive0001_001_html2md.json
+
+Loading the input file ./data/md/swg21122368_001_html2md.json
 Press q to quit or press Enter to continue...
 
- 0: # Install Skype for Business #
- 1: Office for business
- 2: Office 365 Admin
- 3: Office 365 Small Business
- 4: Office 365 Small Business Admin
- 5: Skype for Business
- 6: Skype for Business Online
- 7: Office\.com
- 8: Skype for Business Basic
- 9: Skype for Business for Android
+ 0: 
+ 1: 
+ 2: 
+ 3: 1122368; CQ; export; import; schema; cqload; command; command line; exportschema; importschema
+ 4: 
+ 5: Technote (FAQ)
+ 6: ## Technote (FAQ) ##
+ 7: 
+ 8: Question
+ 9: ## Question ##
 Enter line number, > (or n) for next page, < (or p) for prior page, s for search, q to quit:
+q
+
+Goodbye
 ```
 If you have further questions, please contact Nathaniel Mills wnm3@us.ibm.com
 

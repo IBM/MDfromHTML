@@ -44,11 +44,11 @@ public class TestServiceAPIs {
       ObjectNode HTMLFiltersObj = null;
       try {
          ObjectMapper mapper = new ObjectMapper();
-         JsonNode filters = mapper.readTree(new File("HTML_Filters.json"));
+         JsonNode filters = mapper.readTree(new File("."+File.separator+"properties"+File.separator+"HTML_Filters.json"));
          HTMLFiltersObj = (ObjectNode) filters;
       } catch (Exception e1) {
          throw new Exception(String
-            .format("Error: Can not find a file named \"HTML_Filters.json\": %s"
+            .format("Error: Can not find a file named \""+"."+File.separator+"properties"+File.separator+"HTML_Filters.json\": %s"
                + e1.getLocalizedMessage()));
       }
       return HTMLFiltersObj;
@@ -65,7 +65,7 @@ public class TestServiceAPIs {
       ObjectNode HTMLFilters = loadHTMLFilters();
       String html = "";
       String url = "";
-      String testFileName = "./src/test/resources/Archive0001.json";
+      String testFileName = "."+File.separator+"data"+File.separator+"htmljson"+File.separator+"swg21122368.json";
       while (true) {
          String htmlJsonFileName = MDfromHTMLUtils.prompt(
             "Enter the fully qualified htmljson file name or q to quit ("

@@ -61,10 +61,10 @@ public class FindHTMLFromMarkdown extends DocumentConverter {
       JSONObject htmlFilters = null;
       String inputHTMLFileName = "";
       try {
-         htmlFilters = MDfromHTMLUtils.loadJSONFile("HTML_Filters.json");
+         htmlFilters = MDfromHTMLUtils.loadJSONFile("."+File.separator+"properties"+File.separator+"HTML_Filters.json");
       } catch (Exception e1) {
          System.out.println(
-            "Warning: Using no HTML Filters -- can not find \"HTML_Filters.json\": "
+            "Warning: Using no HTML Filters -- can not find \""+"."+File.separator+"properties"+File.separator+"HTML_Filters.json\": "
                + e1.getLocalizedMessage());
       }
       Options options = Options.multiMarkdown();
@@ -199,8 +199,8 @@ public class FindHTMLFromMarkdown extends DocumentConverter {
    }
 
    public boolean getParams(String[] args) {
-      String inputPath = "./src/test/resources";
-      String inputFileName = "Archive0001_001_html2md.json";
+      String inputPath = "."+File.separator+"data"+File.separator+"md";
+      String inputFileName = "swg21122368_001_html2md.json";
       String tmp = "";
 
       try {

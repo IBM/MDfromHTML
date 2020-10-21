@@ -1,0 +1,167 @@
+<html lang="en-ca" class="no-js"><head>
+</head><body id="ibm-com"><div class="ibm-card">
+<div class="ibm-card__content">
+
+<div id="dBlue-keyword" style="display: none;">odbc trace MustGather; MGDB ; MGOD; MustGatherDocument</div>
+
+<div class="ibm-container ibm-alternate">
+  
+  
+ <h2 class=" ibm-h4 ibm-bold">Technote (troubleshooting)</h2> 
+ <div class="ibm-container-body"> 
+  <br> 
+  <h2 class=" ibm-h4 ibm-bold">Problem(Abstract)</h2> 
+  <p> This procedure is typically run to track down problems in IBM Integration Bus (IIB) or Websphere Message Broker (WMB) with database connectivity such as user access and dropped database connections. Gathering this information before calling IBM Support will help familiarize you with the troubleshooting process and save you time. </p> 
+  <h2 class=" ibm-h4 ibm-bold">Resolving the problem</h2> 
+  <div class="ibm-domino-rtf">
+   <p> </p>
+   <div class="dblue-table-container">
+    <table border="0" cellspacing="0" cellpadding="0"> 
+     <tbody>
+      <tr valign="top">
+       <td width="438"><br> 
+        <div class="ibm-show-hide" data-widget="showhide" data-type="panel"> 
+         <h2 class=" ibm-h4 ibm-bold ibm-ind-link"><a class="ibm-show-hide-link ibm-inlinelink" href="#">Trace instructions for Windows/UNIXes</a></h2> 
+         <div class="ibm-container-body"> 
+          <div class="ibm-domino-rtf"> 
+           <br> 
+           <b>Windows</b>
+           <br> 1) Use the 
+           <b>Tracing</b> tab of the ODBC function, as follows: 
+           <br> 2)
+           <b> </b>Click
+           <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools</b>. 
+           <br> 3) Double-click 
+           <b>Data Sources</b>. 
+           <br> 4) Select the 
+           <b>Tracing</b> tab. The 
+           <b>Log File Path</b> displays the default path and file name (/sql.log) trace information is written to.
+           <br> 5) Click the 
+           <b>Start Tracing Now</b> button. 
+           <br> 6) Click 
+           <b>OK</b>. 
+           <br> 7) To stop ODBC tracing, go to the same panel and click the
+           <b> Stop Tracing Now </b>button, then click 
+           <b>OK</b>.
+           <br> 
+           <br> 
+           <b>UNIX</b> 
+           <br> For WMB V7
+           <br> 1) Edit the 
+           <b>odbc.ini</b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): 
+           <br> 2) Under the stanza entry 
+           <b>[ODBC]</b> change 
+           <b>Trace=0</b> to 
+           <b>Trace=1</b>
+           <br> 3) Enable timestamp in the ODBC trace by setting 
+           <b>TraceOptions=3</b> in the odbc.ini file
+           <br> 4) Optionally, modify the 
+           <b>TraceFile</b> file path value to a preferred value. 
+           <br> 5) Restart the broker. 
+           <br> 
+           <br> All trace records go to one file, which can be confusing with multiple flows or execution groups.
+           <br> Disable the trace by changing 
+           <b>Trace=0</b> to 
+           <b>Trace=1</b> in the odbc.ini file and restart the broker
+           <br> 
+           <br> For WMB V8 and IIB V9
+           <br> 1) Edit the 
+           <b>odbcinst.ini</b> file to initiate trace for ODBC activity (look for environment variable 
+           <b>ODBCINI</b> and 
+           <b>ODBSYSINI</b>): 
+           <br> 2) Under the stanza entry 
+           <b>[ODBC]</b> change 
+           <b>Trace=no</b> to 
+           <b>Trace=yes</b>
+           <br> 3) Enable timestamp in the ODBC trace by setting 
+           <b>TraceOptions=3</b> in the odbc.ini file
+           <br> 4) Optionally, modify the 
+           <b>TraceFile</b> file path value to a preferred value. 
+           <br> 5) Restart the broker. 
+           <br> 
+           <br> All trace records go to one file, which can be confusing with multiple flows or execution groups.
+           <br> Disable the trace by changing 
+           <b>Trace=yes</b> to 
+           <b>Trace=no</b> in the odbcinst.ini file and restart the broker
+           <br> 
+           <br> 
+           <p><b>Note:</b> </p>
+           <ul> 
+            <li>Please ensure the path of the trace file is not the IIB installation or working directory. </li>
+            <li>Please ensure that the trace file entry points to a file system that has enough disk space. </li>
+            <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> </li>
+           </ul>
+          </div> 
+         </div> 
+        </div> 
+        <div class="ibm-show-hide" data-widget="showhide" data-type="panel"> 
+         <h2 class=" ibm-h4 ibm-bold ibm-ind-link"><a class="ibm-show-hide-link ibm-inlinelink" href="#">Trace instructions for z/OS</a></h2> 
+         <div class="ibm-container-body"> 
+          <div class="ibm-domino-rtf"> 
+           <br> 
+           <br> 1) Edit the 
+           <b>BIPDSNAO</b> file in the component dataset and under the stanza entry 
+           <b>[COMMON]</b>, change 
+           <b>APPLTRACE=0</b> to 
+           <b>APPLTRACE=1</b>
+           <br> 2) Remove the comment from the 
+           <b>COMPDIR</b> variable declaration and the 
+           <b>APPLTRC DD</b> from the steps 
+           <b>EGNOENV</b> and 
+           <b>EGENV</b>, in the WebSphere Message Broker started task JCL.
+           <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. 
+           <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;/output/</b>, into a file called <b>db2appltrace</b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. </p>
+           <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. </p>
+           <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> </p>
+          </div> 
+         </div> 
+        </div> </td>
+      </tr> 
+     </tbody>
+    </table>
+   </div> 
+  </div> 
+ </div> 
+ <div class="ibm-domino-rtf">
+  <p> </p>
+ </div>
+ <br> 
+ <div class="dblue-table-container">
+  <table border="0" cellpadding="0" cellspacing="0" class="ibm-data-table"> 
+   <caption>
+    <em>Cross reference information</em>
+   </caption> 
+   <thead>
+    <tr> 
+     <th scope="col">Segment</th> 
+     <th scope="col">Product</th> 
+     <th scope="col">Component</th> 
+     <th scope="col">Platform</th> 
+     <th scope="col">Version</th> 
+     <th scope="col">Edition</th> 
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <th class="ibm-table-row" scope="row">Business Integration</th>
+     <td>IBM Integration Bus</td>
+     <td>Database</td>
+     <td>AIX, HP-UX, Linux, Solaris, Windows, z/OS</td>
+     <td>9.0</td>
+     <td>All Editions</td>
+    </tr> 
+   </tbody>
+  </table>
+ </div> 
+ <br> 
+ <div class="ibm-container-body"> 
+  <h2 class=" ibm-h4 ibm-bold">Product Alias/Synonym</h2> 
+  <p> WMB MB Message Broker MQ Integrator WBIMB WBI-MB MQSI WMQI </p> 
+ </div> 
+  
+ 
+</div>
+</div>
+</div>
+
+<div id="com.dblue.docview.dwAnswers.questions"><div id="com.dblue.docview.dwAnswers.answers"></div></div></body></html>

@@ -53,10 +53,10 @@ public class GetTextFromMarkdown {
       int exitVal = 0;
       JSONObject HTMLFilters = null;
       try {
-         HTMLFilters = MDfromHTMLUtils.loadJSONFile("HTML_Filters.json");
+         HTMLFilters = MDfromHTMLUtils.loadJSONFile("."+File.separator+"properties"+File.separator+"HTML_Filters.json");
       } catch (Exception e1) {
          System.out.println(
-            "Warning: Using no HTML Filters -- can not find \"HTML_Filters.json\": "
+            "Warning: Using no HTML Filters -- can not find "+"."+File.separator+"properties"+File.separator+"HTML_Filters.json\": "
                + e1.getLocalizedMessage());
       }
       GetTextFromMarkdown pgm = new GetTextFromMarkdown(Options.multiMarkdown(),
@@ -255,8 +255,8 @@ public class GetTextFromMarkdown {
     * @return true if we have sufficient parameters to execute the program
     */
    boolean getParams(String[] args) {
-      String inputPath = "./src/test/resources";
-      String outputPath = "./src/test/resources";
+      String inputPath = "."+File.separator+"data"+File.separator+"md";
+      String outputPath = "."+File.separator+"data"+File.separator+"txt";
       String tmp = "";
 
       try {
@@ -318,7 +318,9 @@ public class GetTextFromMarkdown {
       _outputPath = outputPath;
       
       String includeLinks = "n";
-      if (args == null || args.length < 3) {
+      if (args == null || args.length >= 3) {
+         includeLinks = args[2].trim().toLowerCase().substring(0,1);
+      } else {
          tmp = MDfromHTMLUtils.prompt(
             "Include links in text output (y=yes, n=no), or q to exit ("
                + includeLinks + "):");
@@ -329,8 +331,6 @@ public class GetTextFromMarkdown {
             return false;
          }
          includeLinks = tmp.toLowerCase().substring(0,1);
-      } else {
-         includeLinks = args[2].trim().toLowerCase().substring(0,1);
       }
       _includeLinks = ("y".equals(includeLinks));
 

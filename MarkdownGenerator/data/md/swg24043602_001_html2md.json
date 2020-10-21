@@ -1,0 +1,1240 @@
+{
+   "HTMLFilters": {
+      "*": {
+         ":all": {
+         },
+         ":seek_headers": false,
+         ":tagnames": [
+         ]
+      },
+      "www.ibm.com": {
+         ":seek_headers": true
+      }
+   },
+   "baseURI": "http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602",
+   "inputFilename": ".\/data\/md\/swg24043602_001_formatted.html",
+   "outputFilename": ".\/data\/md\/swg24043602_001.md",
+   "provenanceReminder": "seekHeaders is TRUE so markdown is filtered until the first header is encountered.",
+   "provenance": [
+
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div style=\"display: none;\"><\/div>",
+   "level": "1.1.1.1",
+   "md": ""
+},
+{
+   "html": "<div style=\"display: none;\">\n ptf; fixpack; fix pack; fixpacks; fix; service pack; fixes; upgrade\n<\/div>",
+   "level": "1.1.1.1^1",
+   "md": "ptf; fixpack; fix pack; fixpacks; fix; service pack; fixes; upgrade"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2",
+   "md": ""
+},
+{
+   "html": "<h2>Downloadable files<\/h2>",
+   "level": "1.1.1.2.1^1",
+   "md": "Downloadable files"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.1",
+   "md": "## Downloadable files ##"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2",
+   "md": ""
+},
+{
+   "html": "<h2>Abstract<\/h2>",
+   "level": "1.1.1.2.2.2^1",
+   "md": "Abstract"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.2.2",
+   "md": "## Abstract ##"
+},
+{
+   "html": "<p> Fix for IBM Rational Developer for z Systems 9.5.1.5 Host Utilities (FMID HAKG951). <\/p>",
+   "level": "1.1.1.2.2.3^1",
+   "md": "Fix for IBM Rational Developer for z Systems 9\\.5\\.1\\.5 Host Utilities (FMID HAKG951)\\."
+},
+{
+   "html": "<h2>Download Description<\/h2>",
+   "level": "1.1.1.2.2.4^1",
+   "md": "Download Description"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.2.4",
+   "md": "## Download Description ##"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.5",
+   "md": ""
+},
+{
+   "html": "<p>Updates to the Rational Developer for z Systems Code Review and Code Coverage are addressed by applying PTFs UI46693, UI46694, UI46695 and UI46696 and can be found in the PTF Fix List section below. These PTFs supersede Rational Developer for z Systems 9.5.1.4 and can be applied to 9.5.1.4.<br> <br> <br> <\/p>",
+   "level": "1.1.1.2.2.5.1^1",
+   "md": "Updates to the Rational Developer for z Systems Code Review and Code Coverage are addressed by applying PTFs UI46693, UI46694, UI46695 and UI46696 and can be found in the PTF Fix List section below\\. These PTFs supersede Rational Developer for z Systems 9\\.5\\.1\\.4 and can be applied to 9\\.5\\.1\\.4\\."
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.5.3",
+   "md": ""
+},
+{
+   "html": "<th>Sections<\/th>",
+   "level": "1.1.1.2.2.5.3.1.2.1^1",
+   "md": "Sections"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.3.1.2.1~1",
+   "md": "Sections"
+},
+{
+   "html": "<th>Description<\/th>",
+   "level": "1.1.1.2.2.5.3.1.2.1^1",
+   "md": "Description"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.3.1.2.1~2",
+   "md": "Description"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.5.3.1.3.1.1",
+   "md": " *  "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#DNLD\" rel=\"nofollow\">Download package<\/a>",
+   "level": "1.1.1.2.2.5.3.1.3.1.1.1.1^1",
+   "md": "Download package"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#DNLD\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.5.3.1.3.1.1.1.1",
+   "md": "[Download package][]"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.3.1.3.1~1",
+   "md": " *  [Download package][]"
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.5.3.1.3.1.1",
+   "md": ""
+},
+{
+   "html": "<p>The <strong>Download package<\/strong> section provides the direct link to obtain the download package for installation in your environment.<\/p>",
+   "level": "1.1.1.2.2.5.3.1.3.1.1^1",
+   "md": "The "
+},
+{
+   "html": "<strong>Download package<\/strong>",
+   "level": "1.1.1.2.2.5.3.1.3.1.1.1^1",
+   "md": "Download package"
+},
+{
+   "html": "<strong><\/strong>",
+   "level": "1.1.1.2.2.5.3.1.3.1.1.1",
+   "md": "**Download package**"
+},
+{
+   "html": "<p>The <strong>Download package<\/strong> section provides the direct link to obtain the download package for installation in your environment.<\/p>",
+   "level": "1.1.1.2.2.5.3.1.3.1.1^2",
+   "md": " section provides the direct link to obtain the download package for installation in your environment\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.5.3.1.3.1~2",
+   "md": "The **Download package** section provides the direct link to obtain the download package for installation in your environment\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.5.3.1.3.2.1",
+   "md": " *  "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#INSTALL\" rel=\"nofollow\">Installation instructions<\/a>",
+   "level": "1.1.1.2.2.5.3.1.3.2.1.1.1^1",
+   "md": "Installation instructions"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#INSTALL\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.5.3.1.3.2.1.1.1",
+   "md": "[Installation instructions][]"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.3.1.3.2~1",
+   "md": " *  [Installation instructions][]"
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.5.3.1.3.2.1",
+   "md": ""
+},
+{
+   "html": "<p>The <strong>Installation instructions<\/strong> section provides the installation instructions necessary to apply this release into your environment.<\/p>",
+   "level": "1.1.1.2.2.5.3.1.3.2.1^1",
+   "md": "The "
+},
+{
+   "html": "<strong>Installation instructions<\/strong>",
+   "level": "1.1.1.2.2.5.3.1.3.2.1.1^1",
+   "md": "Installation instructions"
+},
+{
+   "html": "<strong><\/strong>",
+   "level": "1.1.1.2.2.5.3.1.3.2.1.1",
+   "md": "**Installation instructions**"
+},
+{
+   "html": "<p>The <strong>Installation instructions<\/strong> section provides the installation instructions necessary to apply this release into your environment.<\/p>",
+   "level": "1.1.1.2.2.5.3.1.3.2.1^2",
+   "md": " section provides the installation instructions necessary to apply this release into your environment\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.5.3.1.3.2~2",
+   "md": "The **Installation instructions** section provides the installation instructions necessary to apply this release into your environment\\."
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.5.5",
+   "md": ""
+},
+{
+   "html": "<th>Document<\/th>",
+   "level": "1.1.1.2.2.5.5.1.2.1^1",
+   "md": "Document"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.5.1.2.1~1",
+   "md": "Document"
+},
+{
+   "html": "<th>Description<\/th>",
+   "level": "1.1.1.2.2.5.5.1.2.1^1",
+   "md": "Description"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.5.1.2.1~2",
+   "md": "Description"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.5.5.1.3.1.1",
+   "md": " *  "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=GI13-2864-02\" rel=\"nofollow\">Program Directory<\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.1.1.1.1^1",
+   "md": "Program Directory"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=GI13-2864-02\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.1.1.1.1",
+   "md": "[Program Directory][]"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.5.1.3.1~1",
+   "md": " *  [Program Directory][]"
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.1.1",
+   "md": ""
+},
+{
+   "html": "<p>Click to open the Program Directory.<\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.1.1^1",
+   "md": "Click to open the Program Directory\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.5.5.1.3.1~2",
+   "md": "Click to open the Program Directory\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.5.5.1.3.2.1",
+   "md": " *  "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=SC23-7658-12\" rel=\"nofollow\">Host Configuration Guide<\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.2.1.1.1^1",
+   "md": "Host Configuration Guide"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=SC23-7658-12\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.2.1.1.1",
+   "md": "[Host Configuration Guide][]"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.5.1.3.2~1",
+   "md": " *  [Host Configuration Guide][]"
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.2.1",
+   "md": ""
+},
+{
+   "html": "<p>Click to open the Host Configuration Guide.<\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.2.1^1",
+   "md": "Click to open the Host Configuration Guide\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.5.5.1.3.2~2",
+   "md": "Click to open the Host Configuration Guide\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.5.5.1.3.3.1",
+   "md": " *  "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/knowledgecenter\/SSQ2R2\/rdz_welcome.html\" rel=\"nofollow\">IBM Knowledge Center<\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.3.1.1.1^1",
+   "md": "IBM Knowledge Center"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/knowledgecenter\/SSQ2R2\/rdz_welcome.html\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.3.1.1.1",
+   "md": "[IBM Knowledge Center][]"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.5.1.3.3~1",
+   "md": " *  [IBM Knowledge Center][]"
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.3.1",
+   "md": ""
+},
+{
+   "html": "<p>IBM Knowledge Center provides an entry point to product documentation. You can view, browse, and search online information related to the product.<\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.3.1^1",
+   "md": "IBM Knowledge Center provides an entry point to product documentation\\. You can view, browse, and search online information related to the product\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.5.5.1.3.3~2",
+   "md": "IBM Knowledge Center provides an entry point to product documentation\\. You can view, browse, and search online information related to the product\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.5.5.1.3.4.1",
+   "md": " *  "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/software\/rational\/products\/developer\/systemz\/library\/\" rel=\"nofollow\">Documentation Library<\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.4.1.1.1^1",
+   "md": "Documentation Library"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/software\/rational\/products\/developer\/systemz\/library\/\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.4.1.1.1",
+   "md": "[Documentation Library][]"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.5.1.3.4~1",
+   "md": " *  [Documentation Library][]"
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.4.1",
+   "md": ""
+},
+{
+   "html": "<p>Click to review the documentation library.<\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.4.1^1",
+   "md": "Click to review the documentation library\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.5.5.1.3.4~2",
+   "md": "Click to review the documentation library\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.5.5.1.3.5.1",
+   "md": " *  "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg27036693\" rel=\"nofollow\">Fix List<\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.5.1.1.1^1",
+   "md": "Fix List"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg27036693\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.5.1.1.1",
+   "md": "[Fix List][]"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.5.1.3.5~1",
+   "md": " *  [Fix List][]"
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.5.1",
+   "md": ""
+},
+{
+   "html": "<p>Click to review a complete list of the defects (APARs) resolved in this release including a list of resolved defects for the entire version family.<\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.5.1^1",
+   "md": "Click to review a complete list of the defects (APARs) resolved in this release including a list of resolved defects for the entire version family\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.5.5.1.3.5~2",
+   "md": "Click to review a complete list of the defects (APARs) resolved in this release including a list of resolved defects for the entire version family\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.5.5.1.3.6.1",
+   "md": " *  "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043583\" rel=\"nofollow\">Client component<\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.6.1.1.1^1",
+   "md": "Client component"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043583\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.5.5.1.3.6.1.1.1",
+   "md": "[Client component][]"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.5.5.1.3.6~1",
+   "md": " *  [Client component][]"
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.6.1",
+   "md": ""
+},
+{
+   "html": "<p>Click to review the download information for the Rational Developer for System z client component. <\/p>",
+   "level": "1.1.1.2.2.5.5.1.3.6.1^1",
+   "md": "Click to review the download information for the Rational Developer for System z client component\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.5.5.1.3.6~2",
+   "md": "Click to review the download information for the Rational Developer for System z client component\\."
+},
+{
+   "html": "<h2>Installation Instructions<\/h2>",
+   "level": "1.1.1.2.2.6^1",
+   "md": "Installation Instructions"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.2.6",
+   "md": "## Installation Instructions ##"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.7",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.8",
+   "md": ""
+},
+{
+   "html": "<th>URL<\/th>",
+   "level": "1.1.1.2.2.8.1.1.1^1",
+   "md": "URL"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.8.1.1.1~1",
+   "md": "URL"
+},
+{
+   "html": "<th>LANGUAGE<\/th>",
+   "level": "1.1.1.2.2.8.1.1.1^1",
+   "md": "LANGUAGE"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.8.1.1.1~2",
+   "md": "LANGUAGE"
+},
+{
+   "html": "<th>SIZE(Bytes)<\/th>",
+   "level": "1.1.1.2.2.8.1.1.1^1",
+   "md": "SIZE(Bytes)"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.8.1.1.1~3",
+   "md": "SIZE(Bytes)"
+},
+{
+   "html": "<a href=\"ftp:\/\/public.dhe.ibm.com\/ps\/products\/wsed\/fixes\/UI46693\/ibm.hakg951.v9515.instructions.html\" rel=\"nofollow\">Installation Instructions <\/a>",
+   "level": "1.1.1.2.2.8.1.2.1.1^1",
+   "md": "Installation Instructions "
+},
+{
+   "html": "<a href=\"ftp:\/\/public.dhe.ibm.com\/ps\/products\/wsed\/fixes\/UI46693\/ibm.hakg951.v9515.instructions.html\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.8.1.2.1.1",
+   "md": "[Installation Instructions ][Installation Instructions]"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.8.1.2.1~1",
+   "md": "[Installation Instructions ][Installation Instructions]"
+},
+{
+   "html": "<td>English<\/td>",
+   "level": "1.1.1.2.2.8.1.2.1^1",
+   "md": "English"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.8.1.2.1~2",
+   "md": "English"
+},
+{
+   "html": "<td>12041<\/td>",
+   "level": "1.1.1.2.2.8.1.2.1^1",
+   "md": "12041"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.8.1.2.1~3",
+   "md": "12041"
+},
+{
+   "html": "<h2>Download package<\/h2>",
+   "level": "1.1.1.2.2.10^1",
+   "md": "Download package"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.2.10",
+   "md": "## Download package ##"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.11",
+   "md": ""
+},
+{
+   "html": "<ol><\/ol>",
+   "level": "1.1.1.2.2.11.3",
+   "md": "1.  "
+},
+{
+   "html": "<li>Click the <i>FC<\/i> link below.<\/li>",
+   "level": "1.1.1.2.2.11.3.1^1",
+   "md": "Click the "
+},
+{
+   "html": "<i>FC<\/i>",
+   "level": "1.1.1.2.2.11.3.1.1^1",
+   "md": "FC"
+},
+{
+   "html": "<i><\/i>",
+   "level": "1.1.1.2.2.11.3.1.1",
+   "md": "*FC*"
+},
+{
+   "html": "<li>Click the <i>FC<\/i> link below.<\/li>",
+   "level": "1.1.1.2.2.11.3.1^2",
+   "md": " link below\\."
+},
+{
+   "html": "<ol><\/ol>",
+   "level": "1.1.1.2.2.11.3",
+   "md": "2.  "
+},
+{
+   "html": "<li>Click <b>fix packs: 9.5.1.5-RATIONAL-RDz-zOS-UI46693_fp01, 9.5.1.5-RATIONAL-RDz-zOS-UI46694_fp01, 9.5.1.5-RATIONAL-RDz-zOS-UI46695_fp01 and 9.5.1.5-RATIONAL-RDz-zOS-UI46696_fp01 <\/b><\/li>",
+   "level": "1.1.1.2.2.11.3.2^1",
+   "md": "Click "
+},
+{
+   "html": "<b>fix packs: 9.5.1.5-RATIONAL-RDz-zOS-UI46693_fp01, 9.5.1.5-RATIONAL-RDz-zOS-UI46694_fp01, 9.5.1.5-RATIONAL-RDz-zOS-UI46695_fp01 and 9.5.1.5-RATIONAL-RDz-zOS-UI46696_fp01 <\/b>",
+   "level": "1.1.1.2.2.11.3.2.1^1",
+   "md": "fix packs: 9\\.5\\.1\\.5\\-RATIONAL\\-RDz\\-zOS\\-UI46693\\_fp01, 9\\.5\\.1\\.5\\-RATIONAL\\-RDz\\-zOS\\-UI46694\\_fp01, 9\\.5\\.1\\.5\\-RATIONAL\\-RDz\\-zOS\\-UI46695\\_fp01 and 9\\.5\\.1\\.5\\-RATIONAL\\-RDz\\-zOS\\-UI46696\\_fp01 "
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.11.3.2.1",
+   "md": "**fix packs: 9\\.5\\.1\\.5\\-RATIONAL\\-RDz\\-zOS\\-UI46693\\_fp01, 9\\.5\\.1\\.5\\-RATIONAL\\-RDz\\-zOS\\-UI46694\\_fp01, 9\\.5\\.1\\.5\\-RATIONAL\\-RDz\\-zOS\\-UI46695\\_fp01 and 9\\.5\\.1\\.5\\-RATIONAL\\-RDz\\-zOS\\-UI46696\\_fp01** "
+},
+{
+   "html": "<ol><\/ol>",
+   "level": "1.1.1.2.2.11.3",
+   "md": "3.  "
+},
+{
+   "html": "<li>Download and extract <b>ibm.hakg951.ui46693.zip, ibm.hakg951.ui46694.zip, ibm.hakg951.ui46695.zip and ibm.hakg951.ui46696.zip <\/b><\/li>",
+   "level": "1.1.1.2.2.11.3.3^1",
+   "md": "Download and extract "
+},
+{
+   "html": "<b>ibm.hakg951.ui46693.zip, ibm.hakg951.ui46694.zip, ibm.hakg951.ui46695.zip and ibm.hakg951.ui46696.zip <\/b>",
+   "level": "1.1.1.2.2.11.3.3.1^1",
+   "md": "ibm\\.hakg951\\.ui46693\\.zip, ibm\\.hakg951\\.ui46694\\.zip, ibm\\.hakg951\\.ui46695\\.zip and ibm\\.hakg951\\.ui46696\\.zip "
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.11.3.3.1",
+   "md": "**ibm\\.hakg951\\.ui46693\\.zip, ibm\\.hakg951\\.ui46694\\.zip, ibm\\.hakg951\\.ui46695\\.zip and ibm\\.hakg951\\.ui46696\\.zip** "
+},
+{
+   "html": "<ol><\/ol>",
+   "level": "1.1.1.2.2.11.3",
+   "md": "4.  "
+},
+{
+   "html": "<li>Follow the instructions provided in <b>ibm.hakg951.v9515.instructions.html <\/b><\/li>",
+   "level": "1.1.1.2.2.11.3.4^1",
+   "md": "Follow the instructions provided in "
+},
+{
+   "html": "<b>ibm.hakg951.v9515.instructions.html <\/b>",
+   "level": "1.1.1.2.2.11.3.4.1^1",
+   "md": "ibm\\.hakg951\\.v9515\\.instructions\\.html "
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.11.3.4.1",
+   "md": "**ibm\\.hakg951\\.v9515\\.instructions\\.html** "
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.13",
+   "md": ""
+},
+{
+   "html": "<th>Download<\/th>",
+   "level": "1.1.1.2.2.13.1.1.1^1",
+   "md": "Download"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.13.1.1.1~1",
+   "md": "Download"
+},
+{
+   "html": "<th>RELEASE DATE<\/th>",
+   "level": "1.1.1.2.2.13.1.1.1^1",
+   "md": "RELEASE DATE"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.13.1.1.1~2",
+   "md": "RELEASE DATE"
+},
+{
+   "html": "<th>LANGUAGE<\/th>",
+   "level": "1.1.1.2.2.13.1.1.1^1",
+   "md": "LANGUAGE"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.13.1.1.1~3",
+   "md": "LANGUAGE"
+},
+{
+   "html": "<th>SIZE(Bytes)<\/th>",
+   "level": "1.1.1.2.2.13.1.1.1^1",
+   "md": "SIZE(Bytes)"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.13.1.1.1~4",
+   "md": "SIZE(Bytes)"
+},
+{
+   "html": "<th>Download Options <br><a href=\"https:\/\/www.ibm.com\/support\/fixcentral\/help?page=swfaqs\" rel=\"nofollow\">What is Fix Central(FC)?<\/a> <\/th>",
+   "level": "1.1.1.2.2.13.1.1.1^1",
+   "md": "Download Options"
+},
+{
+   "html": "<a href=\"https:\/\/www.ibm.com\/support\/fixcentral\/help?page=swfaqs\" rel=\"nofollow\">What is Fix Central(FC)?<\/a>",
+   "level": "1.1.1.2.2.13.1.1.1.2^1",
+   "md": "What is Fix Central(FC)?"
+},
+{
+   "html": "<a href=\"https:\/\/www.ibm.com\/support\/fixcentral\/help?page=swfaqs\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.13.1.1.1.2",
+   "md": "[What is Fix Central(FC)?][What is Fix Central_FC]"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.13.1.1.1~5",
+   "md": "Download Options [What is Fix Central(FC)?][What is Fix Central_FC]"
+},
+{
+   "html": "<th>PTFs UI46693 UI46694 UI46695 and UI46696<\/th>",
+   "level": "1.1.1.2.2.13.1.2.1^1",
+   "md": "PTFs UI46693 UI46694 UI46695 and UI46696"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.13.1.2.1~1",
+   "md": "PTFs UI46693 UI46694 UI46695 and UI46696"
+},
+{
+   "html": "<td>27 Apr 2017<\/td>",
+   "level": "1.1.1.2.2.13.1.2.1^1",
+   "md": "27 Apr 2017"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.13.1.2.1~2",
+   "md": "27 Apr 2017"
+},
+{
+   "html": "<td>English<\/td>",
+   "level": "1.1.1.2.2.13.1.2.1^1",
+   "md": "English"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.13.1.2.1~3",
+   "md": "English"
+},
+{
+   "html": "<td>179952559<\/td>",
+   "level": "1.1.1.2.2.13.1.2.1^1",
+   "md": "179952559"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.13.1.2.1~4",
+   "md": "179952559"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/fixcentral\/swg\/quickorder?parent=ibm%7ERational&amp;product=ibm\/Rational\/Rational+Developer+for+System+z&amp;release=9.5.1.0&amp;platform=All&amp;function=all&amp;source=fc\" rel=\"nofollow\">FC<\/a>",
+   "level": "1.1.1.2.2.13.1.2.1.1^1",
+   "md": "FC"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/fixcentral\/swg\/quickorder?parent=ibm%7ERational&amp;product=ibm\/Rational\/Rational+Developer+for+System+z&amp;release=9.5.1.0&amp;platform=All&amp;function=all&amp;source=fc\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.13.1.2.1.1",
+   "md": "[FC][]"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.13.1.2.1~5",
+   "md": "[FC][]"
+},
+{
+   "html": "<h2>Technical support<\/h2>",
+   "level": "1.1.1.2.2.15^1",
+   "md": "Technical support"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.2.15",
+   "md": "## Technical support ##"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.17",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.17.1",
+   "md": ""
+},
+{
+   "html": "<h2>Tab navigation<\/h2>",
+   "level": "1.1.1.2.2.17.1.1^1",
+   "md": "Tab navigation"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.2.17.1.1",
+   "md": "## Tab navigation ##"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.17.1.2",
+   "md": " *  "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602\" rel=\"nofollow\">General Support Information<\/a>",
+   "level": "1.1.1.2.2.17.1.2.1.1^1",
+   "md": "General Support Information"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.2.1.1",
+   "md": "[General Support Information][]"
+},
+{
+   "html": "<span>- selected tab,<\/span>",
+   "level": "1.1.1.2.2.17.1.2.1.2^1",
+   "md": "\\- selected tab,"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.17.1.2",
+   "md": " *  "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg27020747\" rel=\"nofollow\">Support Resources<\/a>",
+   "level": "1.1.1.2.2.17.1.2.2.1^1",
+   "md": "Support Resources"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg27020747\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.2.2.1",
+   "md": "[Support Resources][]"
+},
+{
+   "html": "<span>- selected tab,<\/span>",
+   "level": "1.1.1.2.2.17.1.2.2.2^1",
+   "md": "\\- selected tab,"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.17.1.3",
+   "md": ""
+},
+{
+   "html": "<hr>",
+   "level": "1.1.1.2.2.17.1.3.1",
+   "md": "--------------------"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.17.1.4",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.17.1.4.1",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.1",
+   "md": ""
+},
+{
+   "html": "<b>IBM Rational Software Support Communities<\/b>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.1.1^1",
+   "md": "IBM Rational Software Support Communities"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.1.1",
+   "md": "**IBM Rational Software Support Communities**"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2",
+   "md": " *  "
+},
+{
+   "html": "<li>Visit the <a href=\"http:\/\/www.ibm.com\/support\/entry\/portal\/Overview\/Software\/Rational\/product\" rel=\"nofollow\">IBM Support Portal<\/a> to configure your support portal experience and review FAQs, lists of known problems, fixes, and a wealth of important support information.<br><br> <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.1^1",
+   "md": "Visit the "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/entry\/portal\/Overview\/Software\/Rational\/product\" rel=\"nofollow\">IBM Support Portal<\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.1.1^1",
+   "md": "IBM Support Portal"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/entry\/portal\/Overview\/Software\/Rational\/product\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.1.1",
+   "md": "[IBM Support Portal][]"
+},
+{
+   "html": "<li>Visit the <a href=\"http:\/\/www.ibm.com\/support\/entry\/portal\/Overview\/Software\/Rational\/product\" rel=\"nofollow\">IBM Support Portal<\/a> to configure your support portal experience and review FAQs, lists of known problems, fixes, and a wealth of important support information.<br><br> <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.1^2",
+   "md": " to configure your support portal experience and review FAQs, lists of known problems, fixes, and a wealth of important support information\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2",
+   "md": " *  "
+},
+{
+   "html": "<li>Visit <a href=\"http:\/\/www.ibm.com\/developerworks\/rational\/\" rel=\"nofollow\">developerWorks<\/a> to access an online collection of tutorials, sample code, standards, forums and other resources provided by experts at IBM to assist software developers using Rational tools including access to the <a href=\"http:\/\/www.ibm.com\/developerworks\/rfe\/\" rel=\"nofollow\">IBM RFE Community<\/a>.<br><br> <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.2^1",
+   "md": "Visit "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/developerworks\/rational\/\" rel=\"nofollow\">developerWorks<\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.2.1^1",
+   "md": "developerWorks"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/developerworks\/rational\/\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.2.1",
+   "md": "[developerWorks][]"
+},
+{
+   "html": "<li>Visit <a href=\"http:\/\/www.ibm.com\/developerworks\/rational\/\" rel=\"nofollow\">developerWorks<\/a> to access an online collection of tutorials, sample code, standards, forums and other resources provided by experts at IBM to assist software developers using Rational tools including access to the <a href=\"http:\/\/www.ibm.com\/developerworks\/rfe\/\" rel=\"nofollow\">IBM RFE Community<\/a>.<br><br> <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.2^2",
+   "md": " to access an online collection of tutorials, sample code, standards, forums and other resources provided by experts at IBM to assist software developers using Rational tools including access to the "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/developerworks\/rfe\/\" rel=\"nofollow\">IBM RFE Community<\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.2.2^1",
+   "md": "IBM RFE Community"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/developerworks\/rfe\/\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.2.2",
+   "md": "[IBM RFE Community][]"
+},
+{
+   "html": "<li>Visit <a href=\"http:\/\/www.ibm.com\/developerworks\/rational\/\" rel=\"nofollow\">developerWorks<\/a> to access an online collection of tutorials, sample code, standards, forums and other resources provided by experts at IBM to assist software developers using Rational tools including access to the <a href=\"http:\/\/www.ibm.com\/developerworks\/rfe\/\" rel=\"nofollow\">IBM RFE Community<\/a>.<br><br> <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.2^3",
+   "md": "\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2",
+   "md": " *  "
+},
+{
+   "html": "<li>Visit the <a href=\"http:\/\/jazz.net\/\" rel=\"nofollow\">Jazz Community<\/a> if you use a Rational product created using the Jazz platform to interact directly with the Jazz development team and other community members, download product trials and betas and track developement progress. <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.3^1",
+   "md": "Visit the "
+},
+{
+   "html": "<a href=\"http:\/\/jazz.net\/\" rel=\"nofollow\">Jazz Community<\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.3.1^1",
+   "md": "Jazz Community"
+},
+{
+   "html": "<a href=\"http:\/\/jazz.net\/\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.3.1",
+   "md": "[Jazz Community][]"
+},
+{
+   "html": "<li>Visit the <a href=\"http:\/\/jazz.net\/\" rel=\"nofollow\">Jazz Community<\/a> if you use a Rational product created using the Jazz platform to interact directly with the Jazz development team and other community members, download product trials and betas and track developement progress. <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.2.3^2",
+   "md": " if you use a Rational product created using the Jazz platform to interact directly with the Jazz development team and other community members, download product trials and betas and track developement progress\\."
+},
+{
+   "filterReason": "tag: \"hr\" has no specific processing so reviewing its children.",
+   "html": "<hr>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.3",
+   "md": ""
+},
+{
+   "html": "<h2>Helpful Hints For Obtaining Technical Assistance:<\/h2>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.4^1",
+   "md": "Helpful Hints For Obtaining Technical Assistance:"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.4",
+   "md": "## Helpful Hints For Obtaining Technical Assistance: ##"
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.5",
+   "md": ""
+},
+{
+   "html": "<p>Before you contact IBM Rational Software Support, gather the background information that you need to describe the problem. When you describe a problem to an IBM software support specialist, be as specific as possible and include all relevant background information so that the specialist can help you solve the problem efficiently. To save time, know the answers to these questions: <\/p>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.5^1",
+   "md": "Before you contact IBM Rational Software Support, gather the background information that you need to describe the problem\\. When you describe a problem to an IBM software support specialist, be as specific as possible and include all relevant background information so that the specialist can help you solve the problem efficiently\\. To save time, know the answers to these questions:"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.6",
+   "md": " *  "
+},
+{
+   "html": "<li>What software versions were you running when the problem occurred? <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.6.1^1",
+   "md": "What software versions were you running when the problem occurred?"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.6",
+   "md": " *  "
+},
+{
+   "html": "<li>Do you have logs, traces, or messages that are related to the problem? <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.6.2^1",
+   "md": "Do you have logs, traces, or messages that are related to the problem?"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.6",
+   "md": " *  "
+},
+{
+   "html": "<li>Can you reproduce the problem? If so, what steps do you take to reproduce it? <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.6.3^1",
+   "md": "Can you reproduce the problem? If so, what steps do you take to reproduce it?"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.6",
+   "md": " *  "
+},
+{
+   "html": "<li>Is there a workaround for the problem? If so, be prepared to describe the workaround. <\/li>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.6.4^1",
+   "md": "Is there a workaround for the problem? If so, be prepared to describe the workaround\\."
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.7",
+   "md": ""
+},
+{
+   "html": "<p>If you have helpful information to diagnose or identify the problem on your system, you can provide this data by following the instructions to <a href=\"http:\/\/www.ibm.com\/software\/support\/exchangeinfo.html\" rel=\"nofollow\">exchange information with IBM Technical Support<\/a>. <\/p>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.7^1",
+   "md": "If you have helpful information to diagnose or identify the problem on your system, you can provide this data by following the instructions to "
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/software\/support\/exchangeinfo.html\" rel=\"nofollow\">exchange information with IBM Technical Support<\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.7.1^1",
+   "md": "exchange information with IBM Technical Support"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/software\/support\/exchangeinfo.html\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.7.1",
+   "md": "[exchange information with IBM Technical Support][]"
+},
+{
+   "html": "<p>If you have helpful information to diagnose or identify the problem on your system, you can provide this data by following the instructions to <a href=\"http:\/\/www.ibm.com\/software\/support\/exchangeinfo.html\" rel=\"nofollow\">exchange information with IBM Technical Support<\/a>. <\/p>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.7^2",
+   "md": "\\."
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.8",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
+   "html": "<p><\/p>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9",
+   "md": ""
+},
+{
+   "html": "<em>Follow IBM Rational Client Support on <a href=\"http:\/\/twitter.com\/rationalsupport\" rel=\"nofollow\"><b>Twitter<\/b><\/a> | <a href=\"http:\/\/facebook.com\/rationalsupport\" rel=\"nofollow\"><b>Facebook<\/b><\/a> | <a href=\"http:\/\/www.youtube.com\/ibmrationalsupport\" rel=\"nofollow\"><b>YouTube<\/b><\/a> | <a href=\"https:\/\/www.ibm.com\/developerworks\/mydeveloperworks\/blogs\/nfrsblog\/?lang=en\" rel=\"nofollow\"><b>devWorks Blog<\/b><\/a><\/em>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1^1",
+   "md": "Follow IBM Rational Client Support on "
+},
+{
+   "html": "<b>Twitter<\/b>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.1.1^1",
+   "md": "Twitter"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.1.1",
+   "md": "**Twitter**"
+},
+{
+   "html": "<a href=\"http:\/\/twitter.com\/rationalsupport\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.1",
+   "md": "[**Twitter**][Twitter]"
+},
+{
+   "html": "<em>Follow IBM Rational Client Support on <a href=\"http:\/\/twitter.com\/rationalsupport\" rel=\"nofollow\"><b>Twitter<\/b><\/a> | <a href=\"http:\/\/facebook.com\/rationalsupport\" rel=\"nofollow\"><b>Facebook<\/b><\/a> | <a href=\"http:\/\/www.youtube.com\/ibmrationalsupport\" rel=\"nofollow\"><b>YouTube<\/b><\/a> | <a href=\"https:\/\/www.ibm.com\/developerworks\/mydeveloperworks\/blogs\/nfrsblog\/?lang=en\" rel=\"nofollow\"><b>devWorks Blog<\/b><\/a><\/em>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1^2",
+   "md": " \\| "
+},
+{
+   "html": "<b>Facebook<\/b>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.2.1^1",
+   "md": "Facebook"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.2.1",
+   "md": "**Facebook**"
+},
+{
+   "html": "<a href=\"http:\/\/facebook.com\/rationalsupport\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.2",
+   "md": "[**Facebook**][Facebook]"
+},
+{
+   "html": "<em>Follow IBM Rational Client Support on <a href=\"http:\/\/twitter.com\/rationalsupport\" rel=\"nofollow\"><b>Twitter<\/b><\/a> | <a href=\"http:\/\/facebook.com\/rationalsupport\" rel=\"nofollow\"><b>Facebook<\/b><\/a> | <a href=\"http:\/\/www.youtube.com\/ibmrationalsupport\" rel=\"nofollow\"><b>YouTube<\/b><\/a> | <a href=\"https:\/\/www.ibm.com\/developerworks\/mydeveloperworks\/blogs\/nfrsblog\/?lang=en\" rel=\"nofollow\"><b>devWorks Blog<\/b><\/a><\/em>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1^3",
+   "md": " \\| "
+},
+{
+   "html": "<b>YouTube<\/b>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.3.1^1",
+   "md": "YouTube"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.3.1",
+   "md": "**YouTube**"
+},
+{
+   "html": "<a href=\"http:\/\/www.youtube.com\/ibmrationalsupport\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.3",
+   "md": "[**YouTube**][YouTube]"
+},
+{
+   "html": "<em>Follow IBM Rational Client Support on <a href=\"http:\/\/twitter.com\/rationalsupport\" rel=\"nofollow\"><b>Twitter<\/b><\/a> | <a href=\"http:\/\/facebook.com\/rationalsupport\" rel=\"nofollow\"><b>Facebook<\/b><\/a> | <a href=\"http:\/\/www.youtube.com\/ibmrationalsupport\" rel=\"nofollow\"><b>YouTube<\/b><\/a> | <a href=\"https:\/\/www.ibm.com\/developerworks\/mydeveloperworks\/blogs\/nfrsblog\/?lang=en\" rel=\"nofollow\"><b>devWorks Blog<\/b><\/a><\/em>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1^4",
+   "md": " \\| "
+},
+{
+   "html": "<b>devWorks Blog<\/b>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.4.1^1",
+   "md": "devWorks Blog"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.4.1",
+   "md": "**devWorks Blog**"
+},
+{
+   "html": "<a href=\"https:\/\/www.ibm.com\/developerworks\/mydeveloperworks\/blogs\/nfrsblog\/?lang=en\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1.4",
+   "md": "[**devWorks Blog**][devWorks Blog]"
+},
+{
+   "html": "<em><\/em>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1.9.1",
+   "md": "*Follow IBM Rational Client Support on [**Twitter**][Twitter] \\| [**Facebook**][Facebook] \\| [**YouTube**][YouTube] \\| [**devWorks Blog**][devWorks Blog]*"
+},
+{
+   "html": "<th><\/th>",
+   "level": "1.1.1.2.2.17.1.4.1.1.1.1~1",
+   "md": "**IBM Rational Software Support Communities**   *  Visit the [IBM Support Portal][] to configure your support portal experience and review FAQs, lists of known problems, fixes, and a wealth of important support information\\.            *  Visit [developerWorks][] to access an online collection of tutorials, sample code, standards, forums and other resources provided by experts at IBM to assist software developers using Rational tools including access to the [IBM RFE Community][]\\.            *  Visit the [Jazz Community][] if you use a Rational product created using the Jazz platform to interact directly with the Jazz development team and other community members, download product trials and betas and track developement progress\\.  ## Helpful Hints For Obtaining Technical Assistance: ##  Before you contact IBM Rational Software Support, gather the background information that you need to describe the problem\\. When you describe a problem to an IBM software support specialist, be as specific as possible and include all relevant background information so that the specialist can help you solve the problem efficiently\\. To save time, know the answers to these questions:   *  What software versions were you running when the problem occurred?  *  Do you have logs, traces, or messages that are related to the problem?  *  Can you reproduce the problem? If so, what steps do you take to reproduce it?  *  Is there a workaround for the problem? If so, be prepared to describe the workaround\\.  If you have helpful information to diagnose or identify the problem on your system, you can provide this data by following the instructions to [exchange information with IBM Technical Support][]\\.  *Follow IBM Rational Client Support on [**Twitter**][Twitter] \\| [**Facebook**][Facebook] \\| [**YouTube**][YouTube] \\| [**devWorks Blog**][devWorks Blog]*"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.3",
+   "md": ""
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#ibm-content\" rel=\"nofollow\">Back to top<\/a>",
+   "level": "1.1.1.2.3.1.1^1",
+   "md": "Back to top"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#ibm-content\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.3.1.1",
+   "md": "[Back to top][]"
+},
+{
+   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602&amp;aid=1\" alt=\"\">",
+   "level": "1.1.1.2.3.2.1.1.1",
+   "md": "![docview.wss_uid_swg24043602_aid_1][]"
+},
+{
+   "html": "<b>Problems (APARS) fixed<\/b>",
+   "level": "1.1.1.2.3.2.1.1.2^1",
+   "md": "Problems (APARS) fixed"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.3.2.1.1.2",
+   "md": "**Problems (APARS) fixed**"
+},
+{
+   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602&amp;aid=2\" alt=\"\">",
+   "level": "1.1.1.2.3.2.2.1.1",
+   "md": "![docview.wss_uid_swg24043602_aid_2][]"
+},
+{
+   "html": "<b>Problems (APARS) fixed<\/b>",
+   "level": "1.1.1.2.3.2.2.1.2^1",
+   "md": "Problems (APARS) fixed"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.3.2.2.1.2",
+   "md": "**Problems (APARS) fixed**"
+},
+{
+   "html": "<span style=\"position:relative\"> <a rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602&amp;aid=2\" alt=\"\"><b>Problems (APARS) fixed<\/b><\/a><br>  PI77627, PI77638, PI77645, PI77654, PI74771, PI74772, PI74773, PI74774 <\/span>",
+   "level": "1.1.1.2.3.2.2^1",
+   "md": "PI77627, PI77638, PI77645, PI77654, PI74771, PI74772, PI74773, PI74774 "
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.2",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.2.1",
+   "md": ""
+}
+   ]
+}

@@ -1,0 +1,658 @@
+{
+   "HTMLFilters": {
+      "*": {
+         ":all": {
+         },
+         ":seek_headers": false,
+         ":tagnames": [
+         ]
+      },
+      "www.ibm.com": {
+         ":seek_headers": true
+      }
+   },
+   "baseURI": "http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21122368",
+   "inputFilename": ".\/data\/md\/swg21122368_001_formatted.html",
+   "outputFilename": ".\/data\/md\/swg21122368_001.md",
+   "provenanceReminder": "seekHeaders is TRUE so markdown is filtered until the first header is encountered.",
+   "provenance": [
+
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div style=\"display: none;\"><\/div>",
+   "level": "1.1.1.1",
+   "md": ""
+},
+{
+   "html": "<div style=\"display: none;\">\n 1122368; CQ; export; import; schema; cqload; command; command line; exportschema; importschema\n<\/div>",
+   "level": "1.1.1.1^1",
+   "md": "1122368; CQ; export; import; schema; cqload; command; command line; exportschema; importschema"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2",
+   "md": ""
+},
+{
+   "html": "<h2>Technote (FAQ)<\/h2>",
+   "level": "1.1.1.2.1^1",
+   "md": "Technote (FAQ)"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.1",
+   "md": "## Technote (FAQ) ##"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2",
+   "md": ""
+},
+{
+   "html": "<h2>Question<\/h2>",
+   "level": "1.1.1.2.2.2^1",
+   "md": "Question"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.2.2",
+   "md": "## Question ##"
+},
+{
+   "html": "<p> What tool can be used to export and import IBM Rational ClearQuest database schemas? <\/p>",
+   "level": "1.1.1.2.2.3^1",
+   "md": "What tool can be used to export and import IBM Rational ClearQuest database schemas?"
+},
+{
+   "html": "<h2>Cause<\/h2>",
+   "level": "1.1.1.2.2.4^1",
+   "md": "Cause"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.2.4",
+   "md": "## Cause ##"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.5",
+   "md": ""
+},
+{
+   "html": "<p>You want to export an entire schema from one schema repository (MASTR) database and import into another.<\/p>",
+   "level": "1.1.1.2.2.5.1^1",
+   "md": "You want to export an entire schema from one schema repository (MASTR) database and import into another\\."
+},
+{
+   "html": "<h2>Answer<\/h2>",
+   "level": "1.1.1.2.2.6^1",
+   "md": "Answer"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.2.6",
+   "md": "## Answer ##"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.7",
+   "md": ""
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^1",
+   "md": "Use the "
+},
+{
+   "html": "<b>cqload <\/b>",
+   "level": "1.1.1.2.2.7.1.1^1",
+   "md": "cqload "
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.1.1",
+   "md": "**cqload** "
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^2",
+   "md": "utility\\. The utility exports the schema to a file, the name and location of which is specified by the user\\. For the primary documentation on this tool, see the "
+},
+{
+   "html": "<i>cqload<\/i>",
+   "level": "1.1.1.2.2.7.1.2.1^1",
+   "md": "cqload"
+},
+{
+   "html": "<i><\/i>",
+   "level": "1.1.1.2.2.7.1.2.1",
+   "md": "*cqload*"
+},
+{
+   "html": "<a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.7.1.2",
+   "md": "[*cqload*][cqload]"
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^3",
+   "md": "topic in the "
+},
+{
+   "html": "<a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>",
+   "level": "1.1.1.2.2.7.1.4^1",
+   "md": "Rational ClearQuest Information Center"
+},
+{
+   "html": "<a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.2.7.1.4",
+   "md": "[Rational ClearQuest Information Center][]"
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^4",
+   "md": "\\. This documentation contains the latest information about the tool\\."
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^5",
+   "md": "To use "
+},
+{
+   "html": "<b>cqload<\/b>",
+   "level": "1.1.1.2.2.7.1.7^1",
+   "md": "cqload"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.1.7",
+   "md": "**cqload**"
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^6",
+   "md": ", it is necessary to use the DOS command prompt\\. In addition, the schema to be exported, must not be checked out\\. If "
+},
+{
+   "html": "<b>cqload<\/b>",
+   "level": "1.1.1.2.2.7.1.8^1",
+   "md": "cqload"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.1.8",
+   "md": "**cqload**"
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^7",
+   "md": " is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by "
+},
+{
+   "html": "<b>cqload<\/b>",
+   "level": "1.1.1.2.2.7.1.9^1",
+   "md": "cqload"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.1.9",
+   "md": "**cqload**"
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^8",
+   "md": "\\."
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^9",
+   "md": "The "
+},
+{
+   "html": "<b>exportschema<\/b>",
+   "level": "1.1.1.2.2.7.1.12^1",
+   "md": "exportschema"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.1.12",
+   "md": "**exportschema**"
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^10",
+   "md": " subcommand is used to export an entire schema to a text file\\. This schema text file can then be imported into another schema repository using the "
+},
+{
+   "html": "<b>importschema <\/b>",
+   "level": "1.1.1.2.2.7.1.13^1",
+   "md": "importschema "
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.1.13",
+   "md": "**importschema** "
+},
+{
+   "html": "<p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p>",
+   "level": "1.1.1.2.2.7.1^11",
+   "md": "command\\. The syntax and examples of both commands are shown below\\."
+},
+{
+   "html": "<code><\/code>",
+   "level": "1.1.1.2.2.7.1.15",
+   "md": "`cqload exportschema -dbset <connection name> <cq-login> <cq-password> <schema name> \"<script full path name>\"`"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.2.7.2",
+   "md": ""
+},
+{
+   "html": "<b>Parameter<\/b>",
+   "level": "1.1.1.2.2.7.2.1.1.1.1^1",
+   "md": "Parameter"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.2.1.1.1.1",
+   "md": "**Parameter**"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.1~1",
+   "md": "**Parameter**"
+},
+{
+   "html": "<b>Description<\/b>",
+   "level": "1.1.1.2.2.7.2.1.1.1.1^1",
+   "md": "Description"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.2.1.1.1.1",
+   "md": "**Description**"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.1~2",
+   "md": "**Description**"
+},
+{
+   "html": "<td>&lt;connection name&gt;<\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.2^1",
+   "md": "&lt;connection name&gt;"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.2~1",
+   "md": "&lt;connection name&gt;"
+},
+{
+   "html": "<td>Existing connection associated with the schema repository database as viewed in the ClearQuest Maintenance Tool. 2003.06.00 (shown in above example) is the default set up automatically in the 2003 release of the ClearQuest Maintenance Tool.<\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.2^1",
+   "md": "Existing connection associated with the schema repository database as viewed in the ClearQuest Maintenance Tool\\. 2003\\.06\\.00 (shown in above example) is the default set up automatically in the 2003 release of the ClearQuest Maintenance Tool\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.2~2",
+   "md": "Existing connection associated with the schema repository database as viewed in the ClearQuest Maintenance Tool\\. 2003\\.06\\.00 (shown in above example) is the default set up automatically in the 2003 release of the ClearQuest Maintenance Tool\\."
+},
+{
+   "html": "<td>&lt;cq-login&gt;<\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.3^1",
+   "md": "&lt;cq\\-login&gt;"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.3~1",
+   "md": "&lt;cq\\-login&gt;"
+},
+{
+   "html": "<td>ClearQuest administrative login name<\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.3^1",
+   "md": "ClearQuest administrative login name"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.3~2",
+   "md": "ClearQuest administrative login name"
+},
+{
+   "html": "<td>&lt;cq-password&gt;<\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.4^1",
+   "md": "&lt;cq\\-password&gt;"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.4~1",
+   "md": "&lt;cq\\-password&gt;"
+},
+{
+   "html": "<td>ClearQuest administrative password (enter \"\" if the value is blank)<\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.4^1",
+   "md": "ClearQuest administrative password (enter \"\" if the value is blank)"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.4~2",
+   "md": "ClearQuest administrative password (enter \"\" if the value is blank)"
+},
+{
+   "html": "<td>&lt;schema name&gt;<\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.5^1",
+   "md": "&lt;schema name&gt;"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.5~1",
+   "md": "&lt;schema name&gt;"
+},
+{
+   "html": "<td>Name of the schema exactly as it appears in ClearQuest Designer. This is case sensitive.<\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.5^1",
+   "md": "Name of the schema exactly as it appears in ClearQuest Designer\\. This is case sensitive\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.5~2",
+   "md": "Name of the schema exactly as it appears in ClearQuest Designer\\. This is case sensitive\\."
+},
+{
+   "html": "<td>&lt;script full path name&gt;<\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.6^1",
+   "md": "&lt;script full path name&gt;"
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.6~1",
+   "md": "&lt;script full path name&gt;"
+},
+{
+   "html": "<td>This must be surrounded by double quotes. A UNC path format can also be used.<\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.6^1",
+   "md": "This must be surrounded by double quotes\\. A UNC path format can also be used\\."
+},
+{
+   "html": "<td><\/td>",
+   "level": "1.1.1.2.2.7.2.1.1.6~2",
+   "md": "This must be surrounded by double quotes\\. A UNC path format can also be used\\."
+},
+{
+   "html": "<div> \n <p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p> \n <div> \n  <table> \n   <tbody> \n    <tr> \n     <td><b>Parameter<\/b><\/td> \n     <td><b>Description<\/b><\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;connection name&gt;<\/td> \n     <td>Existing connection associated with the schema repository database as viewed in the ClearQuest Maintenance Tool. 2003.06.00 (shown in above example) is the default set up automatically in the 2003 release of the ClearQuest Maintenance Tool.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-login&gt;<\/td> \n     <td>ClearQuest administrative login name<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-password&gt;<\/td> \n     <td>ClearQuest administrative password (enter \"\" if the value is blank)<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;schema name&gt;<\/td> \n     <td>Name of the schema exactly as it appears in ClearQuest Designer. This is case sensitive.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;script full path name&gt;<\/td> \n     <td>This must be surrounded by double quotes. A UNC path format can also be used.<\/td> \n    <\/tr> \n   <\/tbody> \n  <\/table> \n <\/div> \n <br> Example: \n <ul> \n  <br> <code>cqload exportschema -dbset 2003.06.00 admin \"\" DefectTracking \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> This command will export the contents of the DefectTracking schema to the file c:\\temp\\schema.txt. \n <br> \n <br> The <b> importschema <\/b>subcommand is used to import an entire schema from a textual representation, and add it to the schema repository. It can be useful for sharing entire schemas with sites that cannot access the main schema repository, or have a different schema repository. \n <ul> \n  <br> <code>cqload importschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; \"&lt;script full path name&gt;\"<br> <\/code> \n <\/ul> \n <br> Example: \n <ul> \n  <br> <code>cqload importschema -dbset 2003.06.00 admin \"\" \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> \n <p>With both subcommands, a message will appear indicating a successful export or import when completed. <\/p> \n <p> <\/p> \n <p><b>Additional Notes<\/b> <\/p> \n <ul> \n  <li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li> \n  <li>Use of the<b> cqload<\/b> command does not effect the users of any production databases, unlike database upgrade operations that would require ClearQuest users to exit a database prior to an upgrade. <\/li> \n  <li>If a schema is checked out, it can still be exported. The last version that is exported is the checked-out version, but no changes made during the last check-out will be included in the exported schema. <\/li> \n  <li>In the current Rational Clearquest 7.1, there is a new feature to Export a Schema in the Rational Clearquest Eclipse Designer into an XML format. This is not currently used for Support work as it is intended to be used future releases. Thus if you are asked by Rational Support to export your schema, it is best to still use the <b>cqload command<\/b>.<\/li> \n <\/ul> \n<\/div>",
+   "level": "1.1.1.2.2.7^1",
+   "md": "Example:"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.7.4",
+   "md": " *  "
+},
+{
+   "html": "<code>cqload exportschema -dbset 2003.06.00 admin \"\" DefectTracking \"c:\\temp\\schema.txt\"<\/code>",
+   "level": "1.1.1.2.2.7.4.2^1",
+   "md": "cqload exportschema \\-dbset 2003\\.06\\.00 admin \"\" DefectTracking \"c:\\\\temp\\\\schema\\.txt\""
+},
+{
+   "html": "<div> \n <p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p> \n <div> \n  <table> \n   <tbody> \n    <tr> \n     <td><b>Parameter<\/b><\/td> \n     <td><b>Description<\/b><\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;connection name&gt;<\/td> \n     <td>Existing connection associated with the schema repository database as viewed in the ClearQuest Maintenance Tool. 2003.06.00 (shown in above example) is the default set up automatically in the 2003 release of the ClearQuest Maintenance Tool.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-login&gt;<\/td> \n     <td>ClearQuest administrative login name<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-password&gt;<\/td> \n     <td>ClearQuest administrative password (enter \"\" if the value is blank)<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;schema name&gt;<\/td> \n     <td>Name of the schema exactly as it appears in ClearQuest Designer. This is case sensitive.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;script full path name&gt;<\/td> \n     <td>This must be surrounded by double quotes. A UNC path format can also be used.<\/td> \n    <\/tr> \n   <\/tbody> \n  <\/table> \n <\/div> \n <br> Example: \n <ul> \n  <br> <code>cqload exportschema -dbset 2003.06.00 admin \"\" DefectTracking \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> This command will export the contents of the DefectTracking schema to the file c:\\temp\\schema.txt. \n <br> \n <br> The <b> importschema <\/b>subcommand is used to import an entire schema from a textual representation, and add it to the schema repository. It can be useful for sharing entire schemas with sites that cannot access the main schema repository, or have a different schema repository. \n <ul> \n  <br> <code>cqload importschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; \"&lt;script full path name&gt;\"<br> <\/code> \n <\/ul> \n <br> Example: \n <ul> \n  <br> <code>cqload importschema -dbset 2003.06.00 admin \"\" \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> \n <p>With both subcommands, a message will appear indicating a successful export or import when completed. <\/p> \n <p> <\/p> \n <p><b>Additional Notes<\/b> <\/p> \n <ul> \n  <li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li> \n  <li>Use of the<b> cqload<\/b> command does not effect the users of any production databases, unlike database upgrade operations that would require ClearQuest users to exit a database prior to an upgrade. <\/li> \n  <li>If a schema is checked out, it can still be exported. The last version that is exported is the checked-out version, but no changes made during the last check-out will be included in the exported schema. <\/li> \n  <li>In the current Rational Clearquest 7.1, there is a new feature to Export a Schema in the Rational Clearquest Eclipse Designer into an XML format. This is not currently used for Support work as it is intended to be used future releases. Thus if you are asked by Rational Support to export your schema, it is best to still use the <b>cqload command<\/b>.<\/li> \n <\/ul> \n<\/div>",
+   "level": "1.1.1.2.2.7^2",
+   "md": "This command will export the contents of the DefectTracking schema to the file "
+},
+{
+   "html": "<div> \n <p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p> \n <div> \n  <table> \n   <tbody> \n    <tr> \n     <td><b>Parameter<\/b><\/td> \n     <td><b>Description<\/b><\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;connection name&gt;<\/td> \n     <td>Existing connection associated with the schema repository database as viewed in the ClearQuest Maintenance Tool. 2003.06.00 (shown in above example) is the default set up automatically in the 2003 release of the ClearQuest Maintenance Tool.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-login&gt;<\/td> \n     <td>ClearQuest administrative login name<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-password&gt;<\/td> \n     <td>ClearQuest administrative password (enter \"\" if the value is blank)<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;schema name&gt;<\/td> \n     <td>Name of the schema exactly as it appears in ClearQuest Designer. This is case sensitive.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;script full path name&gt;<\/td> \n     <td>This must be surrounded by double quotes. A UNC path format can also be used.<\/td> \n    <\/tr> \n   <\/tbody> \n  <\/table> \n <\/div> \n <br> Example: \n <ul> \n  <br> <code>cqload exportschema -dbset 2003.06.00 admin \"\" DefectTracking \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> This command will export the contents of the DefectTracking schema to the file c:\\temp\\schema.txt. \n <br> \n <br> The <b> importschema <\/b>subcommand is used to import an entire schema from a textual representation, and add it to the schema repository. It can be useful for sharing entire schemas with sites that cannot access the main schema repository, or have a different schema repository. \n <ul> \n  <br> <code>cqload importschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; \"&lt;script full path name&gt;\"<br> <\/code> \n <\/ul> \n <br> Example: \n <ul> \n  <br> <code>cqload importschema -dbset 2003.06.00 admin \"\" \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> \n <p>With both subcommands, a message will appear indicating a successful export or import when completed. <\/p> \n <p> <\/p> \n <p><b>Additional Notes<\/b> <\/p> \n <ul> \n  <li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li> \n  <li>Use of the<b> cqload<\/b> command does not effect the users of any production databases, unlike database upgrade operations that would require ClearQuest users to exit a database prior to an upgrade. <\/li> \n  <li>If a schema is checked out, it can still be exported. The last version that is exported is the checked-out version, but no changes made during the last check-out will be included in the exported schema. <\/li> \n  <li>In the current Rational Clearquest 7.1, there is a new feature to Export a Schema in the Rational Clearquest Eclipse Designer into an XML format. This is not currently used for Support work as it is intended to be used future releases. Thus if you are asked by Rational Support to export your schema, it is best to still use the <b>cqload command<\/b>.<\/li> \n <\/ul> \n<\/div>",
+   "level": "1.1.1.2.2.7^3",
+   "md": "c:\\\\temp\\\\schema\\.txt\\."
+},
+{
+   "html": "<div> \n <p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p> \n <div> \n  <table> \n   <tbody> \n    <tr> \n     <td><b>Parameter<\/b><\/td> \n     <td><b>Description<\/b><\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;connection name&gt;<\/td> \n     <td>Existing connection associated with the schema repository database as viewed in the ClearQuest Maintenance Tool. 2003.06.00 (shown in above example) is the default set up automatically in the 2003 release of the ClearQuest Maintenance Tool.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-login&gt;<\/td> \n     <td>ClearQuest administrative login name<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-password&gt;<\/td> \n     <td>ClearQuest administrative password (enter \"\" if the value is blank)<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;schema name&gt;<\/td> \n     <td>Name of the schema exactly as it appears in ClearQuest Designer. This is case sensitive.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;script full path name&gt;<\/td> \n     <td>This must be surrounded by double quotes. A UNC path format can also be used.<\/td> \n    <\/tr> \n   <\/tbody> \n  <\/table> \n <\/div> \n <br> Example: \n <ul> \n  <br> <code>cqload exportschema -dbset 2003.06.00 admin \"\" DefectTracking \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> This command will export the contents of the DefectTracking schema to the file c:\\temp\\schema.txt. \n <br> \n <br> The <b> importschema <\/b>subcommand is used to import an entire schema from a textual representation, and add it to the schema repository. It can be useful for sharing entire schemas with sites that cannot access the main schema repository, or have a different schema repository. \n <ul> \n  <br> <code>cqload importschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; \"&lt;script full path name&gt;\"<br> <\/code> \n <\/ul> \n <br> Example: \n <ul> \n  <br> <code>cqload importschema -dbset 2003.06.00 admin \"\" \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> \n <p>With both subcommands, a message will appear indicating a successful export or import when completed. <\/p> \n <p> <\/p> \n <p><b>Additional Notes<\/b> <\/p> \n <ul> \n  <li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li> \n  <li>Use of the<b> cqload<\/b> command does not effect the users of any production databases, unlike database upgrade operations that would require ClearQuest users to exit a database prior to an upgrade. <\/li> \n  <li>If a schema is checked out, it can still be exported. The last version that is exported is the checked-out version, but no changes made during the last check-out will be included in the exported schema. <\/li> \n  <li>In the current Rational Clearquest 7.1, there is a new feature to Export a Schema in the Rational Clearquest Eclipse Designer into an XML format. This is not currently used for Support work as it is intended to be used future releases. Thus if you are asked by Rational Support to export your schema, it is best to still use the <b>cqload command<\/b>.<\/li> \n <\/ul> \n<\/div>",
+   "level": "1.1.1.2.2.7^4",
+   "md": "The "
+},
+{
+   "html": "<b> importschema <\/b>",
+   "level": "1.1.1.2.2.7.8^1",
+   "md": " importschema "
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.8",
+   "md": " **importschema** "
+},
+{
+   "html": "<div> \n <p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p> \n <div> \n  <table> \n   <tbody> \n    <tr> \n     <td><b>Parameter<\/b><\/td> \n     <td><b>Description<\/b><\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;connection name&gt;<\/td> \n     <td>Existing connection associated with the schema repository database as viewed in the ClearQuest Maintenance Tool. 2003.06.00 (shown in above example) is the default set up automatically in the 2003 release of the ClearQuest Maintenance Tool.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-login&gt;<\/td> \n     <td>ClearQuest administrative login name<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-password&gt;<\/td> \n     <td>ClearQuest administrative password (enter \"\" if the value is blank)<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;schema name&gt;<\/td> \n     <td>Name of the schema exactly as it appears in ClearQuest Designer. This is case sensitive.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;script full path name&gt;<\/td> \n     <td>This must be surrounded by double quotes. A UNC path format can also be used.<\/td> \n    <\/tr> \n   <\/tbody> \n  <\/table> \n <\/div> \n <br> Example: \n <ul> \n  <br> <code>cqload exportschema -dbset 2003.06.00 admin \"\" DefectTracking \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> This command will export the contents of the DefectTracking schema to the file c:\\temp\\schema.txt. \n <br> \n <br> The <b> importschema <\/b>subcommand is used to import an entire schema from a textual representation, and add it to the schema repository. It can be useful for sharing entire schemas with sites that cannot access the main schema repository, or have a different schema repository. \n <ul> \n  <br> <code>cqload importschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; \"&lt;script full path name&gt;\"<br> <\/code> \n <\/ul> \n <br> Example: \n <ul> \n  <br> <code>cqload importschema -dbset 2003.06.00 admin \"\" \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> \n <p>With both subcommands, a message will appear indicating a successful export or import when completed. <\/p> \n <p> <\/p> \n <p><b>Additional Notes<\/b> <\/p> \n <ul> \n  <li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li> \n  <li>Use of the<b> cqload<\/b> command does not effect the users of any production databases, unlike database upgrade operations that would require ClearQuest users to exit a database prior to an upgrade. <\/li> \n  <li>If a schema is checked out, it can still be exported. The last version that is exported is the checked-out version, but no changes made during the last check-out will be included in the exported schema. <\/li> \n  <li>In the current Rational Clearquest 7.1, there is a new feature to Export a Schema in the Rational Clearquest Eclipse Designer into an XML format. This is not currently used for Support work as it is intended to be used future releases. Thus if you are asked by Rational Support to export your schema, it is best to still use the <b>cqload command<\/b>.<\/li> \n <\/ul> \n<\/div>",
+   "level": "1.1.1.2.2.7^5",
+   "md": "subcommand is used to import an entire schema from a textual representation, and add it to the schema repository\\. It can be useful for sharing entire schemas with sites that cannot access the main schema repository, or have a different schema repository\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.7.9",
+   "md": " *  "
+},
+{
+   "html": "<code>cqload importschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; \"&lt;script full path name&gt;\"<br> <\/code>",
+   "level": "1.1.1.2.2.7.9.2^1",
+   "md": "cqload importschema \\-dbset &lt;connection name&gt; &lt;cq\\-login&gt; &lt;cq\\-password&gt; \"&lt;script full path name&gt;\""
+},
+{
+   "html": "<div> \n <p>Use the <b>cqload <\/b>utility. The utility exports the schema to a file, the name and location of which is specified by the user. For the primary documentation on this tool, see the <a href=\"http:\/\/publib.boulder.ibm.com\/infocenter\/cqhelp\/v8r0m0\/topic\/com.ibm.rational.clearquest.cli.doc\/topics\/r_cqload.htm\" rel=\"nofollow\"><i>cqload<\/i><\/a><i> <\/i>topic in the <a href=\"http:\/\/ibm.com\/support\/docview.wss?uid=swg27010159\" rel=\"nofollow\">Rational ClearQuest Information Center<\/a>. This documentation contains the latest information about the tool.<br> <br> To use <b>cqload<\/b>, it is necessary to use the DOS command prompt. In addition, the schema to be exported, must not be checked out. If <b>cqload<\/b> is run while the ClearQuest Designer is open, it will need to be closed, then restarted in order to show the changes made by <b>cqload<\/b>.<br> <br> The <b>exportschema<\/b> subcommand is used to export an entire schema to a text file. This schema text file can then be imported into another schema repository using the <b>importschema <\/b>command. The syntax and examples of both commands are shown below. <br> <code><br> cqload exportschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; &lt;schema name&gt; \"&lt;script full path name&gt;\"<br> <\/code><br> <\/p> \n <div> \n  <table> \n   <tbody> \n    <tr> \n     <td><b>Parameter<\/b><\/td> \n     <td><b>Description<\/b><\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;connection name&gt;<\/td> \n     <td>Existing connection associated with the schema repository database as viewed in the ClearQuest Maintenance Tool. 2003.06.00 (shown in above example) is the default set up automatically in the 2003 release of the ClearQuest Maintenance Tool.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-login&gt;<\/td> \n     <td>ClearQuest administrative login name<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;cq-password&gt;<\/td> \n     <td>ClearQuest administrative password (enter \"\" if the value is blank)<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;schema name&gt;<\/td> \n     <td>Name of the schema exactly as it appears in ClearQuest Designer. This is case sensitive.<\/td> \n    <\/tr> \n    <tr> \n     <td>&lt;script full path name&gt;<\/td> \n     <td>This must be surrounded by double quotes. A UNC path format can also be used.<\/td> \n    <\/tr> \n   <\/tbody> \n  <\/table> \n <\/div> \n <br> Example: \n <ul> \n  <br> <code>cqload exportschema -dbset 2003.06.00 admin \"\" DefectTracking \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> This command will export the contents of the DefectTracking schema to the file c:\\temp\\schema.txt. \n <br> \n <br> The <b> importschema <\/b>subcommand is used to import an entire schema from a textual representation, and add it to the schema repository. It can be useful for sharing entire schemas with sites that cannot access the main schema repository, or have a different schema repository. \n <ul> \n  <br> <code>cqload importschema -dbset &lt;connection name&gt; &lt;cq-login&gt; &lt;cq-password&gt; \"&lt;script full path name&gt;\"<br> <\/code> \n <\/ul> \n <br> Example: \n <ul> \n  <br> <code>cqload importschema -dbset 2003.06.00 admin \"\" \"c:\\temp\\schema.txt\"<\/code> \n <\/ul> \n <br> \n <p>With both subcommands, a message will appear indicating a successful export or import when completed. <\/p> \n <p> <\/p> \n <p><b>Additional Notes<\/b> <\/p> \n <ul> \n  <li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li> \n  <li>Use of the<b> cqload<\/b> command does not effect the users of any production databases, unlike database upgrade operations that would require ClearQuest users to exit a database prior to an upgrade. <\/li> \n  <li>If a schema is checked out, it can still be exported. The last version that is exported is the checked-out version, but no changes made during the last check-out will be included in the exported schema. <\/li> \n  <li>In the current Rational Clearquest 7.1, there is a new feature to Export a Schema in the Rational Clearquest Eclipse Designer into an XML format. This is not currently used for Support work as it is intended to be used future releases. Thus if you are asked by Rational Support to export your schema, it is best to still use the <b>cqload command<\/b>.<\/li> \n <\/ul> \n<\/div>",
+   "level": "1.1.1.2.2.7^6",
+   "md": "Example:"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.7.11",
+   "md": " *  "
+},
+{
+   "html": "<code>cqload importschema -dbset 2003.06.00 admin \"\" \"c:\\temp\\schema.txt\"<\/code>",
+   "level": "1.1.1.2.2.7.11.2^1",
+   "md": "cqload importschema \\-dbset 2003\\.06\\.00 admin \"\" \"c:\\\\temp\\\\schema\\.txt\""
+},
+{
+   "html": "<p>With both subcommands, a message will appear indicating a successful export or import when completed. <\/p>",
+   "level": "1.1.1.2.2.7.13^1",
+   "md": "With both subcommands, a message will appear indicating a successful export or import when completed\\."
+},
+{
+   "html": "<b>Additional Notes<\/b>",
+   "level": "1.1.1.2.2.7.15.1^1",
+   "md": "Additional Notes"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.15.1",
+   "md": "**Additional Notes**"
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.7.16",
+   "md": " *  "
+},
+{
+   "html": "<li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li>",
+   "level": "1.1.1.2.2.7.16.1^1",
+   "md": "The file "
+},
+{
+   "html": "<li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li>",
+   "level": "1.1.1.2.2.7.16.1^2",
+   "md": "C:\\\\temp\\\\schema\\.txt"
+},
+{
+   "html": "<li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li>",
+   "level": "1.1.1.2.2.7.16.1^3",
+   "md": " was created using the "
+},
+{
+   "html": "<b>cqload exportschema<\/b>",
+   "level": "1.1.1.2.2.7.16.1.1^1",
+   "md": "cqload exportschema"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.16.1.1",
+   "md": "**cqload exportschema**"
+},
+{
+   "html": "<li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li>",
+   "level": "1.1.1.2.2.7.16.1^4",
+   "md": " command\\. During that process, the name of the exported schema was saved into this file\\. So when this schema is imported, the schema name will be used to create the schema with "
+},
+{
+   "html": "<b>cqload importschema<\/b>",
+   "level": "1.1.1.2.2.7.16.1.2^1",
+   "md": "cqload importschema"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.16.1.2",
+   "md": "**cqload importschema**"
+},
+{
+   "html": "<li>The file C:\\temp\\schema.txt was created using the <b>cqload exportschema<\/b> command. During that process, the name of the exported schema was saved into this file. So when this schema is imported, the schema name will be used to create the schema with <b>cqload importschema<\/b>. If that name is already in use in destination schema repository, the import will fail. <\/li>",
+   "level": "1.1.1.2.2.7.16.1^5",
+   "md": "\\. If that name is already in use in destination schema repository, the import will fail\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.7.16",
+   "md": " *  "
+},
+{
+   "html": "<li>Use of the<b> cqload<\/b> command does not effect the users of any production databases, unlike database upgrade operations that would require ClearQuest users to exit a database prior to an upgrade. <\/li>",
+   "level": "1.1.1.2.2.7.16.2^1",
+   "md": "Use of the"
+},
+{
+   "html": "<b> cqload<\/b>",
+   "level": "1.1.1.2.2.7.16.2.1^1",
+   "md": " cqload"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.16.2.1",
+   "md": " **cqload**"
+},
+{
+   "html": "<li>Use of the<b> cqload<\/b> command does not effect the users of any production databases, unlike database upgrade operations that would require ClearQuest users to exit a database prior to an upgrade. <\/li>",
+   "level": "1.1.1.2.2.7.16.2^2",
+   "md": " command does not effect the users of any production databases, unlike database upgrade operations that would require ClearQuest users to exit a database prior to an upgrade\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.7.16",
+   "md": " *  "
+},
+{
+   "html": "<li>If a schema is checked out, it can still be exported. The last version that is exported is the checked-out version, but no changes made during the last check-out will be included in the exported schema. <\/li>",
+   "level": "1.1.1.2.2.7.16.3^1",
+   "md": "If a schema is checked out, it can still be exported\\. The last version that is exported is the checked\\-out version, but no changes made during the last check\\-out will be included in the exported schema\\."
+},
+{
+   "html": "<ul><\/ul>",
+   "level": "1.1.1.2.2.7.16",
+   "md": " *  "
+},
+{
+   "html": "<li>In the current Rational Clearquest 7.1, there is a new feature to Export a Schema in the Rational Clearquest Eclipse Designer into an XML format. This is not currently used for Support work as it is intended to be used future releases. Thus if you are asked by Rational Support to export your schema, it is best to still use the <b>cqload command<\/b>.<\/li>",
+   "level": "1.1.1.2.2.7.16.4^1",
+   "md": "In the current Rational Clearquest 7\\.1, there is a new feature to Export a Schema in the Rational Clearquest Eclipse Designer into an XML format\\. This is not currently used for Support work as it is intended to be used future releases\\. Thus if you are asked by Rational Support to export your schema, it is best to still use the "
+},
+{
+   "html": "<b>cqload command<\/b>",
+   "level": "1.1.1.2.2.7.16.4.1^1",
+   "md": "cqload command"
+},
+{
+   "html": "<b><\/b>",
+   "level": "1.1.1.2.2.7.16.4.1",
+   "md": "**cqload command**"
+},
+{
+   "html": "<li>In the current Rational Clearquest 7.1, there is a new feature to Export a Schema in the Rational Clearquest Eclipse Designer into an XML format. This is not currently used for Support work as it is intended to be used future releases. Thus if you are asked by Rational Support to export your schema, it is best to still use the <b>cqload command<\/b>.<\/li>",
+   "level": "1.1.1.2.2.7.16.4^2",
+   "md": "\\."
+},
+{
+   "html": "<h2>Related information<\/h2>",
+   "level": "1.1.1.2.3^1",
+   "md": "Related information"
+},
+{
+   "html": "<h2><\/h2>",
+   "level": "1.1.1.2.3",
+   "md": "## Related information ##"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21392645\" rel=\"nofollow\">A Japanese translation is available<\/a>",
+   "level": "1.1.1.2.4.2^1",
+   "md": "A Japanese translation is available"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21392645\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.4.2",
+   "md": "[A Japanese translation is available][]"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21504140\" rel=\"nofollow\">A simplified Chinese translation is available<\/a>",
+   "level": "1.1.1.2.4.4^1",
+   "md": "A simplified Chinese translation is available"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21504140\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.4.4",
+   "md": "[A simplified Chinese translation is available][]"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21445594\" rel=\"nofollow\">A Korean translation is available<\/a>",
+   "level": "1.1.1.2.4.6^1",
+   "md": "A Korean translation is available"
+},
+{
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21445594\" rel=\"nofollow\"><\/a>",
+   "level": "1.1.1.2.4.6",
+   "md": "[A Korean translation is available][]"
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.5",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.1.1.2.6",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.2",
+   "md": ""
+},
+{
+   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
+   "html": "<div><\/div>",
+   "level": "1.2.1",
+   "md": ""
+}
+   ]
+}

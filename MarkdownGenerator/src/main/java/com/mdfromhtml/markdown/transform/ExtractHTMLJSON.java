@@ -48,26 +48,6 @@ public class ExtractHTMLJSON {
     * 
     */
    public ExtractHTMLJSON() {
-      try {
-         _filters = MDfromHTMLUtils.loadTextFile("RejectStrings.txt");
-         // rewrite filters in lowercase
-         List<String> newFilters = new ArrayList<String>();
-         for (String filter : _filters) {
-            if (filter.startsWith("#")) {
-               // skip comments
-               continue;
-            }
-            filter = filter.trim();
-            if (filter.length() == 0) {
-               // skip empty lines
-               continue;
-            }
-            newFilters.add(filter.toLowerCase());
-         }
-         _filters = newFilters;
-      } catch (Exception e) {
-         e.printStackTrace();
-      }
    }
 
    /**
@@ -363,8 +343,8 @@ public class ExtractHTMLJSON {
     * @return true if we have sufficient parameters to execute the program
     */
    boolean getParams(String[] args) {
-      String inputPath = "./src/test/resources/htmljson/luisurls";
-      String outputPath = "./src/test/resources/htmljson/luisurls";
+      String inputPath = "./data/";
+      String outputPath = "./data/htmljson";
       String tmp = "";
 
       try {
@@ -454,6 +434,27 @@ public class ExtractHTMLJSON {
          _thumbsucker = new Boolean(args[3]);
       }
 
+      try {
+         _filters = MDfromHTMLUtils.loadTextFile(_inputPath+"RejectStrings.txt");
+         // rewrite filters in lowercase
+         List<String> newFilters = new ArrayList<String>();
+         for (String filter : _filters) {
+            if (filter.startsWith("#")) {
+               // skip comments
+               continue;
+            }
+            filter = filter.trim();
+            if (filter.length() == 0) {
+               // skip empty lines
+               continue;
+            }
+            newFilters.add(filter.toLowerCase());
+         }
+         _filters = newFilters;
+      } catch (Exception e) {
+         e.printStackTrace();
+         return false;
+      }
       return true;
    }
 

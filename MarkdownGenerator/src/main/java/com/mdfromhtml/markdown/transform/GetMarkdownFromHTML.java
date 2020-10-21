@@ -260,20 +260,20 @@ public class GetMarkdownFromHTML {
       int exitVal = 0;
       JSONObject HTMLFilters = null;
       try {
-         HTMLFilters = MDfromHTMLUtils.loadJSONFile("HTML_Filters.json");
+         HTMLFilters = MDfromHTMLUtils.loadJSONFile("."+File.separator+"properties"+File.separator+"HTML_Filters.json");
          // fold to lowercase
          try {
             HTMLFilters = (JSONObject) JSON
                .parse(HTMLFilters.toString().toLowerCase());
          } catch (Exception e) {
             System.out
-               .println("Error: \"HTML_Filters.json\" has a parsing error: "
+               .println("Error: \"."+File.separator+"properties"+File.separator+"HTML_Filters.json\" has a parsing error: "
                   + e.getLocalizedMessage());
             return;
          }
       } catch (Exception e1) {
          System.out.println(
-            "Error: No HTML Filters -- can not find \"HTML_Filters.json\": "
+            "Error: No HTML Filters -- can not find \"."+File.separator+"properties"+File.separator+"HTML_Filters.json\": "
                + e1.getLocalizedMessage());
          return;
       }
@@ -577,8 +577,8 @@ public class GetMarkdownFromHTML {
     * @return true if we have sufficient parameters to execute the program
     */
    boolean getParams(String[] args) {
-      String inputPath = "./src/test/resources";
-      String outputPath = "./src/test/resources";
+      String inputPath = "."+File.separator+"data"+File.separator+"htmljson";
+      String outputPath = "."+File.separator+"data"+File.separator+"md";
       String tmp = "";
 
       try {

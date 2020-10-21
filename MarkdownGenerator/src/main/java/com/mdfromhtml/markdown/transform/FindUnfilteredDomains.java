@@ -22,12 +22,12 @@
 
 package com.mdfromhtml.markdown.transform;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
 import com.api.json.JSONObject;
 import com.mdfromhtml.core.MDfromHTMLUtils;
 import com.overzealous.remark.Remark;
@@ -38,51 +38,89 @@ public class FindUnfilteredDomains {
    }
 
    public static void main(String[] args) {
+      String defaultFileToURLFilename = "."+File.separator+"data"+File.separator+"file_to_url.txt";
+      String htmlFiltersFilename = "."+File.separator+"properties"+File.separator+"HTML_Filters.json";
+      String fileToURLFilename = "";
+      boolean quietMode = false;
       try {
-         System.out.println("This utility will read URLs from a tab delimited file with urls in \n"
-            + "the 2nd column and compare their domains against the domain filters in HTML_Filters.json.");
-         System.out.println("Loading HTML_Filters.json");
-         JSONObject htmlfilters = MDfromHTMLUtils.loadJSONFile("HTML_Filters.json");
-         String fileToURLFilename = MDfromHTMLUtils.prompt("Enter the fully qualified path to the tab delimited file url cross reference file or q to quit:");
-         if (fileToURLFilename.length() == 0) {
-            fileToURLFilename = "./src/test/resources/file_to_url.txt";
+         if (args.length > 0) {
+            htmlFiltersFilename = args[0];
+         } else {
+            String tmp = MDfromHTMLUtils.prompt("Enter the HTML_Filters.json file location or q to quit: ("+htmlFiltersFilename+"):");
+            if (tmp.length() == 0) {
+               tmp = htmlFiltersFilename;
+            }
+            if ("q".equalsIgnoreCase(tmp)) {
+               System.exit(0);
+            }
+            htmlFiltersFilename = tmp;
          }
-         if ("q".equalsIgnoreCase(fileToURLFilename) == false) {
-            List<String>urlfiles = MDfromHTMLUtils.loadTextFile(fileToURLFilename);
-            String[] parts = new String[0];
-            String url="";
-            String domain="";
-            Set<String>unfiltered = new HashSet<String>();
-            int urlCount = 1;
+         if (args.length > 1) {
+            fileToURLFilename = args[1];
+            quietMode = true;
+         } else {
+            String tmp = MDfromHTMLUtils.prompt("Enter the path and filename of the tab delimited file cross referencing file names to URLs or q to quit ("+defaultFileToURLFilename+"):");
+            if (tmp.length() == 0) {
+               tmp = defaultFileToURLFilename;
+            }
+            if ("q".equalsIgnoreCase(fileToURLFilename)) {
+               System.exit(0);
+            }
+            fileToURLFilename = tmp;
+         }
+         if (!quietMode) {
+            System.out.println("This utility will read URLs from a tab delimited file with URLs in \n"
+               + "the 2nd column named "+fileToURLFilename+" and compare these URLs domains against the domain filters in ."+htmlFiltersFilename);
+            System.out.println("Loading HTML_Filters.json");
+         }
+         JSONObject htmlfilters = MDfromHTMLUtils.loadJSONFile(htmlFiltersFilename);
+         List<String>files2urls = MDfromHTMLUtils.loadTextFile(fileToURLFilename);
+         String[] parts = new String[0];
+         String url="";
+         String domain="";
+         Set<String>unfiltered = new HashSet<String>();
+         int urlCount = 1;
+         if (!quietMode) {
             System.out.println("Processing URLs (. == 50 urls processed)\n");
-            for (String urlfile : urlfiles) {
-               parts = urlfile.split("\t");
-               url = parts[1];
-               domain = Remark.getDomain(url);
-               if (htmlfilters.get(domain)==null) {
-                  unfiltered.add(domain);
-               }
+         }
+         for (String file_url : files2urls) {
+            if (file_url.trim().startsWith("#")) {
+               continue;
+            }
+            parts = file_url.split("\t");
+            url = parts[1];
+            domain = Remark.getDomain(url);
+            if (htmlfilters.get(domain)==null) {
+               unfiltered.add(domain);
+            }
+            if (!quietMode) {
                if (urlCount % 50 == 0) {
                   System.out.print(".");
                }
                if (urlCount % 4000 == 0) {
                   System.out.println();
                }
-               urlCount++;
             }
+            urlCount++;
+         }
+         if (!quietMode) {
             System.out.println("\n");
-            List<String>unfilteredDomains = new ArrayList<String>();
-            unfilteredDomains.addAll(unfiltered);
-            Collections.sort(unfilteredDomains);
+         }
+         List<String>unfilteredDomains = new ArrayList<String>();
+         unfilteredDomains.addAll(unfiltered);
+         Collections.sort(unfilteredDomains);
+         if (!quietMode) {
             System.out.println("Domains without filters:");
-            for(String unfilteredDomain:unfilteredDomains) {
-               System.out.println(unfilteredDomain);
-            }
+         }
+         for(String unfilteredDomain:unfilteredDomains) {
+            System.out.println(unfilteredDomain);
          }
       } catch (Exception e) {
          e.printStackTrace();
+      } finally {
+         if (!quietMode) {
+            System.out.println("Goodbye");
+         }
       }
-      System.out.println("Goodbye");
    }
-
 }

@@ -7,8 +7,8 @@ read
 echo "Press enter to build MDfromHTMLWebServices"
 read
 cp MDfromHTMLWebServices/Dockerfile_MDfromHTMLWebServices Dockerfile
-docker build --tag tmp:1.0.4 .
-docker run --publish 9080:9080 --detach --name mdfromhtml tmp:1.0.4 >mdfromhtml.container
+docker build --tag tmp:1.0.6 .
+docker run --publish 9081:9081 --detach --name mdfromhtml tmp:1.0.6 >mdfromhtml.container
 docker logs "$(cat mdfromhtml.container)"
 docker container ls |grep mdfromhtml
 docker container ls |grep mdfromhtml | awk '{ print $1 }' > mdfromhtml.containerid

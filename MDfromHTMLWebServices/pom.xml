@@ -27,7 +27,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ibm.mdfromhtml.services</groupId>
 	<artifactId>MDfromHTMLWebServices</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.6</version>
 	<packaging>war</packaging>
 	<name>MDfromHTMLWebServices</name>
 	<description>WAR file for running document services in a container.</description>
@@ -89,7 +89,7 @@
 		<dependency>
 			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>MarkdownGenerator</artifactId>
-			<version>1.0.4</version>
+			<version>1.0.6</version>
 		</dependency>
 		<dependency>
 			<groupId>com.ibm.mdfromhtml</groupId>
