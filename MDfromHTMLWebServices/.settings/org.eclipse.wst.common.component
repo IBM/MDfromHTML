@@ -8,6 +8,9 @@
         <dependent-module archiveName="MarkdownGenerator-1.0.6.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MarkdownGenerator/MarkdownGenerator">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="remark-1.0.4.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Remark/Remark">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="MDfromHTMLBase-1.0.4.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MDfromHTMLBase/MDfromHTMLBase">
             <dependency-type>uses</dependency-type>
         </dependent-module>
