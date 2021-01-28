@@ -435,7 +435,7 @@ public class ExtractHTMLJSON {
       }
 
       try {
-         _filters = MDfromHTMLUtils.loadTextFile(_inputPath+"RejectStrings.txt");
+         _filters = MDfromHTMLUtils.loadTextFile(_inputPath+File.separator+"RejectStrings.txt");
          // rewrite filters in lowercase
          List<String> newFilters = new ArrayList<String>();
          for (String filter : _filters) {
