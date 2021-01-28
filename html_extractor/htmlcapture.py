@@ -21,6 +21,15 @@
 # */
 
 import os
+
+// added below for workaround from https://github.com/jarus/flask-testing/issues/143
+try:
+    from flask_restplus import Resource, Api
+except ImportError:
+    import werkzeug
+    werkzeug.cached_property = werkzeug.utils.cached_property
+    from flask_restplus import Resource, Api
+
 from webapp import app
 from webapp.routes import warmup
 
