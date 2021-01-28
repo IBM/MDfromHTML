@@ -22,7 +22,7 @@
 
 import os
 
-// added below for workaround from https://github.com/jarus/flask-testing/issues/143
+# added below for workaround from https://github.com/jarus/flask-testing/issues/143
 try:
     from flask_restplus import Resource, Api
 except ImportError:
