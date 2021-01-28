@@ -44,7 +44,7 @@ Web app ready to be launched!
 ```
 2. Call the API
 ```bash
-curl -X GET "http://0.0.0.0:5000/APIs/get_generic_content?url=https://example.com" -H "accept: application/json"
+curl -X GET "http://localhost:5000/api/get_generic_content?url=https://example.com" -H "accept: application/json"
 ```
 3. Sample response
 ```json
@@ -54,10 +54,10 @@ curl -X GET "http://0.0.0.0:5000/APIs/get_generic_content?url=https://example.co
 "captureDate": "2020/05/27", 
 "caputreTime": "16:48:58", 
 "captureUtility": "https://github.com/IBM/MDfromHTML/html_capture", 
-"captureDict": {
+"captureArray": [{
   "url": "https://example.com", 
   "html": "<html><body><h1>Example website</h1>\n <p>\nSample content.</p></body></html>", 
   "content": "Example website\n \nSample content." 
-  }
+  }]
 }
 ```
