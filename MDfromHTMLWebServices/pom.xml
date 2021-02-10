@@ -68,21 +68,21 @@
 		<dependency>
 			<groupId>net.wasdev.maven.tools.targets</groupId>
 			<artifactId>liberty-target</artifactId>
-			<version>19.0.0.12</version>
+			<version>20.0.0.9</version>
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.wasdev.maven.tools.targets</groupId>
 			<artifactId>liberty-apis</artifactId>
-			<version>19.0.0.12</version>
+			<version>20.0.0.9</version>
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.wasdev.maven.tools.targets</groupId>
 			<artifactId>liberty-spis</artifactId>
-			<version>19.0.0.12</version>
+			<version>20.0.0.9</version>
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
