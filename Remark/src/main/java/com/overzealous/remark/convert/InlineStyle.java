@@ -281,7 +281,7 @@ public class InlineStyle extends AbstractNodeHandler {
       String level) {
       boolean blockExists = false;
       for (final Element child : node.children()) {
-         blockExists = child.isBlock() || checkInnerBlock(child, aw, level);
+         blockExists = child.isBlock() || checkInnerBlock(child, aw, level) || child.equals(node);
          if (blockExists) {
             break;
          }

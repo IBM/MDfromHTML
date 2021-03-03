@@ -2,9 +2,69 @@
    "HTMLFilters": {
       "*": {
          ":all": {
+            "aria-hidden": [
+               "true"
+            ],
+            "class": [
+               "hidden",
+               "sidebar",
+               "footer",
+               "hide",
+               "comment",
+               "navigation",
+               "adlink",
+               "adsbygoogle",
+               "-ad",
+               "_ad",
+               "rating",
+               "modal",
+               "popover",
+               "history",
+               "top-nav",
+               "menu",
+               "infobox",
+               "slidein",
+               "poll",
+               "screen-reader-text"
+            ],
+            "id": [
+               "header",
+               "footer",
+               "sidebar",
+               "cookie",
+               "comment",
+               "tweets",
+               "floating",
+               "right_column",
+               "respond",
+               "breadcrumb",
+               "menu",
+               "clear",
+               "wm-ipp"
+            ],
+            "input": [
+               "hidden"
+            ],
+            "role": [
+               "navigation",
+               "region"
+            ],
+            "style": [
+               "display:none",
+               "display: none"
+            ],
+            "type": [
+               "hidden"
+            ],
+            "ul": [
+               "breadcrumb"
+            ]
          },
-         ":seek_headers": false,
          ":tagnames": [
+            "header",
+            "footer",
+            "sidebar",
+            "noscript"
          ]
       },
       "www.ibm.com": {
@@ -19,56 +79,51 @@
 
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-card\"><\/div>",
    "level": "1.1",
    "md": ""
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-card__content\"><\/div>",
    "level": "1.1.1",
    "md": ""
 },
 {
-   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div style=\"display: none;\"><\/div>",
+   "filterReason": "attribute: \"style\" value: \"display: none;\" contains filter: \"*~:all~style~display: none\"",
+   "html": "<div id=\"dBlue-keyword\" style=\"display: none;\"><\/div>",
    "level": "1.1.1.1",
    "md": ""
 },
 {
-   "html": "<div style=\"display: none;\">\n ptf; fixpack; fix pack; fixpacks; fix; service pack; fixes; upgrade\n<\/div>",
-   "level": "1.1.1.1^1",
-   "md": "ptf; fixpack; fix pack; fixpacks; fix; service pack; fixes; upgrade"
-},
-{
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-container ibm-alternate\"><\/div>",
    "level": "1.1.1.2",
    "md": ""
 },
 {
-   "html": "<h2>Downloadable files<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Downloadable files<\/h2>",
    "level": "1.1.1.2.1^1",
    "md": "Downloadable files"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.1",
    "md": "## Downloadable files ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-container-body\"><\/div>",
    "level": "1.1.1.2.2",
    "md": ""
 },
 {
-   "html": "<h2>Abstract<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Abstract<\/h2>",
    "level": "1.1.1.2.2.2^1",
    "md": "Abstract"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.2",
    "md": "## Abstract ##"
 },
@@ -78,18 +133,18 @@
    "md": "Fix for IBM Rational Developer for z Systems 9\\.5\\.1\\.5 Host Utilities (FMID HAKG951)\\."
 },
 {
-   "html": "<h2>Download Description<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Download Description<\/h2>",
    "level": "1.1.1.2.2.4^1",
    "md": "Download Description"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.4",
    "md": "## Download Description ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.2.5",
    "md": ""
 },
@@ -100,7 +155,7 @@
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"dblue-table-container\"><\/div>",
    "level": "1.1.1.2.2.5.3",
    "md": ""
 },
@@ -125,22 +180,22 @@
    "md": "Description"
 },
 {
-   "html": "<ul><\/ul>",
+   "html": "<ul class=\"ibm-link-list\"><\/ul>",
    "level": "1.1.1.2.2.5.3.1.3.1.1",
    "md": " *  "
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#DNLD\" rel=\"nofollow\">Download package<\/a>",
+   "html": "<a class=\"ibm-anchor-down-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#DNLD\" rel=\"nofollow\">Download package<\/a>",
    "level": "1.1.1.2.2.5.3.1.3.1.1.1.1^1",
    "md": "Download package"
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#DNLD\" rel=\"nofollow\"><\/a>",
+   "html": "<a class=\"ibm-anchor-down-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#DNLD\" rel=\"nofollow\"><\/a>",
    "level": "1.1.1.2.2.5.3.1.3.1.1.1.1",
    "md": "[Download package][]"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.5.3.1.3.1~1",
    "md": " *  [Download package][]"
 },
@@ -176,22 +231,22 @@
    "md": "The **Download package** section provides the direct link to obtain the download package for installation in your environment\\."
 },
 {
-   "html": "<ul><\/ul>",
+   "html": "<ul class=\"ibm-link-list\"><\/ul>",
    "level": "1.1.1.2.2.5.3.1.3.2.1",
    "md": " *  "
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#INSTALL\" rel=\"nofollow\">Installation instructions<\/a>",
+   "html": "<a class=\"ibm-anchor-down-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#INSTALL\" rel=\"nofollow\">Installation instructions<\/a>",
    "level": "1.1.1.2.2.5.3.1.3.2.1.1.1^1",
    "md": "Installation instructions"
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#INSTALL\" rel=\"nofollow\"><\/a>",
+   "html": "<a class=\"ibm-anchor-down-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#INSTALL\" rel=\"nofollow\"><\/a>",
    "level": "1.1.1.2.2.5.3.1.3.2.1.1.1",
    "md": "[Installation instructions][]"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.5.3.1.3.2~1",
    "md": " *  [Installation instructions][]"
 },
@@ -228,7 +283,7 @@
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"dblue-table-container\"><\/div>",
    "level": "1.1.1.2.2.5.5",
    "md": ""
 },
@@ -253,22 +308,22 @@
    "md": "Description"
 },
 {
-   "html": "<ul><\/ul>",
+   "html": "<ul class=\"ibm-link-list\"><\/ul>",
    "level": "1.1.1.2.2.5.5.1.3.1.1",
    "md": " *  "
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=GI13-2864-02\" rel=\"nofollow\">Program Directory<\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=GI13-2864-02\" rel=\"nofollow\">Program Directory<\/a>",
    "level": "1.1.1.2.2.5.5.1.3.1.1.1.1^1",
    "md": "Program Directory"
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=GI13-2864-02\" rel=\"nofollow\"><\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=GI13-2864-02\" rel=\"nofollow\"><\/a>",
    "level": "1.1.1.2.2.5.5.1.3.1.1.1.1",
    "md": "[Program Directory][]"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.5.5.1.3.1~1",
    "md": " *  [Program Directory][]"
 },
@@ -289,22 +344,22 @@
    "md": "Click to open the Program Directory\\."
 },
 {
-   "html": "<ul><\/ul>",
+   "html": "<ul class=\"ibm-link-list\"><\/ul>",
    "level": "1.1.1.2.2.5.5.1.3.2.1",
    "md": " *  "
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=SC23-7658-12\" rel=\"nofollow\">Host Configuration Guide<\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=SC23-7658-12\" rel=\"nofollow\">Host Configuration Guide<\/a>",
    "level": "1.1.1.2.2.5.5.1.3.2.1.1.1^1",
    "md": "Host Configuration Guide"
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=SC23-7658-12\" rel=\"nofollow\"><\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/e-business\/linkweb\/publications\/servlet\/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=SC23-7658-12\" rel=\"nofollow\"><\/a>",
    "level": "1.1.1.2.2.5.5.1.3.2.1.1.1",
    "md": "[Host Configuration Guide][]"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.5.5.1.3.2~1",
    "md": " *  [Host Configuration Guide][]"
 },
@@ -325,22 +380,22 @@
    "md": "Click to open the Host Configuration Guide\\."
 },
 {
-   "html": "<ul><\/ul>",
+   "html": "<ul class=\"ibm-link-list\"><\/ul>",
    "level": "1.1.1.2.2.5.5.1.3.3.1",
    "md": " *  "
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/knowledgecenter\/SSQ2R2\/rdz_welcome.html\" rel=\"nofollow\">IBM Knowledge Center<\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/support\/knowledgecenter\/SSQ2R2\/rdz_welcome.html\" rel=\"nofollow\">IBM Knowledge Center<\/a>",
    "level": "1.1.1.2.2.5.5.1.3.3.1.1.1^1",
    "md": "IBM Knowledge Center"
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/knowledgecenter\/SSQ2R2\/rdz_welcome.html\" rel=\"nofollow\"><\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/support\/knowledgecenter\/SSQ2R2\/rdz_welcome.html\" rel=\"nofollow\"><\/a>",
    "level": "1.1.1.2.2.5.5.1.3.3.1.1.1",
    "md": "[IBM Knowledge Center][]"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.5.5.1.3.3~1",
    "md": " *  [IBM Knowledge Center][]"
 },
@@ -361,22 +416,22 @@
    "md": "IBM Knowledge Center provides an entry point to product documentation\\. You can view, browse, and search online information related to the product\\."
 },
 {
-   "html": "<ul><\/ul>",
+   "html": "<ul class=\"ibm-link-list\"><\/ul>",
    "level": "1.1.1.2.2.5.5.1.3.4.1",
    "md": " *  "
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/software\/rational\/products\/developer\/systemz\/library\/\" rel=\"nofollow\">Documentation Library<\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/software\/rational\/products\/developer\/systemz\/library\/\" rel=\"nofollow\">Documentation Library<\/a>",
    "level": "1.1.1.2.2.5.5.1.3.4.1.1.1^1",
    "md": "Documentation Library"
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/software\/rational\/products\/developer\/systemz\/library\/\" rel=\"nofollow\"><\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/software\/rational\/products\/developer\/systemz\/library\/\" rel=\"nofollow\"><\/a>",
    "level": "1.1.1.2.2.5.5.1.3.4.1.1.1",
    "md": "[Documentation Library][]"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.5.5.1.3.4~1",
    "md": " *  [Documentation Library][]"
 },
@@ -397,22 +452,22 @@
    "md": "Click to review the documentation library\\."
 },
 {
-   "html": "<ul><\/ul>",
+   "html": "<ul class=\"ibm-link-list\"><\/ul>",
    "level": "1.1.1.2.2.5.5.1.3.5.1",
    "md": " *  "
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg27036693\" rel=\"nofollow\">Fix List<\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg27036693\" rel=\"nofollow\">Fix List<\/a>",
    "level": "1.1.1.2.2.5.5.1.3.5.1.1.1^1",
    "md": "Fix List"
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg27036693\" rel=\"nofollow\"><\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg27036693\" rel=\"nofollow\"><\/a>",
    "level": "1.1.1.2.2.5.5.1.3.5.1.1.1",
    "md": "[Fix List][]"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.5.5.1.3.5~1",
    "md": " *  [Fix List][]"
 },
@@ -433,22 +488,22 @@
    "md": "Click to review a complete list of the defects (APARs) resolved in this release including a list of resolved defects for the entire version family\\."
 },
 {
-   "html": "<ul><\/ul>",
+   "html": "<ul class=\"ibm-link-list\"><\/ul>",
    "level": "1.1.1.2.2.5.5.1.3.6.1",
    "md": " *  "
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043583\" rel=\"nofollow\">Client component<\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043583\" rel=\"nofollow\">Client component<\/a>",
    "level": "1.1.1.2.2.5.5.1.3.6.1.1.1^1",
    "md": "Client component"
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043583\" rel=\"nofollow\"><\/a>",
+   "html": "<a class=\"ibm-forward-em-link ibm-inlinelink\" href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043583\" rel=\"nofollow\"><\/a>",
    "level": "1.1.1.2.2.5.5.1.3.6.1.1.1",
    "md": "[Client component][]"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.5.5.1.3.6~1",
    "md": " *  [Client component][]"
 },
@@ -469,24 +524,24 @@
    "md": "Click to review the download information for the Rational Developer for System z client component\\."
 },
 {
-   "html": "<h2>Installation Instructions<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Installation Instructions<\/h2>",
    "level": "1.1.1.2.2.6^1",
    "md": "Installation Instructions"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.6",
    "md": "## Installation Instructions ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.2.7",
    "md": ""
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"dblue-table-container\"><\/div>",
    "level": "1.1.1.2.2.8",
    "md": ""
 },
@@ -531,7 +586,7 @@
    "md": "[Installation Instructions ][Installation Instructions]"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.8.1.2.1~1",
    "md": "[Installation Instructions ][Installation Instructions]"
 },
@@ -556,18 +611,18 @@
    "md": "12041"
 },
 {
-   "html": "<h2>Download package<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Download package<\/h2>",
    "level": "1.1.1.2.2.10^1",
    "md": "Download package"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.10",
    "md": "## Download package ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.2.11",
    "md": ""
 },
@@ -658,7 +713,7 @@
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"dblue-table-container\"><\/div>",
    "level": "1.1.1.2.2.13",
    "md": ""
 },
@@ -723,12 +778,12 @@
    "md": "Download Options [What is Fix Central(FC)?][What is Fix Central_FC]"
 },
 {
-   "html": "<th>PTFs UI46693 UI46694 UI46695 and UI46696<\/th>",
+   "html": "<th class=\"ibm-table-row\">PTFs UI46693 UI46694 UI46695 and UI46696<\/th>",
    "level": "1.1.1.2.2.13.1.2.1^1",
    "md": "PTFs UI46693 UI46694 UI46695 and UI46696"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.13.1.2.1~1",
    "md": "PTFs UI46693 UI46694 UI46695 and UI46696"
 },
@@ -778,59 +833,59 @@
    "md": "[FC][]"
 },
 {
-   "html": "<h2>Technical support<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Technical support<\/h2>",
    "level": "1.1.1.2.2.15^1",
    "md": "Technical support"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.15",
    "md": "## Technical support ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-container ibm-graphic-tabs\"><\/div>",
    "level": "1.1.1.2.2.17",
    "md": ""
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-tab-section\"><\/div>",
    "level": "1.1.1.2.2.17.1",
    "md": ""
 },
 {
-   "html": "<h2>Tab navigation<\/h2>",
+   "html": "<h2 class=\"ibm-access ibm-h4 ibm-bold\">Tab navigation<\/h2>",
    "level": "1.1.1.2.2.17.1.1^1",
    "md": "Tab navigation"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\"ibm-access ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.17.1.1",
    "md": "## Tab navigation ##"
 },
 {
-   "html": "<ul><\/ul>",
+   "html": "<ul class=\"ibm-tabs\" role=\"tablist\"><\/ul>",
    "level": "1.1.1.2.2.17.1.2",
    "md": " *  "
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602\" rel=\"nofollow\">General Support Information<\/a>",
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602\" role=\"tab\" rel=\"nofollow\">General Support Information<\/a>",
    "level": "1.1.1.2.2.17.1.2.1.1^1",
    "md": "General Support Information"
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602\" rel=\"nofollow\"><\/a>",
+   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602\" role=\"tab\" rel=\"nofollow\"><\/a>",
    "level": "1.1.1.2.2.17.1.2.1.1",
    "md": "[General Support Information][]"
 },
 {
-   "html": "<span>- selected tab,<\/span>",
+   "html": "<span class=\"ibm-access\">- selected tab,<\/span>",
    "level": "1.1.1.2.2.17.1.2.1.2^1",
    "md": "\\- selected tab,"
 },
 {
-   "html": "<ul><\/ul>",
+   "html": "<ul class=\"ibm-tabs\" role=\"tablist\"><\/ul>",
    "level": "1.1.1.2.2.17.1.2",
    "md": " *  "
 },
@@ -845,13 +900,13 @@
    "md": "[Support Resources][]"
 },
 {
-   "html": "<span>- selected tab,<\/span>",
+   "html": "<span class=\"ibm-access\">- selected tab,<\/span>",
    "level": "1.1.1.2.2.17.1.2.2.2^1",
    "md": "\\- selected tab,"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-alternate-rule-two\"><\/div>",
    "level": "1.1.1.2.2.17.1.3",
    "md": ""
 },
@@ -862,13 +917,13 @@
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-container-body\"><\/div>",
    "level": "1.1.1.2.2.17.1.4",
    "md": ""
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"dblue-table-container\"><\/div>",
    "level": "1.1.1.2.2.17.1.4.1",
    "md": ""
 },
@@ -985,12 +1040,12 @@
    "md": ""
 },
 {
-   "html": "<h2>Helpful Hints For Obtaining Technical Assistance:<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Helpful Hints For Obtaining Technical Assistance:<\/h2>",
    "level": "1.1.1.2.2.17.1.4.1.1.1.1.4^1",
    "md": "Helpful Hints For Obtaining Technical Assistance:"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.17.1.4.1.1.1.1.4",
    "md": "## Helpful Hints For Obtaining Technical Assistance: ##"
 },
@@ -1169,43 +1224,34 @@
    "md": "*Follow IBM Rational Client Support on [**Twitter**][Twitter] \\| [**Facebook**][Facebook] \\| [**YouTube**][YouTube] \\| [**devWorks Blog**][devWorks Blog]*"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.2.17.1.4.1.1.1.1~1",
    "md": "**IBM Rational Software Support Communities**   *  Visit the [IBM Support Portal][] to configure your support portal experience and review FAQs, lists of known problems, fixes, and a wealth of important support information\\.            *  Visit [developerWorks][] to access an online collection of tutorials, sample code, standards, forums and other resources provided by experts at IBM to assist software developers using Rational tools including access to the [IBM RFE Community][]\\.            *  Visit the [Jazz Community][] if you use a Rational product created using the Jazz platform to interact directly with the Jazz development team and other community members, download product trials and betas and track developement progress\\.  ## Helpful Hints For Obtaining Technical Assistance: ##  Before you contact IBM Rational Software Support, gather the background information that you need to describe the problem\\. When you describe a problem to an IBM software support specialist, be as specific as possible and include all relevant background information so that the specialist can help you solve the problem efficiently\\. To save time, know the answers to these questions:   *  What software versions were you running when the problem occurred?  *  Do you have logs, traces, or messages that are related to the problem?  *  Can you reproduce the problem? If so, what steps do you take to reproduce it?  *  Is there a workaround for the problem? If so, be prepared to describe the workaround\\.  If you have helpful information to diagnose or identify the problem on your system, you can provide this data by following the instructions to [exchange information with IBM Technical Support][]\\.  *Follow IBM Rational Client Support on [**Twitter**][Twitter] \\| [**Facebook**][Facebook] \\| [**YouTube**][YouTube] \\| [**devWorks Blog**][devWorks Blog]*"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"BackTopLink\"><\/div>",
    "level": "1.1.1.2.3",
    "md": ""
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#ibm-content\" rel=\"nofollow\">Back to top<\/a>",
+   "html": "<a class=\"ibm-anchor-up-link\" href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#ibm-content\" rel=\"nofollow\">Back to top<\/a>",
    "level": "1.1.1.2.3.1.1^1",
    "md": "Back to top"
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#ibm-content\" rel=\"nofollow\"><\/a>",
+   "html": "<a class=\"ibm-anchor-up-link\" href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602#ibm-content\" rel=\"nofollow\"><\/a>",
    "level": "1.1.1.2.3.1.1",
    "md": "[Back to top][]"
 },
 {
-   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602&amp;aid=1\" alt=\"\">",
-   "level": "1.1.1.2.3.2.1.1.1",
-   "md": "![docview.wss_uid_swg24043602_aid_1][]"
+   "filterReason": "attribute: \"style\" value: \"position:relative; display:none; \" contains filter: \"*~:all~style~display:none\"",
+   "html": "<span id=\"cSec\" style=\"position:relative; display:none; \"><\/span>",
+   "level": "1.1.1.2.3.2.1",
+   "md": ""
 },
 {
-   "html": "<b>Problems (APARS) fixed<\/b>",
-   "level": "1.1.1.2.3.2.1.1.2^1",
-   "md": "Problems (APARS) fixed"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.3.2.1.1.2",
-   "md": "**Problems (APARS) fixed**"
-},
-{
-   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602&amp;aid=2\" alt=\"\">",
+   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602&amp;aid=2\" alt=\"\" class=\" ibm-downsize\">",
    "level": "1.1.1.2.3.2.2.1.1",
    "md": "![docview.wss_uid_swg24043602_aid_2][]"
 },
@@ -1220,19 +1266,19 @@
    "md": "**Problems (APARS) fixed**"
 },
 {
-   "html": "<span style=\"position:relative\"> <a rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602&amp;aid=2\" alt=\"\"><b>Problems (APARS) fixed<\/b><\/a><br>  PI77627, PI77638, PI77645, PI77654, PI74771, PI74772, PI74773, PI74774 <\/span>",
+   "html": "<span id=\"xSec\" style=\"position:relative\"> <a rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg24043602&amp;aid=2\" alt=\"\" class=\" ibm-downsize\"><b>Problems (APARS) fixed<\/b><\/a><br>  PI77627, PI77638, PI77645, PI77654, PI74771, PI74772, PI74773, PI74774 <\/span>",
    "level": "1.1.1.2.3.2.2^1",
    "md": "PI77627, PI77638, PI77645, PI77654, PI74771, PI74772, PI74773, PI74774 "
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div id=\"com.dblue.docview.dwAnswers.questions\"><\/div>",
    "level": "1.2",
    "md": ""
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div id=\"com.dblue.docview.dwAnswers.answers\"><\/div>",
    "level": "1.2.1",
    "md": ""
 }

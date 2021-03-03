@@ -321,7 +321,7 @@ public class ExtractHTMLJSON {
          result = !(captureArray.size() > 0);
       } else {
          String reason = "Filter: Content at " + _fileCounter
-                  + " does not have a captureArray.";
+                  + " does not have a captureArray. message: "+jsonObj.get("message");
          JSONObject rejected = new JSONObject();
          rejected.put("reason",reason);
          rejectedURLs.add(rejected);

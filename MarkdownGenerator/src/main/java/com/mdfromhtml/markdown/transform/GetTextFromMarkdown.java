@@ -82,9 +82,13 @@ public class GetTextFromMarkdown {
                   FileSystems.getDefault().getPath(pgm._inputPath.toString()),
                   pgm._ext);
                for (Path file : files) {
-                  exitVal = pgm.doWork(file);
-                  if (exitVal != 0) {
-                     break;
+                  try {
+                     exitVal = pgm.doWork(file);
+                     if (exitVal != 0) {
+                        break;
+                     }
+                  } catch (Exception e) {
+                     e.printStackTrace();
                   }
                }
             } catch (Exception e) {

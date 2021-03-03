@@ -2,9 +2,69 @@
    "HTMLFilters": {
       "*": {
          ":all": {
+            "aria-hidden": [
+               "true"
+            ],
+            "class": [
+               "hidden",
+               "sidebar",
+               "footer",
+               "hide",
+               "comment",
+               "navigation",
+               "adlink",
+               "adsbygoogle",
+               "-ad",
+               "_ad",
+               "rating",
+               "modal",
+               "popover",
+               "history",
+               "top-nav",
+               "menu",
+               "infobox",
+               "slidein",
+               "poll",
+               "screen-reader-text"
+            ],
+            "id": [
+               "header",
+               "footer",
+               "sidebar",
+               "cookie",
+               "comment",
+               "tweets",
+               "floating",
+               "right_column",
+               "respond",
+               "breadcrumb",
+               "menu",
+               "clear",
+               "wm-ipp"
+            ],
+            "input": [
+               "hidden"
+            ],
+            "role": [
+               "navigation",
+               "region"
+            ],
+            "style": [
+               "display:none",
+               "display: none"
+            ],
+            "type": [
+               "hidden"
+            ],
+            "ul": [
+               "breadcrumb"
+            ]
          },
-         ":seek_headers": false,
          ":tagnames": [
+            "header",
+            "footer",
+            "sidebar",
+            "noscript"
          ]
       },
       "www.ibm.com": {
@@ -19,56 +79,51 @@
 
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-card\"><\/div>",
    "level": "1.1",
    "md": ""
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-card__content\"><\/div>",
    "level": "1.1.1",
    "md": ""
 },
 {
-   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div style=\"display: none;\"><\/div>",
+   "filterReason": "attribute: \"style\" value: \"display: none;\" contains filter: \"*~:all~style~display: none\"",
+   "html": "<div id=\"dBlue-keyword\" style=\"display: none;\"><\/div>",
    "level": "1.1.1.1",
    "md": ""
 },
 {
-   "html": "<div style=\"display: none;\">\n odbc trace MustGather; MGDB ; MGOD; MustGatherDocument\n<\/div>",
-   "level": "1.1.1.1^1",
-   "md": "odbc trace MustGather; MGDB ; MGOD; MustGatherDocument"
-},
-{
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-container ibm-alternate\"><\/div>",
    "level": "1.1.1.2",
    "md": ""
 },
 {
-   "html": "<h2>Technote (troubleshooting)<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Technote (troubleshooting)<\/h2>",
    "level": "1.1.1.2.1^1",
    "md": "Technote (troubleshooting)"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.1",
    "md": "## Technote (troubleshooting) ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-container-body\"><\/div>",
    "level": "1.1.1.2.2",
    "md": ""
 },
 {
-   "html": "<h2>Problem(Abstract)<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Problem(Abstract)<\/h2>",
    "level": "1.1.1.2.2.2^1",
    "md": "Problem(Abstract)"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.2",
    "md": "## Problem(Abstract) ##"
 },
@@ -78,881 +133,48 @@
    "md": "This procedure is typically run to track down problems in IBM Integration Bus (IIB) or Websphere Message Broker (WMB) with database connectivity such as user access and dropped database connections\\. Gathering this information before calling IBM Support will help familiarize you with the troubleshooting process and save you time\\."
 },
 {
-   "html": "<h2>Resolving the problem<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Resolving the problem<\/h2>",
    "level": "1.1.1.2.2.4^1",
    "md": "Resolving the problem"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.4",
    "md": "## Resolving the problem ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.2.5",
    "md": ""
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"dblue-table-container\"><\/div>",
    "level": "1.1.1.2.2.5.2",
    "md": ""
 },
 {
-   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "filterReason": "attribute: \"class\" value: \"ibm-show-hide\" contains filter: \"*~:all~class~hide\"",
+   "html": "<div class=\"ibm-show-hide\"><\/div>",
    "level": "1.1.1.2.2.5.2.1.1.1.2",
    "md": ""
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21177048#\" rel=\"nofollow\">Trace instructions for Windows\/UNIXes<\/a>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.1.1^1",
-   "md": "Trace instructions for Windows\/UNIXes"
-},
-{
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21177048#\" rel=\"nofollow\"><\/a>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.1.1",
-   "md": "[Trace instructions for Windows\/UNIXes][Trace instructions for Windows_UNIXes]"
-},
-{
-   "html": "<h2><\/h2>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.1",
-   "md": "## [Trace instructions for Windows\/UNIXes][Trace instructions for Windows_UNIXes] ##"
-},
-{
-   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2",
-   "md": ""
-},
-{
-   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1",
-   "md": ""
-},
-{
-   "html": "<b>Windows<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.2^1",
-   "md": "Windows"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.2",
-   "md": "**Windows**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^1",
-   "md": "1) Use the "
-},
-{
-   "html": "<b>Tracing<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.4^1",
-   "md": "Tracing"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.4",
-   "md": "**Tracing**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^2",
-   "md": " tab of the ODBC function, as follows:"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^3",
-   "md": "2) "
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^4",
-   "md": "Click "
-},
-{
-   "html": "<b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.7^1",
-   "md": " Start &gt; Settings &gt; Control Panel &gt; Administrative Tools"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.7",
-   "md": " **Start &gt; Settings &gt; Control Panel &gt; Administrative Tools**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^5",
-   "md": "\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^6",
-   "md": "3) Double\\-click "
-},
-{
-   "html": "<b>Data Sources<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.9^1",
-   "md": "Data Sources"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.9",
-   "md": "**Data Sources**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^7",
-   "md": "\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^8",
-   "md": "4) Select the "
-},
-{
-   "html": "<b>Tracing<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.11^1",
-   "md": "Tracing"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.11",
-   "md": "**Tracing**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^9",
-   "md": " tab\\. The "
-},
-{
-   "html": "<b>Log File Path<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.12^1",
-   "md": "Log File Path"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.12",
-   "md": "**Log File Path**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^10",
-   "md": " displays the default path and file name (\/sql\\.log) trace information is written to\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^11",
-   "md": "5) Click the "
-},
-{
-   "html": "<b>Start Tracing Now<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.14^1",
-   "md": "Start Tracing Now"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.14",
-   "md": "**Start Tracing Now**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^12",
-   "md": " button\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^13",
-   "md": "6) Click "
-},
-{
-   "html": "<b>OK<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.16^1",
-   "md": "OK"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.16",
-   "md": "**OK**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^14",
-   "md": "\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^15",
-   "md": "7) To stop ODBC tracing, go to the same panel and click the "
-},
-{
-   "html": "<b> Stop Tracing Now <\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.18^1",
-   "md": " Stop Tracing Now "
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.18",
-   "md": " **Stop Tracing Now** "
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^16",
-   "md": "button, then click "
-},
-{
-   "html": "<b>OK<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.19^1",
-   "md": "OK"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.19",
-   "md": "**OK**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^17",
-   "md": "\\."
-},
-{
-   "html": "<b>UNIX<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.22^1",
-   "md": "UNIX"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.22",
-   "md": "**UNIX**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^18",
-   "md": "For WMB V7"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^19",
-   "md": "1) Edit the "
-},
-{
-   "html": "<b>odbc.ini<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.25^1",
-   "md": "odbc\\.ini"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.25",
-   "md": "**odbc\\.ini**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^20",
-   "md": " (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7):"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^21",
-   "md": "2) Under the stanza entry "
-},
-{
-   "html": "<b>[ODBC]<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.27^1",
-   "md": "\\[ODBC\\]"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.27",
-   "md": "**\\[ODBC\\]**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^22",
-   "md": " change "
-},
-{
-   "html": "<b>Trace=0<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.28^1",
-   "md": "Trace=0"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.28",
-   "md": "**Trace=0**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^23",
-   "md": " to "
-},
-{
-   "html": "<b>Trace=1<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.29^1",
-   "md": "Trace=1"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.29",
-   "md": "**Trace=1**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^24",
-   "md": "3) Enable timestamp in the ODBC trace by setting "
-},
-{
-   "html": "<b>TraceOptions=3<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.31^1",
-   "md": "TraceOptions=3"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.31",
-   "md": "**TraceOptions=3**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^25",
-   "md": " in the odbc\\.ini file"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^26",
-   "md": "4) Optionally, modify the "
-},
-{
-   "html": "<b>TraceFile<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.33^1",
-   "md": "TraceFile"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.33",
-   "md": "**TraceFile**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^27",
-   "md": " file path value to a preferred value\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^28",
-   "md": "5) Restart the broker\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^29",
-   "md": "All trace records go to one file, which can be confusing with multiple flows or execution groups\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^30",
-   "md": "Disable the trace by changing "
-},
-{
-   "html": "<b>Trace=0<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.38^1",
-   "md": "Trace=0"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.38",
-   "md": "**Trace=0**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^31",
-   "md": " to "
-},
-{
-   "html": "<b>Trace=1<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.39^1",
-   "md": "Trace=1"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.39",
-   "md": "**Trace=1**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^32",
-   "md": " in the odbc\\.ini file and restart the broker"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^33",
-   "md": "For WMB V8 and IIB V9"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^34",
-   "md": "1) Edit the "
-},
-{
-   "html": "<b>odbcinst.ini<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.43^1",
-   "md": "odbcinst\\.ini"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.43",
-   "md": "**odbcinst\\.ini**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^35",
-   "md": " file to initiate trace for ODBC activity (look for environment variable "
-},
-{
-   "html": "<b>ODBCINI<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.44^1",
-   "md": "ODBCINI"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.44",
-   "md": "**ODBCINI**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^36",
-   "md": " and "
-},
-{
-   "html": "<b>ODBSYSINI<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.45^1",
-   "md": "ODBSYSINI"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.45",
-   "md": "**ODBSYSINI**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^37",
-   "md": "):"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^38",
-   "md": "2) Under the stanza entry "
-},
-{
-   "html": "<b>[ODBC]<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.47^1",
-   "md": "\\[ODBC\\]"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.47",
-   "md": "**\\[ODBC\\]**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^39",
-   "md": " change "
-},
-{
-   "html": "<b>Trace=no<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.48^1",
-   "md": "Trace=no"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.48",
-   "md": "**Trace=no**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^40",
-   "md": " to "
-},
-{
-   "html": "<b>Trace=yes<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.49^1",
-   "md": "Trace=yes"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.49",
-   "md": "**Trace=yes**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^41",
-   "md": "3) Enable timestamp in the ODBC trace by setting "
-},
-{
-   "html": "<b>TraceOptions=3<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.51^1",
-   "md": "TraceOptions=3"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.51",
-   "md": "**TraceOptions=3**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^42",
-   "md": " in the odbc\\.ini file"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^43",
-   "md": "4) Optionally, modify the "
-},
-{
-   "html": "<b>TraceFile<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.53^1",
-   "md": "TraceFile"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.53",
-   "md": "**TraceFile**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^44",
-   "md": " file path value to a preferred value\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^45",
-   "md": "5) Restart the broker\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^46",
-   "md": "All trace records go to one file, which can be confusing with multiple flows or execution groups\\."
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^47",
-   "md": "Disable the trace by changing "
-},
-{
-   "html": "<b>Trace=yes<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.58^1",
-   "md": "Trace=yes"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.58",
-   "md": "**Trace=yes**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^48",
-   "md": " to "
-},
-{
-   "html": "<b>Trace=no<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.59^1",
-   "md": "Trace=no"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.59",
-   "md": "**Trace=no**"
-},
-{
-   "html": "<div> \n <br> <b>Windows<\/b> \n <br> 1) Use the <b>Tracing<\/b> tab of the ODBC function, as follows: \n <br> 2) <b> <\/b>Click <b> Start &gt; Settings &gt; Control Panel &gt; Administrative Tools<\/b>. \n <br> 3) Double-click <b>Data Sources<\/b>. \n <br> 4) Select the <b>Tracing<\/b> tab. The <b>Log File Path<\/b> displays the default path and file name (\/sql.log) trace information is written to. \n <br> 5) Click the <b>Start Tracing Now<\/b> button. \n <br> 6) Click <b>OK<\/b>. \n <br> 7) To stop ODBC tracing, go to the same panel and click the <b> Stop Tracing Now <\/b>button, then click <b>OK<\/b>. \n <br> \n <br> <b>UNIX<\/b> \n <br> For WMB V7 \n <br> 1) Edit the <b>odbc.ini<\/b> (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=0<\/b> to <b>Trace=1<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=0<\/b> to <b>Trace=1<\/b> in the odbc.ini file and restart the broker \n <br> \n <br> For WMB V8 and IIB V9 \n <br> 1) Edit the <b>odbcinst.ini<\/b> file to initiate trace for ODBC activity (look for environment variable <b>ODBCINI<\/b> and <b>ODBSYSINI<\/b>): \n <br> 2) Under the stanza entry <b>[ODBC]<\/b> change <b>Trace=no<\/b> to <b>Trace=yes<\/b> \n <br> 3) Enable timestamp in the ODBC trace by setting <b>TraceOptions=3<\/b> in the odbc.ini file \n <br> 4) Optionally, modify the <b>TraceFile<\/b> file path value to a preferred value. \n <br> 5) Restart the broker. \n <br> \n <br> All trace records go to one file, which can be confusing with multiple flows or execution groups. \n <br> Disable the trace by changing <b>Trace=yes<\/b> to <b>Trace=no<\/b> in the odbcinst.ini file and restart the broker \n <br> \n <br> \n <p><b>Note:<\/b> <\/p> \n <ul> \n  <li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li> \n  <li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li> \n  <li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li> \n <\/ul> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1^49",
-   "md": " in the odbcinst\\.ini file and restart the broker"
-},
-{
-   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
-   "html": "<p><\/p>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.62",
-   "md": ""
-},
-{
-   "html": "<b>Note:<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.62.1^1",
-   "md": "Note:"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.62.1",
-   "md": "**Note:**"
-},
-{
-   "html": "<ul><\/ul>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.63",
-   "md": " *  "
-},
-{
-   "html": "<li>Please ensure the path of the trace file is not the IIB installation or working directory. <\/li>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.63.1^1",
-   "md": "Please ensure the path of the trace file is not the IIB installation or working directory\\."
-},
-{
-   "html": "<ul><\/ul>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.63",
-   "md": " *  "
-},
-{
-   "html": "<li>Please ensure that the trace file entry points to a file system that has enough disk space. <\/li>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.63.2^1",
-   "md": "Please ensure that the trace file entry points to a file system that has enough disk space\\."
-},
-{
-   "html": "<ul><\/ul>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.63",
-   "md": " *  "
-},
-{
-   "html": "<li>Please also ensure that the user running the trace has write permissions to the directory where trace file is written. <br> <br> <\/li>",
-   "level": "1.1.1.2.2.5.2.1.1.1.2.2.1.63.3^1",
-   "md": "Please also ensure that the user running the trace has write permissions to the directory where trace file is written\\."
-},
-{
-   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "filterReason": "attribute: \"class\" value: \"ibm-show-hide\" contains filter: \"*~:all~class~hide\"",
+   "html": "<div class=\"ibm-show-hide\"><\/div>",
    "level": "1.1.1.2.2.5.2.1.1.1.3",
    "md": ""
 },
 {
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21177048#\" rel=\"nofollow\">Trace instructions for z\/OS<\/a>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.1.1^1",
-   "md": "Trace instructions for z\/OS"
-},
-{
-   "html": "<a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21177048#\" rel=\"nofollow\"><\/a>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.1.1",
-   "md": "[Trace instructions for z\/OS][Trace instructions for Windows_UNIXes]"
-},
-{
-   "html": "<h2><\/h2>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.1",
-   "md": "## [Trace instructions for z\/OS][Trace instructions for Windows_UNIXes] ##"
-},
-{
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2",
-   "md": ""
-},
-{
-   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1",
-   "md": ""
-},
-{
-   "html": "<div> \n <br> \n <br> 1) Edit the <b>BIPDSNAO<\/b> file in the component dataset and under the stanza entry <b>[COMMON]<\/b>, change <b>APPLTRACE=0<\/b> to <b>APPLTRACE=1<\/b> \n <br> 2) Remove the comment from the <b>COMPDIR<\/b> variable declaration and the <b>APPLTRC DD<\/b> from the steps <b>EGNOENV<\/b> and <b>EGENV<\/b>, in the WebSphere Message Broker started task JCL. \n <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. \n <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p> \n <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p> \n <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1^1",
-   "md": "1) Edit the "
-},
-{
-   "html": "<b>BIPDSNAO<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.3^1",
-   "md": "BIPDSNAO"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.3",
-   "md": "**BIPDSNAO**"
-},
-{
-   "html": "<div> \n <br> \n <br> 1) Edit the <b>BIPDSNAO<\/b> file in the component dataset and under the stanza entry <b>[COMMON]<\/b>, change <b>APPLTRACE=0<\/b> to <b>APPLTRACE=1<\/b> \n <br> 2) Remove the comment from the <b>COMPDIR<\/b> variable declaration and the <b>APPLTRC DD<\/b> from the steps <b>EGNOENV<\/b> and <b>EGENV<\/b>, in the WebSphere Message Broker started task JCL. \n <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. \n <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p> \n <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p> \n <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1^2",
-   "md": " file in the component dataset and under the stanza entry "
-},
-{
-   "html": "<b>[COMMON]<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.4^1",
-   "md": "\\[COMMON\\]"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.4",
-   "md": "**\\[COMMON\\]**"
-},
-{
-   "html": "<div> \n <br> \n <br> 1) Edit the <b>BIPDSNAO<\/b> file in the component dataset and under the stanza entry <b>[COMMON]<\/b>, change <b>APPLTRACE=0<\/b> to <b>APPLTRACE=1<\/b> \n <br> 2) Remove the comment from the <b>COMPDIR<\/b> variable declaration and the <b>APPLTRC DD<\/b> from the steps <b>EGNOENV<\/b> and <b>EGENV<\/b>, in the WebSphere Message Broker started task JCL. \n <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. \n <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p> \n <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p> \n <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1^3",
-   "md": ", change "
-},
-{
-   "html": "<b>APPLTRACE=0<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.5^1",
-   "md": "APPLTRACE=0"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.5",
-   "md": "**APPLTRACE=0**"
-},
-{
-   "html": "<div> \n <br> \n <br> 1) Edit the <b>BIPDSNAO<\/b> file in the component dataset and under the stanza entry <b>[COMMON]<\/b>, change <b>APPLTRACE=0<\/b> to <b>APPLTRACE=1<\/b> \n <br> 2) Remove the comment from the <b>COMPDIR<\/b> variable declaration and the <b>APPLTRC DD<\/b> from the steps <b>EGNOENV<\/b> and <b>EGENV<\/b>, in the WebSphere Message Broker started task JCL. \n <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. \n <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p> \n <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p> \n <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1^4",
-   "md": " to "
-},
-{
-   "html": "<b>APPLTRACE=1<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.6^1",
-   "md": "APPLTRACE=1"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.6",
-   "md": "**APPLTRACE=1**"
-},
-{
-   "html": "<div> \n <br> \n <br> 1) Edit the <b>BIPDSNAO<\/b> file in the component dataset and under the stanza entry <b>[COMMON]<\/b>, change <b>APPLTRACE=0<\/b> to <b>APPLTRACE=1<\/b> \n <br> 2) Remove the comment from the <b>COMPDIR<\/b> variable declaration and the <b>APPLTRC DD<\/b> from the steps <b>EGNOENV<\/b> and <b>EGENV<\/b>, in the WebSphere Message Broker started task JCL. \n <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. \n <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p> \n <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p> \n <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1^5",
-   "md": "2) Remove the comment from the "
-},
-{
-   "html": "<b>COMPDIR<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.8^1",
-   "md": "COMPDIR"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.8",
-   "md": "**COMPDIR**"
-},
-{
-   "html": "<div> \n <br> \n <br> 1) Edit the <b>BIPDSNAO<\/b> file in the component dataset and under the stanza entry <b>[COMMON]<\/b>, change <b>APPLTRACE=0<\/b> to <b>APPLTRACE=1<\/b> \n <br> 2) Remove the comment from the <b>COMPDIR<\/b> variable declaration and the <b>APPLTRC DD<\/b> from the steps <b>EGNOENV<\/b> and <b>EGENV<\/b>, in the WebSphere Message Broker started task JCL. \n <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. \n <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p> \n <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p> \n <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1^6",
-   "md": " variable declaration and the "
-},
-{
-   "html": "<b>APPLTRC DD<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.9^1",
-   "md": "APPLTRC DD"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.9",
-   "md": "**APPLTRC DD**"
-},
-{
-   "html": "<div> \n <br> \n <br> 1) Edit the <b>BIPDSNAO<\/b> file in the component dataset and under the stanza entry <b>[COMMON]<\/b>, change <b>APPLTRACE=0<\/b> to <b>APPLTRACE=1<\/b> \n <br> 2) Remove the comment from the <b>COMPDIR<\/b> variable declaration and the <b>APPLTRC DD<\/b> from the steps <b>EGNOENV<\/b> and <b>EGENV<\/b>, in the WebSphere Message Broker started task JCL. \n <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. \n <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p> \n <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p> \n <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1^7",
-   "md": " from the steps "
-},
-{
-   "html": "<b>EGNOENV<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.10^1",
-   "md": "EGNOENV"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.10",
-   "md": "**EGNOENV**"
-},
-{
-   "html": "<div> \n <br> \n <br> 1) Edit the <b>BIPDSNAO<\/b> file in the component dataset and under the stanza entry <b>[COMMON]<\/b>, change <b>APPLTRACE=0<\/b> to <b>APPLTRACE=1<\/b> \n <br> 2) Remove the comment from the <b>COMPDIR<\/b> variable declaration and the <b>APPLTRC DD<\/b> from the steps <b>EGNOENV<\/b> and <b>EGENV<\/b>, in the WebSphere Message Broker started task JCL. \n <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. \n <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p> \n <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p> \n <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1^8",
-   "md": " and "
-},
-{
-   "html": "<b>EGENV<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.11^1",
-   "md": "EGENV"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.11",
-   "md": "**EGENV**"
-},
-{
-   "html": "<div> \n <br> \n <br> 1) Edit the <b>BIPDSNAO<\/b> file in the component dataset and under the stanza entry <b>[COMMON]<\/b>, change <b>APPLTRACE=0<\/b> to <b>APPLTRACE=1<\/b> \n <br> 2) Remove the comment from the <b>COMPDIR<\/b> variable declaration and the <b>APPLTRC DD<\/b> from the steps <b>EGNOENV<\/b> and <b>EGENV<\/b>, in the WebSphere Message Broker started task JCL. \n <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. \n <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p> \n <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p> \n <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1^9",
-   "md": ", in the WebSphere Message Broker started task JCL\\."
-},
-{
-   "html": "<div> \n <br> \n <br> 1) Edit the <b>BIPDSNAO<\/b> file in the component dataset and under the stanza entry <b>[COMMON]<\/b>, change <b>APPLTRACE=0<\/b> to <b>APPLTRACE=1<\/b> \n <br> 2) Remove the comment from the <b>COMPDIR<\/b> variable declaration and the <b>APPLTRC DD<\/b> from the steps <b>EGNOENV<\/b> and <b>EGENV<\/b>, in the WebSphere Message Broker started task JCL. \n <br> 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL. \n <p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p> \n <p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p> \n <p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p> \n<\/div>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1^10",
-   "md": "3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL\\."
-},
-{
-   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
-   "html": "<p><\/p>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.13",
-   "md": ""
-},
-{
-   "html": "<p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.13^1",
-   "md": "By default, the trace output file is written to "
-},
-{
-   "html": "<b>&lt;component_HFS&gt;\/output\/<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.13.1^1",
-   "md": "&lt;component\\_HFS&gt;\/output\/"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.13.1",
-   "md": "**&lt;component\\_HFS&gt;\/output\/**"
-},
-{
-   "html": "<p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.13^2",
-   "md": ", into a file called "
-},
-{
-   "html": "<b>db2appltrace<\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.13.2^1",
-   "md": "db2appltrace"
-},
-{
-   "html": "<b><\/b>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.13.2",
-   "md": "**db2appltrace**"
-},
-{
-   "html": "<p>By default, the trace output file is written to <b>&lt;component_HFS&gt;\/output\/<\/b>, into a file called <b>db2appltrace<\/b>.. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace. <\/p>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.13^3",
-   "md": "\\.\\. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace\\."
-},
-{
-   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
-   "html": "<p><\/p>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.14",
-   "md": ""
-},
-{
-   "html": "<p>This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG. <\/p>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.14^1",
-   "md": "This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG\\."
-},
-{
-   "filterReason": "tag: \"p\" has no specific processing so reviewing its children.",
-   "html": "<p><\/p>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.15",
-   "md": ""
-},
-{
-   "html": "<p>If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value. <br> <br> <\/p>",
-   "level": "1.1.1.2.2.5.2.1.1.1.3.2.1.15^1",
-   "md": "If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value\\."
-},
-{
-   "html": "<td><\/td>",
-   "level": "1.1.1.2.2.5.2.1.1.1~1",
-   "md": " ## [Trace instructions for Windows\/UNIXes][Trace instructions for Windows_UNIXes] ##   **Windows** 1) Use the **Tracing** tab of the ODBC function, as follows: 2) Click  **Start &gt; Settings &gt; Control Panel &gt; Administrative Tools**\\. 3) Double\\-click **Data Sources**\\. 4) Select the **Tracing** tab\\. The **Log File Path** displays the default path and file name (\/sql\\.log) trace information is written to\\. 5) Click the **Start Tracing Now** button\\. 6) Click **OK**\\. 7) To stop ODBC tracing, go to the same panel and click the  **Stop Tracing Now** button, then click **OK**\\.  **UNIX** For WMB V7 1) Edit the **odbc\\.ini** (V7) file to initiate trace for ODBC activity (look for environment variable ODBCINI for V7): 2) Under the stanza entry **\\[ODBC\\]** change **Trace=0** to **Trace=1** 3) Enable timestamp in the ODBC trace by setting **TraceOptions=3** in the odbc\\.ini file 4) Optionally, modify the **TraceFile** file path value to a preferred value\\. 5) Restart the broker\\.  All trace records go to one file, which can be confusing with multiple flows or execution groups\\. Disable the trace by changing **Trace=0** to **Trace=1** in the odbc\\.ini file and restart the broker  For WMB V8 and IIB V9 1) Edit the **odbcinst\\.ini** file to initiate trace for ODBC activity (look for environment variable **ODBCINI** and **ODBSYSINI**): 2) Under the stanza entry **\\[ODBC\\]** change **Trace=no** to **Trace=yes** 3) Enable timestamp in the ODBC trace by setting **TraceOptions=3** in the odbc\\.ini file 4) Optionally, modify the **TraceFile** file path value to a preferred value\\. 5) Restart the broker\\.  All trace records go to one file, which can be confusing with multiple flows or execution groups\\. Disable the trace by changing **Trace=yes** to **Trace=no** in the odbcinst\\.ini file and restart the broker    **Note:**   *  Please ensure the path of the trace file is not the IIB installation or working directory\\.  *  Please ensure that the trace file entry points to a file system that has enough disk space\\.  *  Please also ensure that the user running the trace has write permissions to the directory where trace file is written\\.            ## [Trace instructions for z\/OS][Trace instructions for Windows_UNIXes] ##    1) Edit the **BIPDSNAO** file in the component dataset and under the stanza entry **\\[COMMON\\]**, change **APPLTRACE=0** to **APPLTRACE=1** 2) Remove the comment from the **COMPDIR** variable declaration and the **APPLTRC DD** from the steps **EGNOENV** and **EGENV**, in the WebSphere Message Broker started task JCL\\. 3) Stop and restart the broker after you have made all the changes to the BIPDSNAO file and the started task JCL\\.  By default, the trace output file is written to **&lt;component\\_HFS&gt;\/output\/**, into a file called **db2appltrace**\\.\\. Each address space has a unique number, and the eight character execution group label appended to the end of db2appltrace\\.  This unique number, appended to the ODBC file, is the SE number in the execution group address space JOBLOG\\.  If the eight character execution group label is not unique across multiple execution groups, look for the value of SE in the JOBLOG for which you want to view the ODBC trace, and find the file that specifies this value\\.  "
-},
-{
-   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.3",
    "md": ""
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"dblue-table-container\"><\/div>",
    "level": "1.1.1.2.5",
    "md": ""
 },
@@ -1017,12 +239,12 @@
    "md": "Edition"
 },
 {
-   "html": "<th>Business Integration<\/th>",
+   "html": "<th class=\"ibm-table-row\">Business Integration<\/th>",
    "level": "1.1.1.2.5.1.3.1^1",
    "md": "Business Integration"
 },
 {
-   "html": "<th><\/th>",
+   "html": "<th class=\"ibm-table-row\"><\/th>",
    "level": "1.1.1.2.5.1.3.1~1",
    "md": "Business Integration"
 },
@@ -1078,17 +300,17 @@
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-container-body\"><\/div>",
    "level": "1.1.1.2.7",
    "md": ""
 },
 {
-   "html": "<h2>Product Alias\/Synonym<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Product Alias\/Synonym<\/h2>",
    "level": "1.1.1.2.7.1^1",
    "md": "Product Alias\/Synonym"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.7.1",
    "md": "## Product Alias\/Synonym ##"
 },
@@ -1099,13 +321,13 @@
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div id=\"com.dblue.docview.dwAnswers.questions\"><\/div>",
    "level": "1.2",
    "md": ""
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div id=\"com.dblue.docview.dwAnswers.answers\"><\/div>",
    "level": "1.2.1",
    "md": ""
 }

@@ -1,6 +1,6 @@
 FROM openliberty/open-liberty:kernel-java8-openj9-ubi
 
-ARG VERSION=1.0.6
+ARG VERSION=1.0.8
 ARG REVISION=RELEASE
 
 LABEL \
@@ -21,6 +21,9 @@ COPY --chown=1001:0 MDfromHTMLWebServices/target/*.war /config/dropins/
 COPY --chown=1001:0 MDfromHTMLWebServices/properties/  /opt/ol/wlp/output/defaultServer/properties/
 COPY --chown=1001:0 MarkdownGenerator/data/  /opt/ol/wlp/output/defaultServer/data/
 COPY --chown=1001:0 MarkdownGenerator/properties/  /opt/ol/wlp/output/defaultServer/properties/
+
+# copy the .jar containing the utility into the appropriate place (relative to properties directory)
+COPY --chown=1001:0 MarkdownGenerator/target/MarkdownGenerator-1.0.8-jar-with-dependencies.jar /opt/ol/wlp/output/defaultServer/MarkdownGenerator-1.0.8-jar-with-dependencies.jar
 
 ENV AIDEN_HOME=/opt/ol/wlp/output/defaultServer
 

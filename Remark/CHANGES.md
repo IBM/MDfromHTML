@@ -7,6 +7,9 @@
 
 ## Functional Changes
 
+#### 20210215 Changes
+ * General bug fixes for stack overflow
+
 #### 20190814 Changes
  * Added AnnotationWriter class and added it throughout the Remark API's to prepare for tracking the Nodes/Elements used to generate a markdown output line
  * Added filters for id's and aria-label's that reference footer

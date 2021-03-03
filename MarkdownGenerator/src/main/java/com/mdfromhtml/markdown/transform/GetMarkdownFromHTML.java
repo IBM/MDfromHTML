@@ -130,8 +130,7 @@ public class GetMarkdownFromHTML {
       }
       Options options = Options.multiMarkdown();
       options.hardwraps = true;
-      GetMarkdownFromHTML pgm = new GetMarkdownFromHTML(options,
-         HTMLFilters);
+      GetMarkdownFromHTML pgm = new GetMarkdownFromHTML(options, HTMLFilters);
       JsonNode temp = htmlObject.get("html");
       if (temp == null) {
          // try to get this from the captureArray
@@ -172,7 +171,7 @@ public class GetMarkdownFromHTML {
       String domain = Remark.getDomain(baseURI);
       int testindex = baseURI.indexOf(domain);
       // need to find actual domain for proper filters
-      String workingURI = baseURI.substring(testindex+domain.length());
+      String workingURI = baseURI.substring(testindex + domain.length());
       testindex = workingURI.toLowerCase().indexOf("http");
       if (testindex >= 0) {
          workingURI = workingURI.substring(testindex);
@@ -260,27 +259,27 @@ public class GetMarkdownFromHTML {
       int exitVal = 0;
       JSONObject HTMLFilters = null;
       try {
-         HTMLFilters = MDfromHTMLUtils.loadJSONFile("."+File.separator+"properties"+File.separator+"HTML_Filters.json");
+         HTMLFilters = MDfromHTMLUtils.loadJSONFile("." + File.separator
+            + "properties" + File.separator + "HTML_Filters.json");
          // fold to lowercase
          try {
             HTMLFilters = (JSONObject) JSON
                .parse(HTMLFilters.toString().toLowerCase());
          } catch (Exception e) {
-            System.out
-               .println("Error: \"."+File.separator+"properties"+File.separator+"HTML_Filters.json\" has a parsing error: "
-                  + e.getLocalizedMessage());
+            System.out.println("Error: \"." + File.separator + "properties"
+               + File.separator + "HTML_Filters.json\" has a parsing error: "
+               + e.getLocalizedMessage());
             return;
          }
       } catch (Exception e1) {
-         System.out.println(
-            "Error: No HTML Filters -- can not find \"."+File.separator+"properties"+File.separator+"HTML_Filters.json\": "
-               + e1.getLocalizedMessage());
+         System.out.println("Error: No HTML Filters -- can not find \"."
+            + File.separator + "properties" + File.separator
+            + "HTML_Filters.json\": " + e1.getLocalizedMessage());
          return;
       }
       Options options = Options.multiMarkdown();
       options.hardwraps = true;
-      GetMarkdownFromHTML pgm = new GetMarkdownFromHTML(options,
-         HTMLFilters);
+      GetMarkdownFromHTML pgm = new GetMarkdownFromHTML(options, HTMLFilters);
       if (pgm.getParams(args)) {
          if (pgm._thumbsucker) {
             System.out.println("\nFiles ending with ." + pgm._ext
@@ -301,9 +300,13 @@ public class GetMarkdownFromHTML {
                   FileSystems.getDefault().getPath(pgm._inputPath.toString()),
                   pgm._ext);
                for (Path file : files) {
-                  exitVal = pgm.doWork(file, HTMLFilters);
-                  if (exitVal != 0) {
-                     break;
+                  try {
+                     exitVal = pgm.doWork(file, HTMLFilters);
+                     if (exitVal != 0) {
+                        break;
+                     }
+                  } catch (Exception e) {
+                     e.printStackTrace();
                   }
                }
             } catch (Exception e) {
@@ -395,8 +398,7 @@ public class GetMarkdownFromHTML {
             for (Object obj : htmlList) {
                boolean seekHeaders = true; // default is true so only special
                                            // sites need override this
-               JSONObject globalFilters = (JSONObject) HTMLFilters
-                     .get("*");
+               JSONObject globalFilters = (JSONObject) HTMLFilters.get("*");
                if (globalFilters != null) {
                   Boolean test = (Boolean) globalFilters
                      .get(DocumentConverter.SEEK_HEADERS);
@@ -464,7 +466,8 @@ public class GetMarkdownFromHTML {
                   String domain = Remark.getDomain(baseURI);
                   int testindex = baseURI.indexOf(domain);
                   // need to find actual domain for proper filters
-                  String workingURI = baseURI.substring(testindex+domain.length());
+                  String workingURI = baseURI
+                     .substring(testindex + domain.length());
                   testindex = workingURI.toLowerCase().indexOf("http");
                   if (testindex >= 0) {
                      workingURI = workingURI.substring(testindex);
@@ -478,7 +481,8 @@ public class GetMarkdownFromHTML {
 
                   provenanceOutputFileName = _outputPath
                      + shortFileName.substring(0, index) + "_"
-                     + MDfromHTMLUtils.padLeftZero(htmlCounter, 3) + "_html2md.json";
+                     + MDfromHTMLUtils.padLeftZero(htmlCounter, 3)
+                     + "_html2md.json";
 
                   File provenanceOutputFile = new File(
                      provenanceOutputFileName);
@@ -505,7 +509,6 @@ public class GetMarkdownFromHTML {
                   String markdown = generateMarkdownFromHTML(doc,
                      provenanceWriter, baseURI, seekHeaders);
 
-                  
                   if (_keepProvenanceLinks) {
                      markdown += "\n###### Doc2Dial Provenance ######\n\n"
                         + " * [Doc2Dial Original URL][]\n"
@@ -516,7 +519,8 @@ public class GetMarkdownFromHTML {
                         + file.toAbsolutePath().toString();
                   }
 
-                  MDfromHTMLUtils.saveTextFile(markdownOutputFileName, markdown);
+                  MDfromHTMLUtils.saveTextFile(markdownOutputFileName,
+                     markdown);
                } catch (Exception e) {
                   e.printStackTrace();
                   exitVal = -1;
@@ -552,7 +556,8 @@ public class GetMarkdownFromHTML {
    }
 
    void cleanUpAnnotations(String provenanceFileName) throws Exception {
-      JSONObject provenanceObj = MDfromHTMLUtils.loadJSONFile(provenanceFileName);
+      JSONObject provenanceObj = MDfromHTMLUtils
+         .loadJSONFile(provenanceFileName);
       JSONArray provenanceArray = (JSONArray) provenanceObj.get("provenance");
       for (Iterator<Object> it = provenanceArray.iterator(); it.hasNext();) {
          JSONObject annotation = (JSONObject) it.next();
@@ -577,8 +582,9 @@ public class GetMarkdownFromHTML {
     * @return true if we have sufficient parameters to execute the program
     */
    boolean getParams(String[] args) {
-      String inputPath = "."+File.separator+"data"+File.separator+"htmljson";
-      String outputPath = "."+File.separator+"data"+File.separator+"md";
+      String inputPath = "." + File.separator + "data" + File.separator
+         + "htmljson";
+      String outputPath = "." + File.separator + "data" + File.separator + "md";
       String tmp = "";
 
       try {

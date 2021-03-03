@@ -7,8 +7,8 @@ Note: there is a later version in github found [here][here1] but I have not yet 
 ### Building this project ###
 Generate the jar files in your maven repository by right clicking on the pom.xml file and selecting Run as... / Maven build... and use the **clean install** goals. This will create jars in the target directory as well as in the ~/.m2/repository directory tree:
 
-  * remark-1.0.4-jar-with-dependencies.jar
-  * remark-1.0.4.jar 
+  * remark-1.0.8-jar-with-dependencies.jar
+  * remark-1.0.8.jar 
 
 
 

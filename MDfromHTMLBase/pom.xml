@@ -27,7 +27,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ibm.mdfromhtml</groupId>
 	<artifactId>MDfromHTMLBase</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.8</version>
 	<name>MDfromHTMLBase</name>
 	<description>Common utilities and classes used throughout the MDfromHTML project</description>
 	<url>https://github.com/IBM/MDfromHTML</url>

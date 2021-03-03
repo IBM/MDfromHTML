@@ -2,9 +2,69 @@
    "HTMLFilters": {
       "*": {
          ":all": {
+            "aria-hidden": [
+               "true"
+            ],
+            "class": [
+               "hidden",
+               "sidebar",
+               "footer",
+               "hide",
+               "comment",
+               "navigation",
+               "adlink",
+               "adsbygoogle",
+               "-ad",
+               "_ad",
+               "rating",
+               "modal",
+               "popover",
+               "history",
+               "top-nav",
+               "menu",
+               "infobox",
+               "slidein",
+               "poll",
+               "screen-reader-text"
+            ],
+            "id": [
+               "header",
+               "footer",
+               "sidebar",
+               "cookie",
+               "comment",
+               "tweets",
+               "floating",
+               "right_column",
+               "respond",
+               "breadcrumb",
+               "menu",
+               "clear",
+               "wm-ipp"
+            ],
+            "input": [
+               "hidden"
+            ],
+            "role": [
+               "navigation",
+               "region"
+            ],
+            "style": [
+               "display:none",
+               "display: none"
+            ],
+            "type": [
+               "hidden"
+            ],
+            "ul": [
+               "breadcrumb"
+            ]
          },
-         ":seek_headers": false,
          ":tagnames": [
+            "header",
+            "footer",
+            "sidebar",
+            "noscript"
          ]
       },
       "www.ibm.com": {
@@ -19,56 +79,51 @@
 
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-card\"><\/div>",
    "level": "1.1",
    "md": ""
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-card__content\"><\/div>",
    "level": "1.1.1",
    "md": ""
 },
 {
-   "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div style=\"display: none;\"><\/div>",
+   "filterReason": "attribute: \"style\" value: \"display: none;\" contains filter: \"*~:all~style~display: none\"",
+   "html": "<div id=\"dBlue-keyword\" style=\"display: none;\"><\/div>",
    "level": "1.1.1.1",
    "md": ""
 },
 {
-   "html": "<div style=\"display: none;\">\n 71RRT-RFTPLAN; 71RRT-RFTINS; 71RRT-RFTCONF; 71RRT-RFTREC; 71RRT-RFTUPLOAD; 71RRT-RFTDNLOAD; 71RRT-RFTPLAY; 71RRT-RFTWV; 71RRT-RFTTS; application under test script pback failure unable\n<\/div>",
-   "level": "1.1.1.1^1",
-   "md": "71RRT\\-RFTPLAN; 71RRT\\-RFTINS; 71RRT\\-RFTCONF; 71RRT\\-RFTREC; 71RRT\\-RFTUPLOAD; 71RRT\\-RFTDNLOAD; 71RRT\\-RFTPLAY; 71RRT\\-RFTWV; 71RRT\\-RFTTS; application under test script pback failure unable"
-},
-{
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-container ibm-alternate\"><\/div>",
    "level": "1.1.1.2",
    "md": ""
 },
 {
-   "html": "<h2>Technote (troubleshooting)<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Technote (troubleshooting)<\/h2>",
    "level": "1.1.1.2.1^1",
    "md": "Technote (troubleshooting)"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.1",
    "md": "## Technote (troubleshooting) ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-container-body\"><\/div>",
    "level": "1.1.1.2.2",
    "md": ""
 },
 {
-   "html": "<h2>Problem(Abstract)<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Problem(Abstract)<\/h2>",
    "level": "1.1.1.2.2.2^1",
    "md": "Problem(Abstract)"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.2",
    "md": "## Problem(Abstract) ##"
 },
@@ -78,18 +133,18 @@
    "md": "Rational Functional Tester v8\\.2 test script playback on ITCAM robotic player agent fails with BWMRF0125E error seen in TEP robotic workspace\\."
 },
 {
-   "html": "<h2>Symptom<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Symptom<\/h2>",
    "level": "1.1.1.2.2.4^1",
    "md": "Symptom"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.4",
    "md": "## Symptom ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.2.5",
    "md": ""
 },
@@ -179,12 +234,12 @@
    "md": "should be located in \\.\/tmaitm6\/app\/rft\/scripts\/TEST directory, or more generally in \\.\/tmaitm6\/app\/rft\/scripts\/&lt;script name&gt; directory, on the robotic player agent"
 },
 {
-   "html": "<p>good example :<br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=1\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=1\" width=\"574\" height=\"252\"><\/a><br> <br> bad example:<br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=2\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=2\" width=\"661\" height=\"119\"><\/a><br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=3\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=3\" width=\"670\" height=\"222\"><\/a><\/p>",
+   "html": "<p>good example :<br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=1\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=1\" width=\"574\" height=\"252\" class=\"ibm-image-resize ibm-downsize\"><\/a><br> <br> bad example:<br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=2\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=2\" width=\"661\" height=\"119\" class=\"ibm-image-resize ibm-downsize\"><\/a><br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=3\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=3\" width=\"670\" height=\"222\" class=\"ibm-image-resize ibm-downsize\"><\/a><\/p>",
    "level": "1.1.1.2.2.5.4^1",
    "md": "good example :"
 },
 {
-   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=1\" width=\"574\" height=\"252\">",
+   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=1\" width=\"574\" height=\"252\" class=\"ibm-image-resize ibm-downsize\">",
    "level": "1.1.1.2.2.5.4.2.1",
    "md": "![docview.wss_uid_swg21636060_aid_1][]"
 },
@@ -194,12 +249,12 @@
    "md": "[![docview.wss_uid_swg21636060_aid_1][]][docview.wss_uid_swg21636060_aid_1]"
 },
 {
-   "html": "<p>good example :<br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=1\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=1\" width=\"574\" height=\"252\"><\/a><br> <br> bad example:<br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=2\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=2\" width=\"661\" height=\"119\"><\/a><br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=3\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=3\" width=\"670\" height=\"222\"><\/a><\/p>",
+   "html": "<p>good example :<br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=1\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=1\" width=\"574\" height=\"252\" class=\"ibm-image-resize ibm-downsize\"><\/a><br> <br> bad example:<br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=2\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=2\" width=\"661\" height=\"119\" class=\"ibm-image-resize ibm-downsize\"><\/a><br> <a href=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=3\" rel=\"nofollow\"><img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=3\" width=\"670\" height=\"222\" class=\"ibm-image-resize ibm-downsize\"><\/a><\/p>",
    "level": "1.1.1.2.2.5.4^2",
    "md": "bad example:"
 },
 {
-   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=2\" width=\"661\" height=\"119\">",
+   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=2\" width=\"661\" height=\"119\" class=\"ibm-image-resize ibm-downsize\">",
    "level": "1.1.1.2.2.5.4.6.1",
    "md": "![docview.wss_uid_swg21636060_aid_2][]"
 },
@@ -209,7 +264,7 @@
    "md": "[![docview.wss_uid_swg21636060_aid_2][]][docview.wss_uid_swg21636060_aid_2]"
 },
 {
-   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=3\" width=\"670\" height=\"222\">",
+   "html": "<img src=\"http:\/\/www.ibm.com\/support\/docview.wss?uid=swg21636060&amp;aid=3\" width=\"670\" height=\"222\" class=\"ibm-image-resize ibm-downsize\">",
    "level": "1.1.1.2.2.5.4.8.1",
    "md": "![docview.wss_uid_swg21636060_aid_3][]"
 },
@@ -219,18 +274,18 @@
    "md": "[![docview.wss_uid_swg21636060_aid_3][]][docview.wss_uid_swg21636060_aid_3]"
 },
 {
-   "html": "<h2>Cause<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Cause<\/h2>",
    "level": "1.1.1.2.2.7^1",
    "md": "Cause"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.7",
    "md": "## Cause ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.2.8",
    "md": ""
 },
@@ -240,18 +295,18 @@
    "md": "RFT script was not created and exported to ITCAM using a valid RFT workspace\/ functional test project environment"
 },
 {
-   "html": "<h2>Environment<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Environment<\/h2>",
    "level": "1.1.1.2.2.10^1",
    "md": "Environment"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.10",
    "md": "## Environment ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.2.11",
    "md": ""
 },
@@ -281,18 +336,18 @@
    "md": "ITCAM4Tx Tivoli Rational Integration v7\\.3"
 },
 {
-   "html": "<h2>Diagnosing the problem<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Diagnosing the problem<\/h2>",
    "level": "1.1.1.2.2.13^1",
    "md": "Diagnosing the problem"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.13",
    "md": "## Diagnosing the problem ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.2.14",
    "md": ""
 },
@@ -302,18 +357,18 @@
    "md": "see symptoms"
 },
 {
-   "html": "<h2>Resolving the problem<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Resolving the problem<\/h2>",
    "level": "1.1.1.2.2.16^1",
    "md": "Resolving the problem"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.16",
    "md": "## Resolving the problem ##"
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.2.17",
    "md": ""
 },
@@ -334,17 +389,17 @@
 },
 {
    "filterReason": "tag: \"div\" has no specific processing so reviewing its children.",
-   "html": "<div><\/div>",
+   "html": "<div class=\"ibm-domino-rtf\"><\/div>",
    "level": "1.1.1.2.2.18",
    "md": ""
 },
 {
-   "html": "<h2>Product Alias\/Synonym<\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\">Product Alias\/Synonym<\/h2>",
    "level": "1.1.1.2.2.19^1",
    "md": "Product Alias\/Synonym"
 },
 {
-   "html": "<h2><\/h2>",
+   "html": "<h2 class=\" ibm-h4 ibm-bold\"><\/h2>",
    "level": "1.1.1.2.2.19",
    "md": "## Product Alias\/Synonym ##"
 },
