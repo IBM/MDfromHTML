@@ -27,7 +27,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ibm.mdfromhtml.services</groupId>
 	<artifactId>MDfromHTMLWebServices</artifactId>
-	<version>1.0.8</version>
+	<version>1.0.9</version>
 	<packaging>war</packaging>
 	<name>MDfromHTMLWebServices</name>
 	<description>WAR file for running document services in a container.</description>
@@ -89,12 +89,12 @@
 		<dependency>
 			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>MarkdownGenerator</artifactId>
-			<version>1.0.8</version>
+			<version>1.0.9</version>
 		</dependency>
 		<dependency>
 			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>remark</artifactId>
-			<version>1.0.8</version>
+			<version>1.0.9</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.wnm3</groupId>
@@ -104,14 +104,14 @@
 		<dependency>
 			<groupId>com.ibm.mdfromhtml</groupId>
 			<artifactId>MDfromHTMLBase</artifactId>
-			<version>1.0.8</version>
+			<version>1.0.9</version>
 			<exclusions>
 			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.13.1</version>
+			<version>4.13.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
