@@ -1,6 +1,6 @@
-FROM openliberty/open-liberty:kernel-java8-openj9-ubi
+FROM openliberty/open-liberty:full-java11-openj9-ubi
 
-ARG VERSION=1.0.8
+ARG VERSION=1.0.9
 ARG REVISION=RELEASE
 
 LABEL \
@@ -23,7 +23,7 @@ COPY --chown=1001:0 MarkdownGenerator/data/  /opt/ol/wlp/output/defaultServer/da
 COPY --chown=1001:0 MarkdownGenerator/properties/  /opt/ol/wlp/output/defaultServer/properties/
 
 # copy the .jar containing the utility into the appropriate place (relative to properties directory)
-COPY --chown=1001:0 MarkdownGenerator/target/MarkdownGenerator-1.0.8-jar-with-dependencies.jar /opt/ol/wlp/output/defaultServer/MarkdownGenerator-1.0.8-jar-with-dependencies.jar
+COPY --chown=1001:0 MarkdownGenerator/target/MarkdownGenerator-1.0.9-jar-with-dependencies.jar /opt/ol/wlp/output/defaultServer/MarkdownGenerator-1.0.9-jar-with-dependencies.jar
 
 ENV AIDEN_HOME=/opt/ol/wlp/output/defaultServer
 
