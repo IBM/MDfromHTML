@@ -48,6 +48,9 @@ PASSWORD = os.getenv('PASSWORD', '')
 # vdisplay.start()
 
 chrome_options = webdriver.ChromeOptions()
+prefs = {"profile.default_content_setting_values.geolocation" :2}
+options.add_experimental_option("prefs",prefs)
+
 # chrome_options.add_argument('--no-sandbox')
 # chrome_options.add_argument('--window-size=1420,1080')
 # chrome_options.add_argument('--headless')
